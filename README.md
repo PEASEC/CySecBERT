@@ -1,93 +1,103 @@
 # CySecBERT
 
+CySecBERT is a domain-adapted version of the BERT model tailored for cybersecurity tasks. This repository contains the experimental codebase for further training BERT, fine-tuning the resulting BERT model, running various experiments, and analyzing training logs. Please note that this repository does not include any datasets, pretrained models, or checkpoints. These resources can be obtained by contacting the authors.
 
+## Model
 
-## Getting started
+https://huggingface.co/markusbayer/CySecBERT
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Project Structure
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+The repository is organized as follows:
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.dev.peasec.de/markusbayer/cysecbert.git
-git branch -M main
-git push -uf origin main
+cysecbert/
+│
+├── logs_training/               # Contains logging files from training
+├── results/                     # Contains checkpoints of trained models
+├── cybert/
+│   ├── input/                   # Directory for datasets
+│   ├── model/                   # Directory for storing resulting models
+│   ├── code/
+│       ├── CySecAlert/          # Code for running the CySecAlert experiment
+│       ├── MSExchange/          # Code for running the MSExchange experiment
+│       ├── OVANA/               # Code for running the OVANA experiment
+│       ├── SuperGLUE/           # Code for running the SuperGLUE experiment
+│       ├── run_mlm.py           # Script for domain adapting BERT (CySecBERT)
+│   ├── CyBERT.ipynb             # Jupyter notebook for domain adaptation and fine-tuning (deprecated)
 ```
 
-## Integrate with your tools
+## Installation and Setup
 
-- [ ] [Set up project integrations](https://gitlab.dev.peasec.de/markusbayer/cysecbert/-/settings/integrations)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/CySecBERT.git
+   cd CySecBERT
+   ```
 
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+2. Install the required dependencies:
+   ```bash
+   pip install -r cybert/requirements.txt
+   ```
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Domain Adapting BERT
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+To adapt BERT to the cybersecurity domain, use the `run_mlm.py` script. This script allows you to fine-tune the BERT model on a domain-specific corpus.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Example command:
+```
+python cybert/code/run_mlm.py \
+    --model_name_or_path bert-base-uncased \
+    --train_file /path/to/train.txt \
+    --validation_file /path/to/validation.txt \
+    --max_seq_length 512 \
+    --mlm_probability 0.15 \
+    --output_dir /path/to/save/model \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 16 \
+    --save_steps 10_000 \
+    --logging_dir /path/to/logging
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+#### Model Parameters
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+The `run_mlm.py` script contains several key parameters for model training and fine-tuning:
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+- **ModelArguments**:
+  - `model_name_or_path`: Path to the pre-trained model or model identifier from the Hugging Face model hub.
+  - `model_type`: Type of model to be trained from scratch (e.g., `bert`).
+  - `config_name`, `tokenizer_name`: Names or paths of the config and tokenizer if different from the model name.
+  - `cache_dir`: Directory to store downloaded models.
+  - `use_fast_tokenizer`: Whether to use a fast tokenizer backed by the `tokenizers` library.
+  - `model_revision`: Specific model version to use (branch name, tag, or commit id).
+  - `use_auth_token`: Use a Hugging Face authentication token for private models.
 
-## License
-For open source projects, say how it is licensed.
+- **DataTrainingArguments**:
+  - `dataset_name`: Name of the dataset (via the Hugging Face datasets library).
+  - `train_file`, `validation_file`: Paths to the training and validation data files.
+  - `validation_split_percentage`: Percentage of the training set used for validation.
+  - `max_seq_length`: Maximum sequence length after tokenization.
+  - `mlm_probability`: Ratio of tokens to mask for the masked language modeling loss.
+  - `line_by_line`: Whether to treat each line in the dataset as a separate sequence.
+  - `pad_to_max_length`: Whether to pad all sequences to the `max_seq_length`.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### Fine-Tuning and Experiments
+
+The repository includes scripts for fine-tuning CySecBERT on various tasks. These are located under `cybert/code/` in directories named after specific experiments (e.g., `CySecAlert`, `MSExchange`, `OVANA`, `SuperGLUE`).
+
+To run an experiment, navigate to the corresponding directory and execute the script provided. Ensure that you have configured the necessary environment variables and paths for datasets and models.
+
+### Training Logs
+
+Training logs are stored in the `logs_training/` directory. These logs provide detailed insights into the training process.
+
+## Notebook for Domain Adaptation and Fine-Tuning
+
+The repository includes an older Jupyter notebook, `CyBERT.ipynb`, that was used during the initial phases of domain adaptation and fine-tuning. While this notebook is deprecated, it may still provide useful insights into the process.
+
+## Getting Help
+
+For any questions, issues, or requests for datasets, models, or checkpoints, please contact the authors directly.
+
