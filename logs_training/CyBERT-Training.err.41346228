@@ -1,0 +1,5 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+/var/spool/slurmd/job41346228/slurm_script: line 20: conda: command not found

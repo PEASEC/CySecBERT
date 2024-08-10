@@ -1,0 +1,202 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29500 (errno: 97 - Address family not supported by protocol).
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+2023-05-17 11:47:24.154154: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-05-17 11:47:24.154154: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-05-17 11:47:24.154156: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-05-17 11:47:24.154151: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-05-17 11:47:24.401628: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-17 11:47:24.401628: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-17 11:47:24.401630: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-17 11:47:24.401626: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-17 11:47:27.412438: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-05-17 11:47:27.412439: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-05-17 11:47:27.412435: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-05-17 11:47:27.412438: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+wandb: wandb version 0.15.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230517_114734-l2di665j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run divine-plant-625
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/l2di665j
+wandb: wandb version 0.15.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230517_114734-t586cp22
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run young-pyramid-625
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/t586cp22
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 457, in <module>
+    main()
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 186, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 346, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 111, in __init__
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 457, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1333, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1697, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 186, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1613, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 346, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 111, in __init__
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1333, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1697, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1613, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: wandb version 0.15.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230517_114734-3vrz4gos
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sunny-jazz-625
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/3vrz4gos
+wandb: wandb version 0.15.2 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230517_114734-lq8nr1a2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dry-music-625
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/lq8nr1a2
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 457, in <module>
+    main()
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 186, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 346, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 111, in __init__
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1333, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1697, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1613, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 457, in <module>
+    main()
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 186, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 346, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 111, in __init__
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1333, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1697, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/training_args.py", line 1613, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate`: Run `pip install --upgrade accelerate`
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: 🚀 View run young-pyramid-625 at: https://wandb.ai/few_shot/CyBERT/runs/t586cp22
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230517_114734-t586cp22/logs
+wandb: 🚀 View run divine-plant-625 at: https://wandb.ai/few_shot/CyBERT/runs/l2di665j
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230517_114734-l2di665j/logs
+wandb: 🚀 View run dry-music-625 at: https://wandb.ai/few_shot/CyBERT/runs/lq8nr1a2
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230517_114734-lq8nr1a2/logs
+wandb: 🚀 View run sunny-jazz-625 at: https://wandb.ai/few_shot/CyBERT/runs/3vrz4gos
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230517_114734-3vrz4gos/logs
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 1629870) of binary: /shared/apps/.gcc/8.5/python/3.10.10/bin/python3.10
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+cybert/code/run_mlm.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-05-17_11:47:46
+  host      : gaqc0001.lcluster
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1629871)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-05-17_11:47:46
+  host      : gaqc0001.lcluster
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 1629872)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2023-05-17_11:47:46
+  host      : gaqc0001.lcluster
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 1629873)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-05-17_11:47:46
+  host      : gaqc0001.lcluster
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1629870)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gaqc0001: task 0: Exited with exit code 1

@@ -1,0 +1,12 @@
+{
+  "aggregated": 0.63,
+  "copa": {
+    "loss": 0.6828518509864807,
+    "metrics": {
+      "major": 0.63,
+      "minor": {
+        "acc": 0.63
+      }
+    }
+  }
+}

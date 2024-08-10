@@ -1,0 +1,552 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket has failed to listen on 0.0.0.0:29400 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:426] [c10d] The server socket has failed to listen on 0.0.0.0:29400 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29400 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:29400 (errno: 97 - Address family not supported by protocol).
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+2023-04-17 12:42:45.873522: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-17 12:42:45.873521: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-17 12:42:45.873520: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-17 12:42:45.873522: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-17 12:42:46.221078: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-17 12:42:46.221084: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-17 12:42:46.221084: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-17 12:42:46.221084: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-17 12:42:50.294438: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-17 12:42:50.294441: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-17 12:42:50.294441: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-17 12:42:50.294438: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230417_124300-w8q8vddi
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run spring-sun-532
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/w8q8vddi
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230417_124300-h2ky0luv
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rosy-surf-533
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/h2ky0luv
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230417_124300-hfdrx5e5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230417_124300-fdaujjlc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run dazzling-deluge-533
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/hfdrx5e5
+wandb: Syncing run silvery-breeze-532
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/fdaujjlc
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0004]:33983 (errno: 97 - Address family not supported by protocol).
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 3407.23it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 345.75it/s]
+Generating train split: 0 examples [00:00, ? examples/s]                                                          0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 384.59it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 479.40it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 476.84it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 409.56it/s]
+[INFO|configuration_utils.py:668] 2023-04-17 12:43:01,910 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-17 12:43:01,911 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:668] 2023-04-17 12:43:02,033 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-17 12:43:02,034 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1802] 2023-04-17 12:43:02,035 >> loading file vocab.txt from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/vocab.txt
+[INFO|tokenization_utils_base.py:1802] 2023-04-17 12:43:02,035 >> loading file tokenizer.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer.json
+[INFO|tokenization_utils_base.py:1802] 2023-04-17 12:43:02,035 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1802] 2023-04-17 12:43:02,035 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1802] 2023-04-17 12:43:02,036 >> loading file tokenizer_config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer_config.json
+[INFO|configuration_utils.py:668] 2023-04-17 12:43:02,036 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-17 12:43:02,037 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:2403] 2023-04-17 12:43:02,072 >> loading weights file pytorch_model.bin from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/pytorch_model.bin
+[INFO|configuration_utils.py:575] 2023-04-17 12:43:02,363 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "pad_token_id": 0,
+  "transformers_version": "4.27.4"
+}
+
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:3024] 2023-04-17 12:43:04,358 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:3042] 2023-04-17 12:43:04,359 >> All the weights of BertForMaskedLM were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForMaskedLM for predictions without further training.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Map:   0%|          | 0/140 [00:00<?, ? examples/s][INFO|modeling_utils.py:2692] 2023-04-17 12:43:04,490 >> Generation config file not found, using a generation config created from the model config.
+                                                   Map:   0%|          | 0/140 [00:00<?, ? examples/s]Map:   0%|          | 0/140 [00:00<?, ? examples/s]Map:   0%|          | 0/140 [00:00<?, ? examples/s]                                                                                                                                                         [INFO|trainer.py:738] 2023-04-17 12:43:07,373 >> The following columns in the training set don't have a corresponding argument in `BertForMaskedLM.forward` and have been ignored: special_tokens_mask. If special_tokens_mask are not expected by `BertForMaskedLM.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[INFO|trainer.py:1740] 2023-04-17 12:43:07,655 >> ***** Running training *****
+[INFO|trainer.py:1741] 2023-04-17 12:43:07,656 >>   Num examples = 6
+[INFO|trainer.py:1742] 2023-04-17 12:43:07,656 >>   Num Epochs = 30
+[INFO|trainer.py:1743] 2023-04-17 12:43:07,656 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1744] 2023-04-17 12:43:07,656 >>   Total train batch size (w. parallel, distributed & accumulation) = 64
+[INFO|trainer.py:1745] 2023-04-17 12:43:07,656 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1746] 2023-04-17 12:43:07,656 >>   Total optimization steps = 30
+[INFO|trainer.py:1747] 2023-04-17 12:43:07,657 >>   Number of trainable parameters = 109514298
+[INFO|integrations.py:709] 2023-04-17 12:43:07,685 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+  0%|          | 0/30 [00:00<?, ?it/s][WARNING|logging.py:280] 2023-04-17 12:43:07,698 >> You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[W reducer.cpp:1300] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1300] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1300] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[W reducer.cpp:1300] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  3%|▎         | 1/30 [00:00<00:27,  1.07it/s][INFO|trainer.py:2814] 2023-04-17 12:43:08,629 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-1
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:08,633 >> Configuration saved in model/cybert_v100_test/checkpoint-1/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:08,636 >> Configuration saved in model/cybert_v100_test/checkpoint-1/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:09,133 >> Model weights saved in model/cybert_v100_test/checkpoint-1/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:09,134 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:09,136 >> Special tokens file saved in model/cybert_v100_test/checkpoint-1/special_tokens_map.json
+  7%|▋         | 2/30 [00:02<00:38,  1.36s/it][INFO|trainer.py:2814] 2023-04-17 12:43:10,293 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-2
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:10,297 >> Configuration saved in model/cybert_v100_test/checkpoint-2/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:10,299 >> Configuration saved in model/cybert_v100_test/checkpoint-2/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:10,790 >> Model weights saved in model/cybert_v100_test/checkpoint-2/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:10,791 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:10,791 >> Special tokens file saved in model/cybert_v100_test/checkpoint-2/special_tokens_map.json
+ 10%|█         | 3/30 [00:04<00:40,  1.49s/it][INFO|trainer.py:2814] 2023-04-17 12:43:11,941 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-3
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:11,945 >> Configuration saved in model/cybert_v100_test/checkpoint-3/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:11,947 >> Configuration saved in model/cybert_v100_test/checkpoint-3/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:12,441 >> Model weights saved in model/cybert_v100_test/checkpoint-3/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:12,442 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-3/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:12,443 >> Special tokens file saved in model/cybert_v100_test/checkpoint-3/special_tokens_map.json
+ 13%|█▎        | 4/30 [00:05<00:40,  1.56s/it][INFO|trainer.py:2814] 2023-04-17 12:43:13,597 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-4
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:13,600 >> Configuration saved in model/cybert_v100_test/checkpoint-4/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:13,602 >> Configuration saved in model/cybert_v100_test/checkpoint-4/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:14,100 >> Model weights saved in model/cybert_v100_test/checkpoint-4/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:14,101 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-4/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:14,102 >> Special tokens file saved in model/cybert_v100_test/checkpoint-4/special_tokens_map.json
+ 17%|█▋        | 5/30 [00:07<00:39,  1.60s/it][INFO|trainer.py:2814] 2023-04-17 12:43:15,273 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-5
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:15,276 >> Configuration saved in model/cybert_v100_test/checkpoint-5/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:15,279 >> Configuration saved in model/cybert_v100_test/checkpoint-5/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:15,774 >> Model weights saved in model/cybert_v100_test/checkpoint-5/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:15,775 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:15,776 >> Special tokens file saved in model/cybert_v100_test/checkpoint-5/special_tokens_map.json
+ 20%|██        | 6/30 [00:09<00:38,  1.62s/it][INFO|trainer.py:2814] 2023-04-17 12:43:16,946 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-6
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:16,950 >> Configuration saved in model/cybert_v100_test/checkpoint-6/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:16,953 >> Configuration saved in model/cybert_v100_test/checkpoint-6/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:17,456 >> Model weights saved in model/cybert_v100_test/checkpoint-6/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:17,458 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-6/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:17,460 >> Special tokens file saved in model/cybert_v100_test/checkpoint-6/special_tokens_map.json
+ 23%|██▎       | 7/30 [00:10<00:37,  1.64s/it][INFO|trainer.py:2814] 2023-04-17 12:43:18,633 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-7
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:18,636 >> Configuration saved in model/cybert_v100_test/checkpoint-7/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:18,639 >> Configuration saved in model/cybert_v100_test/checkpoint-7/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:19,138 >> Model weights saved in model/cybert_v100_test/checkpoint-7/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:19,139 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:19,140 >> Special tokens file saved in model/cybert_v100_test/checkpoint-7/special_tokens_map.json
+ 27%|██▋       | 8/30 [00:12<00:36,  1.65s/it][INFO|trainer.py:2814] 2023-04-17 12:43:20,300 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-8
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:20,303 >> Configuration saved in model/cybert_v100_test/checkpoint-8/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:20,305 >> Configuration saved in model/cybert_v100_test/checkpoint-8/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:20,806 >> Model weights saved in model/cybert_v100_test/checkpoint-8/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:20,808 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-8/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:20,808 >> Special tokens file saved in model/cybert_v100_test/checkpoint-8/special_tokens_map.json
+ 30%|███       | 9/30 [00:14<00:34,  1.66s/it][INFO|trainer.py:2814] 2023-04-17 12:43:21,968 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-9
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:21,971 >> Configuration saved in model/cybert_v100_test/checkpoint-9/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:21,974 >> Configuration saved in model/cybert_v100_test/checkpoint-9/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:22,468 >> Model weights saved in model/cybert_v100_test/checkpoint-9/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:22,469 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-9/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:22,470 >> Special tokens file saved in model/cybert_v100_test/checkpoint-9/special_tokens_map.json
+ 33%|███▎      | 10/30 [00:15<00:33,  1.66s/it][INFO|trainer.py:2814] 2023-04-17 12:43:23,624 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-10
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:23,663 >> Configuration saved in model/cybert_v100_test/checkpoint-10/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:23,666 >> Configuration saved in model/cybert_v100_test/checkpoint-10/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:24,164 >> Model weights saved in model/cybert_v100_test/checkpoint-10/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:24,166 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-10/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:24,166 >> Special tokens file saved in model/cybert_v100_test/checkpoint-10/special_tokens_map.json
+ 37%|███▋      | 11/30 [00:17<00:31,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:25,330 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-11
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:25,332 >> Configuration saved in model/cybert_v100_test/checkpoint-11/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:25,335 >> Configuration saved in model/cybert_v100_test/checkpoint-11/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:25,838 >> Model weights saved in model/cybert_v100_test/checkpoint-11/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:25,840 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-11/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:25,841 >> Special tokens file saved in model/cybert_v100_test/checkpoint-11/special_tokens_map.json
+ 40%|████      | 12/30 [00:19<00:30,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:27,006 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-12
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:27,009 >> Configuration saved in model/cybert_v100_test/checkpoint-12/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:27,011 >> Configuration saved in model/cybert_v100_test/checkpoint-12/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:27,510 >> Model weights saved in model/cybert_v100_test/checkpoint-12/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:27,511 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-12/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:27,512 >> Special tokens file saved in model/cybert_v100_test/checkpoint-12/special_tokens_map.json
+ 43%|████▎     | 13/30 [00:20<00:28,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:28,666 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-13
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:28,670 >> Configuration saved in model/cybert_v100_test/checkpoint-13/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:28,673 >> Configuration saved in model/cybert_v100_test/checkpoint-13/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:29,171 >> Model weights saved in model/cybert_v100_test/checkpoint-13/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:29,172 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-13/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:29,173 >> Special tokens file saved in model/cybert_v100_test/checkpoint-13/special_tokens_map.json
+ 47%|████▋     | 14/30 [00:22<00:26,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:30,337 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-14
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:30,341 >> Configuration saved in model/cybert_v100_test/checkpoint-14/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:30,344 >> Configuration saved in model/cybert_v100_test/checkpoint-14/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:30,844 >> Model weights saved in model/cybert_v100_test/checkpoint-14/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:30,846 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-14/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:30,846 >> Special tokens file saved in model/cybert_v100_test/checkpoint-14/special_tokens_map.json
+ 50%|█████     | 15/30 [00:24<00:25,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:32,018 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-15
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:32,021 >> Configuration saved in model/cybert_v100_test/checkpoint-15/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:32,024 >> Configuration saved in model/cybert_v100_test/checkpoint-15/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:32,529 >> Model weights saved in model/cybert_v100_test/checkpoint-15/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:32,530 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-15/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:32,531 >> Special tokens file saved in model/cybert_v100_test/checkpoint-15/special_tokens_map.json
+ 53%|█████▎    | 16/30 [00:26<00:23,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:33,718 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-16
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:33,721 >> Configuration saved in model/cybert_v100_test/checkpoint-16/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:33,724 >> Configuration saved in model/cybert_v100_test/checkpoint-16/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:34,226 >> Model weights saved in model/cybert_v100_test/checkpoint-16/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:34,227 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-16/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:34,228 >> Special tokens file saved in model/cybert_v100_test/checkpoint-16/special_tokens_map.json
+ 57%|█████▋    | 17/30 [00:27<00:21,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:35,393 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-17
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:35,398 >> Configuration saved in model/cybert_v100_test/checkpoint-17/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:35,400 >> Configuration saved in model/cybert_v100_test/checkpoint-17/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:35,900 >> Model weights saved in model/cybert_v100_test/checkpoint-17/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:35,902 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-17/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:35,903 >> Special tokens file saved in model/cybert_v100_test/checkpoint-17/special_tokens_map.json
+ 60%|██████    | 18/30 [00:29<00:20,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:37,062 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-18
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:37,110 >> Configuration saved in model/cybert_v100_test/checkpoint-18/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:37,113 >> Configuration saved in model/cybert_v100_test/checkpoint-18/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:37,612 >> Model weights saved in model/cybert_v100_test/checkpoint-18/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:37,613 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-18/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:37,614 >> Special tokens file saved in model/cybert_v100_test/checkpoint-18/special_tokens_map.json
+ 63%|██████▎   | 19/30 [00:31<00:18,  1.69s/it][INFO|trainer.py:2814] 2023-04-17 12:43:38,774 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-19
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:38,778 >> Configuration saved in model/cybert_v100_test/checkpoint-19/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:38,780 >> Configuration saved in model/cybert_v100_test/checkpoint-19/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:39,281 >> Model weights saved in model/cybert_v100_test/checkpoint-19/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:39,283 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-19/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:39,283 >> Special tokens file saved in model/cybert_v100_test/checkpoint-19/special_tokens_map.json
+ 67%|██████▋   | 20/30 [00:32<00:16,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:40,449 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-20
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:40,452 >> Configuration saved in model/cybert_v100_test/checkpoint-20/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:40,455 >> Configuration saved in model/cybert_v100_test/checkpoint-20/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:40,951 >> Model weights saved in model/cybert_v100_test/checkpoint-20/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:40,952 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-20/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:40,953 >> Special tokens file saved in model/cybert_v100_test/checkpoint-20/special_tokens_map.json
+ 70%|███████   | 21/30 [00:34<00:15,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:42,118 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-21
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:42,122 >> Configuration saved in model/cybert_v100_test/checkpoint-21/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:42,124 >> Configuration saved in model/cybert_v100_test/checkpoint-21/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:42,628 >> Model weights saved in model/cybert_v100_test/checkpoint-21/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:42,630 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-21/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:42,630 >> Special tokens file saved in model/cybert_v100_test/checkpoint-21/special_tokens_map.json
+ 73%|███████▎  | 22/30 [00:36<00:13,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:43,804 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-22
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:43,807 >> Configuration saved in model/cybert_v100_test/checkpoint-22/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:43,810 >> Configuration saved in model/cybert_v100_test/checkpoint-22/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:44,305 >> Model weights saved in model/cybert_v100_test/checkpoint-22/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:44,308 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-22/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:44,309 >> Special tokens file saved in model/cybert_v100_test/checkpoint-22/special_tokens_map.json
+ 77%|███████▋  | 23/30 [00:37<00:11,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:45,466 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-23
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:45,469 >> Configuration saved in model/cybert_v100_test/checkpoint-23/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:45,472 >> Configuration saved in model/cybert_v100_test/checkpoint-23/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:45,975 >> Model weights saved in model/cybert_v100_test/checkpoint-23/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:45,976 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-23/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:45,977 >> Special tokens file saved in model/cybert_v100_test/checkpoint-23/special_tokens_map.json
+ 80%|████████  | 24/30 [00:39<00:10,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:47,144 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-24
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:47,148 >> Configuration saved in model/cybert_v100_test/checkpoint-24/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:47,150 >> Configuration saved in model/cybert_v100_test/checkpoint-24/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:47,649 >> Model weights saved in model/cybert_v100_test/checkpoint-24/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:47,650 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-24/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:47,651 >> Special tokens file saved in model/cybert_v100_test/checkpoint-24/special_tokens_map.json
+ 83%|████████▎ | 25/30 [00:41<00:08,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:48,810 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-25
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:48,813 >> Configuration saved in model/cybert_v100_test/checkpoint-25/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:48,816 >> Configuration saved in model/cybert_v100_test/checkpoint-25/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:49,314 >> Model weights saved in model/cybert_v100_test/checkpoint-25/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:49,316 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-25/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:49,316 >> Special tokens file saved in model/cybert_v100_test/checkpoint-25/special_tokens_map.json
+ 87%|████████▋ | 26/30 [00:42<00:06,  1.67s/it][INFO|trainer.py:2814] 2023-04-17 12:43:50,473 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-26
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:50,513 >> Configuration saved in model/cybert_v100_test/checkpoint-26/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:50,515 >> Configuration saved in model/cybert_v100_test/checkpoint-26/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:51,012 >> Model weights saved in model/cybert_v100_test/checkpoint-26/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:51,013 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-26/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:51,014 >> Special tokens file saved in model/cybert_v100_test/checkpoint-26/special_tokens_map.json
+ 90%|█████████ | 27/30 [00:44<00:05,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:52,164 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-27
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:52,168 >> Configuration saved in model/cybert_v100_test/checkpoint-27/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:52,170 >> Configuration saved in model/cybert_v100_test/checkpoint-27/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:52,688 >> Model weights saved in model/cybert_v100_test/checkpoint-27/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:52,689 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-27/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:52,690 >> Special tokens file saved in model/cybert_v100_test/checkpoint-27/special_tokens_map.json
+ 93%|█████████▎| 28/30 [00:46<00:03,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:53,854 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-28
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:53,857 >> Configuration saved in model/cybert_v100_test/checkpoint-28/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:53,860 >> Configuration saved in model/cybert_v100_test/checkpoint-28/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:54,356 >> Model weights saved in model/cybert_v100_test/checkpoint-28/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:54,358 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-28/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:54,359 >> Special tokens file saved in model/cybert_v100_test/checkpoint-28/special_tokens_map.json
+ 97%|█████████▋| 29/30 [00:47<00:01,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:55,517 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-29
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:55,520 >> Configuration saved in model/cybert_v100_test/checkpoint-29/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:55,523 >> Configuration saved in model/cybert_v100_test/checkpoint-29/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:56,025 >> Model weights saved in model/cybert_v100_test/checkpoint-29/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:56,027 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-29/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:56,028 >> Special tokens file saved in model/cybert_v100_test/checkpoint-29/special_tokens_map.json
+100%|██████████| 30/30 [00:49<00:00,  1.68s/it][INFO|trainer.py:2814] 2023-04-17 12:43:57,196 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-30
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:57,200 >> Configuration saved in model/cybert_v100_test/checkpoint-30/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:57,202 >> Configuration saved in model/cybert_v100_test/checkpoint-30/generation_config.json
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:57,722 >> Model weights saved in model/cybert_v100_test/checkpoint-30/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:57,723 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-30/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:57,724 >> Special tokens file saved in model/cybert_v100_test/checkpoint-30/special_tokens_map.json
+[INFO|trainer.py:2012] 2023-04-17 12:43:58,770 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                               100%|██████████| 30/30 [00:51<00:00,  1.68s/it]100%|██████████| 30/30 [00:51<00:00,  1.70s/it]
+[INFO|trainer.py:2814] 2023-04-17 12:43:58,774 >> Saving model checkpoint to model/cybert_v100_test
+[INFO|configuration_utils.py:457] 2023-04-17 12:43:58,776 >> Configuration saved in model/cybert_v100_test/config.json
+[INFO|configuration_utils.py:362] 2023-04-17 12:43:58,778 >> Configuration saved in model/cybert_v100_test/generation_config.json
+wandb: Waiting for W&B process to finish... (success).
+wandb: Waiting for W&B process to finish... (success).
+wandb: Waiting for W&B process to finish... (success).
+[INFO|modeling_utils.py:1762] 2023-04-17 12:43:59,289 >> Model weights saved in model/cybert_v100_test/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-17 12:43:59,290 >> tokenizer config file saved in model/cybert_v100_test/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-17 12:43:59,291 >> Special tokens file saved in model/cybert_v100_test/special_tokens_map.json
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                    train/epoch ▁
+wandb:              train/global_step ▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                    train/epoch 30.0
+wandb:              train/global_step 30
+wandb:               train/total_flos 63169155563520.0
+wandb:               train/train_loss 3.84866
+wandb:            train/train_runtime 51.113
+wandb: train/train_samples_per_second 3.522
+wandb:   train/train_steps_per_second 0.587
+wandb: 
+wandb: 🚀 View run spring-sun-532 at: https://wandb.ai/few_shot/CyBERT/runs/w8q8vddi
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230417_124300-w8q8vddi/logs
+wandb: 🚀 View run rosy-surf-533 at: https://wandb.ai/few_shot/CyBERT/runs/h2ky0luv
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230417_124300-h2ky0luv/logs
+wandb: 🚀 View run dazzling-deluge-533 at: https://wandb.ai/few_shot/CyBERT/runs/hfdrx5e5
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230417_124300-hfdrx5e5/logs
+wandb: 🚀 View run silvery-breeze-532 at: https://wandb.ai/few_shot/CyBERT/runs/fdaujjlc
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230417_124300-fdaujjlc/logs
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+srun: error: gvqc0004: task 3: Exited with exit code 1
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+    self._op_executor.run(join_op, deadline)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 635, in run
+    raise RendezvousClosedError()
+torch.distributed.elastic.rendezvous.api.RendezvousClosedError
+srun: error: gvqc0004: tasks 1-2: Exited with exit code 1

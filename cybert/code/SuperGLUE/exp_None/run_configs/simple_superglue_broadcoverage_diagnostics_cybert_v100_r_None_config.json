@@ -1,0 +1,44 @@
+{
+  "task_config_path_dict": {
+    "superglue_broadcoverage_diagnostics": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_None/tasks/configs/superglue_broadcoverage_diagnostics_config.json"
+  },
+  "task_cache_config_dict": {
+    "superglue_broadcoverage_diagnostics": {
+      "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_None/cache/bert/superglue_broadcoverage_diagnostics/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 0,
+    "warmup_steps": 0
+  },
+  "task_specific_configs_dict": {
+    "superglue_broadcoverage_diagnostics": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "superglue_broadcoverage_diagnostics": "superglue_broadcoverage_diagnostics"
+    },
+    "taskmodel_config_map": {
+      "superglue_broadcoverage_diagnostics": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [],
+    "train_val_task_list": [],
+    "val_task_list": [],
+    "test_task_list": [
+      "superglue_broadcoverage_diagnostics"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

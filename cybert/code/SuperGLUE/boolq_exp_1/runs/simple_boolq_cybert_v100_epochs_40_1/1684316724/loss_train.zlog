@@ -1,0 +1,4 @@
+{"task": "boolq", "task_step": 1, "global_step": 1, "loss_val": 0.7170023322105408, "TIMESTAMP": 1684316740.994224}
+{"task": "boolq", "task_step": 2, "global_step": 2, "loss_val": 0.7032439112663269, "TIMESTAMP": 1684316741.4530473}
+{"task": "boolq", "task_step": 3, "global_step": 3, "loss_val": 0.706532895565033, "TIMESTAMP": 1684316741.9213736}
+{"task": "boolq", "task_step": 4, "global_step": 4, "loss_val": 0.703486979007721, "TIMESTAMP": 1684316742.389311}

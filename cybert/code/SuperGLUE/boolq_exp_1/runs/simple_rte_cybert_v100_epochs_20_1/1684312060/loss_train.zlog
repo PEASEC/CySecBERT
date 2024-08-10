@@ -1,0 +1,16 @@
+{"task": "rte", "task_step": 1, "global_step": 1, "loss_val": 0.6982943415641785, "TIMESTAMP": 1684312067.0598514}
+{"task": "rte", "task_step": 2, "global_step": 2, "loss_val": 0.7142011523246765, "TIMESTAMP": 1684312067.5105283}
+{"task": "rte", "task_step": 3, "global_step": 3, "loss_val": 0.7124483585357666, "TIMESTAMP": 1684312067.9681897}
+{"task": "rte", "task_step": 4, "global_step": 4, "loss_val": 0.6853248476982117, "TIMESTAMP": 1684312068.4206474}
+{"task": "rte", "task_step": 5, "global_step": 5, "loss_val": 0.6873835921287537, "TIMESTAMP": 1684312068.8704097}
+{"task": "rte", "task_step": 6, "global_step": 6, "loss_val": 0.6779276728630066, "TIMESTAMP": 1684312069.330525}
+{"task": "rte", "task_step": 7, "global_step": 7, "loss_val": 0.7121574878692627, "TIMESTAMP": 1684312069.7784538}
+{"task": "rte", "task_step": 8, "global_step": 8, "loss_val": 0.6987034678459167, "TIMESTAMP": 1684312070.2379878}
+{"task": "rte", "task_step": 9, "global_step": 9, "loss_val": 0.711816132068634, "TIMESTAMP": 1684312070.6931682}
+{"task": "rte", "task_step": 10, "global_step": 10, "loss_val": 0.6969122886657715, "TIMESTAMP": 1684312071.149668}
+{"task": "rte", "task_step": 11, "global_step": 11, "loss_val": 0.6998656392097473, "TIMESTAMP": 1684312071.6042285}
+{"task": "rte", "task_step": 12, "global_step": 12, "loss_val": 0.7058512568473816, "TIMESTAMP": 1684312072.0576196}
+{"task": "rte", "task_step": 13, "global_step": 13, "loss_val": 0.6881112456321716, "TIMESTAMP": 1684312072.5136542}
+{"task": "rte", "task_step": 14, "global_step": 14, "loss_val": 0.6919407844543457, "TIMESTAMP": 1684312072.9668887}
+{"task": "rte", "task_step": 15, "global_step": 15, "loss_val": 0.7012074589729309, "TIMESTAMP": 1684312073.423532}
+{"task": "rte", "task_step": 16, "global_step": 16, "loss_val": 0.6961855292320251, "TIMESTAMP": 1684312073.8794944}

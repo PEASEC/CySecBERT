@@ -1,0 +1,4 @@
+name: cybert
+channels:
+  - defaults
+prefix: /home/mb14sola/.conda/envs/cybert

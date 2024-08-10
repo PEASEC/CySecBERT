@@ -1,0 +1,9 @@
+{
+  "task": "wic",
+  "paths": {
+    "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/tasks/data/wic/train.jsonl",
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/tasks/data/wic/test.jsonl",
+    "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/tasks/data/wic/val.jsonl"
+  },
+  "name": "wic"
+}

@@ -1,0 +1,101 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+RuntimeError: module compiled against API version 0xe but this version of numpy is 0xd
+RuntimeError: module compiled against API version 0xe but this version of numpy is 0xd
+ImportError: numpy.core._multiarray_umath failed to import
+ImportError: numpy.core.umath failed to import
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2150, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/modeling_tf_utils.py", line 27, in <module>
+    import tensorflow as tf
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/__init__.py", line 37, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+    from tensorflow.python import data
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/__init__.py", line 21, in <module>
+    from tensorflow.python.data import experimental
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/experimental/__init__.py", line 95, in <module>
+    from tensorflow.python.data.experimental import service
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/experimental/service/__init__.py", line 387, in <module>
+    from tensorflow.python.data.experimental.ops.data_service_ops import distribute
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/experimental/ops/data_service_ops.py", line 23, in <module>
+    from tensorflow.python.data.experimental.ops import compression_ops
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/experimental/ops/compression_ops.py", line 16, in <module>
+    from tensorflow.python.data.util import structure
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/util/structure.py", line 22, in <module>
+    from tensorflow.python.data.util import nest
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/data/util/nest.py", line 36, in <module>
+    from tensorflow.python.framework import sparse_tensor as _sparse_tensor
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/framework/sparse_tensor.py", line 24, in <module>
+    from tensorflow.python.framework import constant_op
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/framework/constant_op.py", line 25, in <module>
+    from tensorflow.python.eager import execute
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 23, in <module>
+    from tensorflow.python.framework import dtypes
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/tensorflow/python/framework/dtypes.py", line 29, in <module>
+    _np_bfloat16 = _pywrap_bfloat16.TF_bfloat16_type()
+TypeError: Unable to convert function return value to a Python type! The signature was
+	() -> handle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2150, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/models/__init__.py", line 19, in <module>
+    from . import (
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/models/layoutlm/__init__.py", line 22, in <module>
+    from .configuration_layoutlm import LAYOUTLM_PRETRAINED_CONFIG_ARCHIVE_MAP, LayoutLMConfig
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/models/layoutlm/configuration_layoutlm.py", line 22, in <module>
+    from ...onnx import OnnxConfig, PatchingSpec
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/onnx/__init__.py", line 17, in <module>
+    from .convert import export, validate_model_outputs
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/onnx/convert.py", line 23, in <module>
+    from .. import PreTrainedModel, PreTrainedTokenizer, TensorType, TFPreTrainedModel, is_torch_available
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2140, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2152, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import transformers.modeling_tf_utils because of the following error (look up to see its traceback):
+Unable to convert function return value to a Python type! The signature was
+	() -> handle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/MSExchange/run_msexchange_Ranada.py", line 2, in <module>
+    from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer
+  File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2140, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 2152, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import transformers.models.auto because of the following error (look up to see its traceback):
+Failed to import transformers.modeling_tf_utils because of the following error (look up to see its traceback):
+Unable to convert function return value to a Python type! The signature was
+	() -> handle
+srun: error: gvqc0002: task 0: Exited with exit code 1

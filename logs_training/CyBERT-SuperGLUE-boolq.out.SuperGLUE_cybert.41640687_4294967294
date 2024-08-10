@@ -1,0 +1,39 @@
+Downloaded and generated configs for 'boolq' (1/1)
+Tokenizing Task 'boolq' for phases 'train,val,test'
+BoolQTask
+  [train]: /work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_2/tasks/data/boolq/train.jsonl
+  [test]: /work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_2/tasks/data/boolq/test.jsonl
+  [val]: /work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_2/tasks/data/boolq/val.jsonl
+Running from start
+  jiant_task_container_config_path: /work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_2/run_configs/simple_boolq_cybert_v100_epochs_40_2_config.json
+  output_dir: /work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_2/runs/simple_boolq_cybert_v100_epochs_40_2
+  hf_pretrained_model_name_or_path: /work/projects/project02060/CyBERT/model/cybert_v100_epochs_40
+  model_path: /work/projects/project02060/CyBERT/model/cybert_v100_epochs_40/model/model.p
+  model_config_path: /work/projects/project02060/CyBERT/model/cybert_v100_epochs_40/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3849356025

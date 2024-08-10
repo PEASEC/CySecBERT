@@ -1,0 +1,2 @@
+{"score": 0.38347398521411635, "metrics": {"multirc": {"major": 0.38347398521411635, "minor": {"em": 0.08411214953271028, "f1": 0.6828358208955224}}}, "train_state": {"global_steps": 1278, "task_steps": {"multirc": 1278}}, "TIMESTAMP": 1657721499.480767}
+{"score": 0.38347398521411635, "metrics": {"multirc": {"major": 0.38347398521411635, "minor": {"em": 0.08411214953271028, "f1": 0.6828358208955224}}}, "train_state": {"global_steps": 1278, "task_steps": {"multirc": 1278}}, "TIMESTAMP": 1657721504.2756686}

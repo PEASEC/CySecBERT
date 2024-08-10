@@ -1,0 +1,24 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+/var/spool/slurmd/job41346795/slurm_script: /work/projects/project02060/CyBERT/cybert/code/Conda/miniconda3/bin/conda: /work/projects/project01762/CyBERT/cybert/code/Conda/miniconda3/bin/python: bad interpreter: No such file or directory
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+

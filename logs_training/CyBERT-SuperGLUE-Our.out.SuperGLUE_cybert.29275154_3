@@ -1,0 +1,34 @@
+Downloaded and generated configs for 'superglue_broadcoverage_diagnostics' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/run_configs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_3_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/runs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_3
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: False
+  do_val: False
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3779986129

@@ -1,0 +1,1 @@
+{"score": 0.3813225447414448, "metrics": {"multirc": {"major": 0.3813225447414448, "minor": {"em": 0.09345794392523364, "f1": 0.6691871455576559}}}, "train_state": {"global_steps": 1278, "task_steps": {"multirc": 1278}}, "TIMESTAMP": 1656549271.7741878}

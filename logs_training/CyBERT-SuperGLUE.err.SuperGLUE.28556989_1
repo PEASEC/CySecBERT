@@ -1,0 +1,10 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+/opt/slurm/current/var/spool/job28580896/slurm_script: line 22: activate: No such file or directory
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/superglue_baseline.py", line 6, in <module>
+srun: error: gaqc0002: task 0: Exited with exit code 1
+    import jiant.utils.python.io as py_io
+ModuleNotFoundError: No module named 'jiant.utils'

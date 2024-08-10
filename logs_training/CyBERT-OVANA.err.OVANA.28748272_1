@@ -1,0 +1,27 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.17 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.16
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220527_111926-36exjzas
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run graceful-planet-350
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/36exjzas
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 522, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 195, in main
+    training_args.output_dir= training_args.output_dir+"_"+trainings_args.seed
+NameError: name 'trainings_args' is not defined
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: - 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: \ 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: | 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: / 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: - 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: \ 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: | 0.005 MB of 0.005 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced graceful-planet-350: https://wandb.ai/few_shot/CyBERT/runs/36exjzas
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220527_111926-36exjzas/logs
+srun: error: gaqc0004: task 0: Exited with exit code 1
+/opt/slurm/current/var/spool/job28750430/slurm_script: line 33: --save_strategy: command not found

@@ -1,0 +1,117 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 34, in <module>
+    wandb.login('true', '169903ffe3707fe1b844110ffb85887e0b1f1748')
+AttributeError: module 'wandb' has no attribute 'login'
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+srun: error: gvqc0004: tasks 0-3: Exited with exit code 1

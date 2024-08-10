@@ -1,0 +1,48 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+2022-05-27 01:08:14.280441: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+Reusing dataset super_glue (/home/mb14sola/.cache/huggingface/datasets/super_glue/boolq/1.0.2/41d9edb3935257e1da4b7ce54cd90df0e8bb255a15e46cfe5cbc7e1c04f177de)
+/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/model_setup.py:174: UserWarning: The following weights were not loaded: dict_keys(['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.decoder.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias'])
+  "The following weights were not loaded: {}".format(remainder_weights_dict.keys())
+/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/site-packages/torch/cuda/__init__.py:104: UserWarning: 
+NVIDIA A100-PCIE-40GB with CUDA capability sm_80 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA A100-PCIE-40GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+Training:   0%|          | 0/444 [00:00<?, ?it/s]Training:   0%|          | 0/444 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "cybert/code/SuperGLUE/superglue_baseline.py", line 47, in <module>
+    simple_run.run_simple(args)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/simple/runscript.py", line 255, in run_simple
+    runscript.run_loop(args=run_args, checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runscript.py", line 171, in run_loop
+    metarunner.run_train_loop()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/shared/metarunner.py", line 38, in run_train_loop
+    for _ in self.yield_train_step():
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/metarunner.py", line 109, in yield_train_step
+    for train_state in train_iterator:
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runner.py", line 76, in run_train_context
+    train_dataloader_dict=train_dataloader_dict, train_state=train_state
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runner.py", line 105, in run_train_step
+    jiant_model=self.jiant_model, batch=batch, task=task, compute_loss=True,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 108, in wrap_jiant_forward
+    batch=batch.to_dict() if is_multi_gpu else batch, task=task, compute_loss=compute_loss,
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 78, in forward
+    batch=batch, tokenizer=self.tokenizer, compute_loss=compute_loss,
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/taskmodels.py", line 82, in forward
+    input_ids=batch.input_ids, segment_ids=batch.segment_ids, input_mask=batch.input_mask,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 211, in encode
+    output_hidden_states=output_hidden_states,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 944, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape, device)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/modeling_utils.py", line 275, in get_extended_attention_mask
+    extended_attention_mask = extended_attention_mask.to(dtype=self.dtype)  # fp16 compatibility
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+srun: error: gaqc0004: task 0: Exited with exit code 1

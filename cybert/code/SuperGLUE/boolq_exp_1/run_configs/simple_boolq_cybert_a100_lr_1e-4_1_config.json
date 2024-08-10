@@ -1,0 +1,53 @@
+{
+  "task_config_path_dict": {
+    "boolq": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/tasks/configs/boolq_config.json"
+  },
+  "task_cache_config_dict": {
+    "boolq": {
+      "train": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/cache/bert/boolq/train",
+      "val": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/cache/bert/boolq/val",
+      "val_labels": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/cache/bert/boolq/val_labels",
+      "test": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/cache/bert/boolq/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 444,
+    "warmup_steps": 44
+  },
+  "task_specific_configs_dict": {
+    "boolq": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "boolq": "boolq"
+    },
+    "taskmodel_config_map": {
+      "boolq": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [
+      "boolq"
+    ],
+    "train_val_task_list": [
+      "boolq"
+    ],
+    "val_task_list": [
+      "boolq"
+    ],
+    "test_task_list": [
+      "boolq"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

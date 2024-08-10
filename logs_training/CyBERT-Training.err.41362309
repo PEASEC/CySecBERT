@@ -1,0 +1,310 @@
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py:181: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use-env is set by default in torchrun.
+If your script expects `--local-rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket has failed to listen on 0.0.0.0:29501 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 86, in _run_code
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 86, in _run_code
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 196, in <module>
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 196, in <module>
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 192, in main
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 192, in main
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 177, in launch
+    launch(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 177, in launch
+    launch(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol). The server socket has failed to listen on 0.0.0.0:29501 (errno: 98 - Address already in use).
+RuntimeError: The server socket has failed to listen on any local network address. The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol). The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket cannot be initialized on [::]:29501 (errno: 97 - Address family not supported by protocol). The server socket has failed to bind to 0.0.0.0:29501 (errno: 98 - Address already in use).
+srun: error: gvqc0001: tasks 0,2-3: Exited with exit code 1
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+2023-04-14 03:04:01.552197: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-14 03:04:01.552196: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-14 03:04:01.552192: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-14 03:04:01.552195: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-14 03:04:01.872190: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-14 03:04:01.872191: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-14 03:04:01.872187: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-14 03:04:01.872190: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-14 03:04:05.370150: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-14 03:04:05.370162: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-14 03:04:05.370163: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-14 03:04:05.370156: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_030413-2mnf8z04
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run crisp-bee-455
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2mnf8z04
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_030413-c5jo5u3v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run good-sponge-455
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/c5jo5u3v
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_030413-11szqiut
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_030413-1fjnalai
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rose-music-455
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/11szqiut
+wandb: Syncing run eternal-jazz-455
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1fjnalai
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29501 (errno: 97 - Address family not supported by protocol).
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 341, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--local-rank=0']
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 341, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--local-rank=1']
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 341, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--local-rank=2']
+  File "/work/projects/project02060/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/transformers/hf_argparser.py", line 341, in parse_args_into_dataclasses
+    raise ValueError(f"Some specified arguments are not used by the HfArgumentParser: {remaining_args}")
+ValueError: Some specified arguments are not used by the HfArgumentParser: ['--local-rank=3']
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: 🚀 View run rose-music-455 at: https://wandb.ai/few_shot/CyBERT/runs/11szqiut
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_030413-11szqiut/logs
+wandb: 🚀 View run good-sponge-455 at: https://wandb.ai/few_shot/CyBERT/runs/c5jo5u3v
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_030413-c5jo5u3v/logs
+wandb: 🚀 View run eternal-jazz-455 at: https://wandb.ai/few_shot/CyBERT/runs/1fjnalai
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_030413-1fjnalai/logs
+wandb: 🚀 View run crisp-bee-455 at: https://wandb.ai/few_shot/CyBERT/runs/2mnf8z04
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_030413-2mnf8z04/logs
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 476531 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 476530) of binary: /shared/apps/.gcc/8.5/python/3.10.10/bin/python
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 196, in <module>
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 192, in main
+    launch(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launch.py", line 177, in launch
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+cybert/code/run_mlm.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2023-04-14_03:04:21
+  host      : gvqc0001.lcluster
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 476532)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2023-04-14_03:04:21
+  host      : gvqc0001.lcluster
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 476533)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-04-14_03:04:21
+  host      : gvqc0001.lcluster
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 476530)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: gvqc0001: task 1: Exited with exit code 1

@@ -1,0 +1,3 @@
+[submodule "cybert/code/SuperGLUE/ji"]
+	path = cybert/code/SuperGLUE/ji
+	url = https://github.com/nyu-mll/jiant

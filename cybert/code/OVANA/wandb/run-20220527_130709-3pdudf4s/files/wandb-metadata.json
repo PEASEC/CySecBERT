@@ -1,0 +1,15 @@
+{
+    "os": "Linux-4.18.0-348.20.1.el8_5.x86_64-x86_64-with-glibc2.28",
+    "python": "3.9.5",
+    "heartbeatAt": "2022-05-27T11:07:12.869811",
+    "startedAt": "2022-05-27T11:07:09.360809",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 96,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py",
+    "codePath": "run_ner_AC_baseline.py"
+}

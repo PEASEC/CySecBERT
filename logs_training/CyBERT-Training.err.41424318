@@ -1,0 +1,209 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+2023-04-19 14:09:19.778209: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-19 14:09:19.778204: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-19 14:09:20.362919: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-19 14:09:20.362919: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-19 14:09:23.336885: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-04-19 14:09:23.336889: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230419_140930-3xggvqes
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zesty-lake-576
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/3xggvqes
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230419_140930-qzealfqs
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run volcanic-oath-576
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/qzealfqs
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:42183 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0001]:42183 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0001]:42183 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0001]:42183 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [gvqc0001]:42183 (errno: 97 - Address family not supported by protocol).
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 289.20it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 426.55it/s]
+[INFO|configuration_utils.py:668] 2023-04-19 14:09:31,888 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-19 14:09:31,889 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:668] 2023-04-19 14:09:32,011 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-19 14:09:32,013 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1802] 2023-04-19 14:09:32,014 >> loading file vocab.txt from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/vocab.txt
+[INFO|tokenization_utils_base.py:1802] 2023-04-19 14:09:32,015 >> loading file tokenizer.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer.json
+[INFO|tokenization_utils_base.py:1802] 2023-04-19 14:09:32,015 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1802] 2023-04-19 14:09:32,015 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1802] 2023-04-19 14:09:32,016 >> loading file tokenizer_config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer_config.json
+[INFO|configuration_utils.py:668] 2023-04-19 14:09:32,017 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-19 14:09:32,018 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.27.4",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:2403] 2023-04-19 14:09:32,053 >> loading weights file pytorch_model.bin from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/pytorch_model.bin
+[INFO|configuration_utils.py:575] 2023-04-19 14:09:32,364 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "pad_token_id": 0,
+  "transformers_version": "4.27.4"
+}
+
+[WARNING|modeling_utils.py:3024] 2023-04-19 14:09:34,388 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:3042] 2023-04-19 14:09:34,389 >> All the weights of BertForMaskedLM were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForMaskedLM for predictions without further training.
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:2692] 2023-04-19 14:09:34,531 >> Generation config file not found, using a generation config created from the model config.
+[INFO|trainer.py:2082] 2023-04-19 14:09:37,885 >> Loading model from model/cybert_v100_test/checkpoint-30.
+[INFO|trainer.py:738] 2023-04-19 14:09:38,526 >> The following columns in the training set don't have a corresponding argument in `BertForMaskedLM.forward` and have been ignored: special_tokens_mask. If special_tokens_mask are not expected by `BertForMaskedLM.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+/home/mb14sola/.local/lib/python3.10/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[INFO|trainer.py:1740] 2023-04-19 14:09:40,086 >> ***** Running training *****
+[INFO|trainer.py:1741] 2023-04-19 14:09:40,087 >>   Num examples = 6
+[INFO|trainer.py:1742] 2023-04-19 14:09:40,087 >>   Num Epochs = 30
+[INFO|trainer.py:1743] 2023-04-19 14:09:40,088 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1744] 2023-04-19 14:09:40,088 >>   Total train batch size (w. parallel, distributed & accumulation) = 32
+[INFO|trainer.py:1745] 2023-04-19 14:09:40,089 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1746] 2023-04-19 14:09:40,089 >>   Total optimization steps = 30
+[INFO|trainer.py:1747] 2023-04-19 14:09:40,091 >>   Number of trainable parameters = 109514298
+[INFO|trainer.py:1769] 2023-04-19 14:09:40,091 >>   Continuing training from checkpoint, will skip to saved global_step
+[INFO|trainer.py:1770] 2023-04-19 14:09:40,092 >>   Continuing training from epoch 30
+[INFO|trainer.py:1771] 2023-04-19 14:09:40,092 >>   Continuing training from global step 30
+[INFO|trainer.py:1774] 2023-04-19 14:09:40,093 >>   Will skip the first 30 epochs then the first 0 batches in the first epoch. If this takes a lot of time, you can install the latest version of Accelerate with `pip install -U accelerate`.You can also add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+0it [00:00, ?it/s]Skipping the first batches: : 0it [00:00, ?it/s][INFO|integrations.py:709] 2023-04-19 14:09:40,095 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+  0%|          | 0/30 [00:00<?, ?it/s][A[WARNING|logging.py:280] 2023-04-19 14:09:40,113 >> You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[INFO|trainer.py:2012] 2023-04-19 14:09:40,267 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                
+                                      [ASkipping the first batches: : 0it [00:00, ?it/s]
+  0%|          | 0/30 [00:00<?, ?it/s][A  0%|          | 0/30 [00:00<?, ?it/s]
+Skipping the first batches: : 0it [00:00, ?it/s]
+[INFO|trainer.py:2814] 2023-04-19 14:09:40,279 >> Saving model checkpoint to model/cybert_v100_test
+[INFO|configuration_utils.py:457] 2023-04-19 14:09:40,281 >> Configuration saved in model/cybert_v100_test/config.json
+[INFO|configuration_utils.py:362] 2023-04-19 14:09:40,283 >> Configuration saved in model/cybert_v100_test/generation_config.json
+wandb: Waiting for W&B process to finish... (success).
+[INFO|modeling_utils.py:1762] 2023-04-19 14:09:40,822 >> Model weights saved in model/cybert_v100_test/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2163] 2023-04-19 14:09:40,823 >> tokenizer config file saved in model/cybert_v100_test/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2170] 2023-04-19 14:09:40,824 >> Special tokens file saved in model/cybert_v100_test/special_tokens_map.json
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.011 MB of 0.011 MB uploaded (0.000 MB deduped)wandb: \ 0.018 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: 🚀 View run volcanic-oath-576 at: https://wandb.ai/few_shot/CyBERT/runs/qzealfqs
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230419_140930-qzealfqs/logs
+wandb: 
+wandb: Run history:
+wandb:                    train/epoch ▁
+wandb:              train/global_step ▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                    train/epoch 30.0
+wandb:              train/global_step 30
+wandb:               train/total_flos 63169155563520.0
+wandb:               train/train_loss 0.0
+wandb:            train/train_runtime 0.1762
+wandb: train/train_samples_per_second 1021.778
+wandb:   train/train_steps_per_second 170.296
+wandb: 
+wandb: 🚀 View run zesty-lake-576 at: https://wandb.ai/few_shot/CyBERT/runs/3xggvqes
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230419_140930-3xggvqes/logs

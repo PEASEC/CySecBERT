@@ -1,0 +1,11 @@
+Run				-> ID		-> is_model_avail
+
+cybert_v100_epochs_20	-> 41435595	-> YES
+cybert_v100_epochs_40	-> 41435598	-> YES
+cybert_v100_LR_1e-4	-> 41435612	-> NO
+cybert_v100_dataset_05	-> 41435622	-> YES
+cybert_v100_LR_5e-5	-> 41435615 -> RUNNING
+cybert_v100_dataset_15	-> 41435625	-> WAITING
+
+
+cybert_a100_lr_1e-4	-> 41582972	-> Checkpointed

@@ -1,0 +1,9 @@
+{
+  "task": "multirc",
+  "paths": {
+    "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/multirc/train.jsonl",
+    "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/multirc/val.jsonl",
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/multirc/test.jsonl"
+  },
+  "name": "multirc"
+}

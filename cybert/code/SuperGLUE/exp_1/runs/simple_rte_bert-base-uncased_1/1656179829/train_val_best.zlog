@@ -1,0 +1,1 @@
+{"score": 0.5848375451263538, "metrics": {"rte": {"major": 0.5848375451263538, "minor": {"acc": 0.5848375451263538}}}, "train_state": {"global_steps": 117, "task_steps": {"rte": 117}}, "TIMESTAMP": 1656179941.4144742}

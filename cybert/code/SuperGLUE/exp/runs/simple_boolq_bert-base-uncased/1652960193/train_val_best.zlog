@@ -1,0 +1,1 @@
+{"score": 0.688, "metrics": {"boolq": {"major": 0.688, "minor": {"acc": 0.688}}}, "train_state": {"global_steps": 444, "task_steps": {"boolq": 444}}, "TIMESTAMP": 1652960596.8681417}

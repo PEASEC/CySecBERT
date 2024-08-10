@@ -1,0 +1,2 @@
+{"score": 0.668, "metrics": {"boolq": {"major": 0.668, "minor": {"acc": 0.668}}}, "train_state": {"global_steps": 444, "task_steps": {"boolq": 444}}, "TIMESTAMP": 1654102516.5631537}
+{"score": 0.668, "metrics": {"boolq": {"major": 0.668, "minor": {"acc": 0.668}}}, "train_state": {"global_steps": 444, "task_steps": {"boolq": 444}}, "TIMESTAMP": 1654102519.4314227}

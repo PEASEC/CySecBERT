@@ -1,0 +1,13 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.7.4 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/superglue_boolq.py", line 7, in <module>
+srun: error: gaqc0001: task 0: Exited with exit code 1
+    import jiant.utils.python.io as py_io
+ModuleNotFoundError: No module named 'jiant'

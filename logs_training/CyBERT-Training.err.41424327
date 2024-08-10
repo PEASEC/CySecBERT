@@ -1,0 +1,113 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29400 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[W socket.cpp:426] [c10d] The server socket cannot be initialized on [::]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29400 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:601] [c10d] The client socket cannot be initialized to connect to [localhost]:29400 (errno: 97 - Address family not supported by protocol).
+WARNING:torch.distributed.elastic.rendezvous.dynamic_rendezvous:The node 'gvqc0001.lcluster_3202646_0' has failed to shutdown the rendezvous 'none' due to an error of type RendezvousConnectionError.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 113, in _call_store
+    return getattr(self._store, store_op)(*args, **kwargs)
+RuntimeError: Broken pipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 607, in run
+    has_set = self._state_holder.sync()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 409, in sync
+    get_response = self._backend.get_state()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 73, in get_state
+    base64_state: bytes = self._call_store("get", self._key)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 115, in _call_store
+    raise RendezvousConnectionError(
+torch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.
+WARNING:torch.distributed.elastic.rendezvous.dynamic_rendezvous:The node 'gvqc0001.lcluster_3202645_0' has failed to shutdown the rendezvous 'none' due to an error of type RendezvousConnectionError.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 113, in _call_store
+    return getattr(self._store, store_op)(*args, **kwargs)
+RuntimeError: Broken pipe
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1028, in next_rendezvous
+    self._op_executor.run(join_op, deadline)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 607, in run
+    has_set = self._state_holder.sync()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 409, in sync
+    get_response = self._backend.get_state()
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 73, in get_state
+    base64_state: bytes = self._call_store("get", self._key)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 115, in _call_store
+    raise RendezvousConnectionError(
+torch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.
+srun: error: gvqc0001: tasks 0-1: Exited with exit code 1

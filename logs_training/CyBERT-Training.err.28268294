@@ -1,0 +1,1033 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+/opt/slurm/current/var/spool/job28268294/slurm_script: line 21: conda: command not found
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : cybert/code/run_mlm.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 4
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29500
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : cybert/code/run_mlm.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 4
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29500
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py:163: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+  logger.warn(
+The module torch.distributed.launch is deprecated and going to be removed in future.Migrate to torch.distributed.run
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : cybert/code/run_mlm.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 4
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29500
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+WARNING:torch.distributed.run:--use_env is deprecated and will be removed in future releases.
+ Please read local_rank from `os.environ('LOCAL_RANK')` instead.
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : cybert/code/run_mlm.py
+  min_nodes        : 1
+  max_nodes        : 1
+  nproc_per_node   : 4
+  run_id           : none
+  rdzv_backend     : static
+  rdzv_endpoint    : 127.0.0.1:29500
+  rdzv_configs     : {'rank': 0, 'timeout': 900}
+  max_restarts     : 3
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_qmt4tnj6/none_2qbc1jv2
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_3ltow3aw/none_jp8qv510
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_ner7w2to/none_2x0jazf2
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py:52: FutureWarning: This is an experimental API and will be changed in future.
+  warnings.warn(
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=127.0.0.1
+  master_port=29500
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_0/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_0/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_0/3/error.json
+{"name": "torchelastic.worker.status.FAILED", "source": "AGENT", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": null, "group_rank": null, "worker_id": null, "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 0, "rdzv_backend": "static", "raw_error": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n", "metadata": "{\"group_world_size\": null, \"entry_point\": \"python\"}", "agent_restarts": 0}}
+{"name": "torchelastic.worker.status.FAILED", "source": "AGENT", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": null, "group_rank": null, "worker_id": null, "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 0, "rdzv_backend": "static", "raw_error": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n", "metadata": "{\"group_world_size\": null, \"entry_point\": \"python\"}", "agent_restarts": 0}}
+{"name": "torchelastic.worker.status.FAILED", "source": "AGENT", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": null, "group_rank": null, "worker_id": null, "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 0, "rdzv_backend": "static", "raw_error": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n", "metadata": "{\"group_world_size\": null, \"entry_point\": \"python\"}", "agent_restarts": 0}}
+ERROR:torch.distributed.elastic.multiprocessing.errors.error_handler:{
+  "message": {
+    "message": "RuntimeError: Address already in use",
+    "extraInfo": {
+      "py_callstack": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 348, in wrapper\n    return f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n",
+      "timestamp": "1651914100"
+    }
+  }
+}
+ERROR:torch.distributed.elastic.multiprocessing.errors.error_handler:{
+  "message": {
+    "message": "RuntimeError: Address already in use",
+    "extraInfo": {
+      "py_callstack": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 348, in wrapper\n    return f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n",
+      "timestamp": "1651914100"
+    }
+  }
+}
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+ERROR:torch.distributed.elastic.multiprocessing.errors.error_handler:{
+  "message": {
+    "message": "RuntimeError: Address already in use",
+    "extraInfo": {
+      "py_callstack": "Traceback (most recent call last):\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 348, in wrapper\n    return f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py\", line 238, in launch_agent\n    result = agent.run()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 700, in run\n    result = self._invoke_run(role)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 822, in _invoke_run\n    self._initialize_workers(self._worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 670, in _initialize_workers\n    self._rendezvous(worker_group)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py\", line 125, in wrapper\n    result = f(*args, **kwargs)\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py\", line 530, in _rendezvous\n    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()\n  File \"/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py\", line 55, in next_rendezvous\n    self._store = TCPStore(\nRuntimeError: Address already in use\n",
+      "timestamp": "1651914100"
+    }
+  }
+}
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 87, in _run_code
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 87, in _run_code
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 173, in <module>
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 173, in <module>
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 173, in <module>
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 169, in main
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 169, in main
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 169, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/run.py", line 621, in run
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/run.py", line 621, in run
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/run.py", line 621, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 116, in __call__
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 116, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 116, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 238, in launch_agent
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 238, in launch_agent
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 238, in launch_agent
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 700, in run
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 700, in run
+    result = agent.run()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 700, in run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 822, in _invoke_run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 822, in _invoke_run
+    result = self._invoke_run(role)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 822, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    self._initialize_workers(self._worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 670, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 670, in _initialize_workers
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 670, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    self._rendezvous(worker_group)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 530, in _rendezvous
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 530, in _rendezvous
+    result = f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/agent/server/api.py", line 530, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(
+RuntimeError: Address already in use
+    self._store = TCPStore(
+RuntimeError: Address already in use
+    self._store = TCPStore(
+RuntimeError: Address already in use
+srun: error: gaqc0003: tasks 1-3: Exited with exit code 1
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110236-itbtlcqh
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110236-tobwdelj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110236-1wclundi
+wandb: Run `wandb offline` to turn off syncing.
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110236-6sxly9mk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vibrant-donkey-245
+wandb: Syncing run cerulean-oath-246
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/itbtlcqh
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/tobwdelj
+wandb: Syncing run leafy-durian-242
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1wclundi
+wandb: Syncing run robust-lion-243
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/6sxly9mk
+0 tables [00:00, ? tables/s]1 tables [00:00,  5.43 tables/s]2 tables [00:00,  6.91 tables/s]3 tables [00:00,  7.66 tables/s]4 tables [00:00,  7.91 tables/s]5 tables [00:00,  8.22 tables/s]6 tables [00:00,  8.61 tables/s]7 tables [00:00,  8.88 tables/s]8 tables [00:00,  9.03 tables/s]9 tables [00:01,  8.72 tables/s]10 tables [00:01,  8.53 tables/s]11 tables [00:01,  8.65 tables/s]12 tables [00:01,  8.78 tables/s]13 tables [00:01,  8.58 tables/s]14 tables [00:01,  8.76 tables/s]15 tables [00:01,  8.78 tables/s]16 tables [00:01,  8.81 tables/s]17 tables [00:02,  8.91 tables/s]18 tables [00:02,  9.13 tables/s]19 tables [00:02,  9.29 tables/s]20 tables [00:02,  9.23 tables/s]21 tables [00:02,  9.01 tables/s]22 tables [00:02,  8.77 tables/s]23 tables [00:02,  8.81 tables/s]24 tables [00:02,  8.82 tables/s]25 tables [00:02,  8.54 tables/s]26 tables [00:03,  8.42 tables/s]27 tables [00:03,  8.33 tables/s]28 tables [00:03,  8.26 tables/s]29 tables [00:03,  8.35 tables/s]30 tables [00:03,  8.44 tables/s]31 tables [00:03,  8.57 tables/s]32 tables [00:03,  8.78 tables/s]33 tables [00:03,  8.45 tables/s]34 tables [00:03,  8.61 tables/s]35 tables [00:04,  8.79 tables/s]37 tables [00:04,  9.16 tables/s]38 tables [00:04,  9.31 tables/s]39 tables [00:04,  9.47 tables/s]40 tables [00:04,  9.16 tables/s]41 tables [00:04,  8.95 tables/s]42 tables [00:04,  8.97 tables/s]43 tables [00:04,  9.22 tables/s]44 tables [00:05,  8.79 tables/s]45 tables [00:05,  8.59 tables/s]46 tables [00:05,  8.76 tables/s]47 tables [00:05,  8.49 tables/s]48 tables [00:05,  8.38 tables/s]49 tables [00:05,  8.36 tables/s]50 tables [00:05,  8.36 tables/s]51 tables [00:05,  8.58 tables/s]52 tables [00:05,  8.96 tables/s]53 tables [00:06,  8.83 tables/s]54 tables [00:06,  8.95 tables/s]55 tables [00:06,  9.09 tables/s]56 tables [00:06,  9.21 tables/s]57 tables [00:06,  9.14 tables/s]58 tables [00:06,  7.85 tables/s]60 tables [00:06,  8.91 tables/s]61 tables [00:07,  9.08 tables/s]62 tables [00:07,  8.90 tables/s]63 tables [00:07,  8.86 tables/s]65 tables [00:07,  9.34 tables/s]66 tables [00:07,  9.12 tables/s]68 tables [00:07,  9.61 tables/s]70 tables [00:07,  9.61 tables/s]71 tables [00:08,  9.41 tables/s]72 tables [00:08,  9.11 tables/s]73 tables [00:08,  9.17 tables/s]75 tables [00:08,  9.12 tables/s]77 tables [00:08, 10.97 tables/s]79 tables [00:08, 12.37 tables/s]81 tables [00:08, 11.15 tables/s]83 tables [00:09, 10.29 tables/s]85 tables [00:09,  9.13 tables/s]86 tables [00:09,  8.88 tables/s]87 tables [00:09,  8.93 tables/s]89 tables [00:09,  9.15 tables/s]90 tables [00:10,  8.85 tables/s]91 tables [00:10,  8.88 tables/s]92 tables [00:10,  9.13 tables/s]93 tables [00:10,  9.08 tables/s]95 tables [00:10,  9.47 tables/s]96 tables [00:10,  9.57 tables/s]98 tables [00:10,  9.89 tables/s]99 tables [00:10,  9.60 tables/s]100 tables [00:11,  9.53 tables/s]102 tables [00:11,  9.84 tables/s]103 tables [00:11,  9.61 tables/s]104 tables [00:11,  9.47 tables/s]105 tables [00:11,  9.25 tables/s]106 tables [00:11,  9.40 tables/s]107 tables [00:11,  9.28 tables/s]108 tables [00:11,  9.22 tables/s]109 tables [00:12,  9.11 tables/s]110 tables [00:12,  8.74 tables/s]111 tables [00:12,  8.76 tables/s]112 tables [00:12,  8.79 tables/s]113 tables [00:12,  8.71 tables/s]114 tables [00:12,  9.02 tables/s]115 tables [00:12,  9.26 tables/s]117 tables [00:12,  9.74 tables/s]118 tables [00:13,  9.54 tables/s]119 tables [00:13,  9.08 tables/s]120 tables [00:13,  9.05 tables/s]121 tables [00:13,  8.99 tables/s]122 tables [00:13,  8.33 tables/s]123 tables [00:13,  8.60 tables/s]125 tables [00:13,  9.02 tables/s]126 tables [00:13,  8.75 tables/s]127 tables [00:14,  8.89 tables/s]129 tables [00:14,  9.22 tables/s]130 tables [00:14,  9.11 tables/s]131 tables [00:14,  9.14 tables/s]132 tables [00:14,  8.89 tables/s]133 tables [00:14,  9.08 tables/s]135 tables [00:14,  9.86 tables/s]136 tables [00:15,  9.62 tables/s]137 tables [00:15,  9.40 tables/s]138 tables [00:15,  9.28 tables/s]140 tables [00:15,  9.91 tables/s]141 tables [00:15,  9.70 tables/s]142 tables [00:15,  9.35 tables/s]143 tables [00:15,  9.03 tables/s]144 tables [00:15,  9.17 tables/s]145 tables [00:15,  9.38 tables/s]146 tables [00:16,  9.16 tables/s]147 tables [00:16,  8.97 tables/s]148 tables [00:16,  8.89 tables/s]149 tables [00:16,  8.70 tables/s]151 tables [00:16,  9.77 tables/s]153 tables [00:16, 10.03 tables/s]154 tables [00:16, 10.01 tables/s]155 tables [00:17,  9.89 tables/s]157 tables [00:17,  9.75 tables/s]159 tables [00:17, 10.23 tables/s]161 tables [00:17, 10.15 tables/s]163 tables [00:17, 10.58 tables/s]165 tables [00:17, 10.45 tables/s]167 tables [00:18, 10.70 tables/s]169 tables [00:18, 10.35 tables/s]171 tables [00:18, 10.31 tables/s]173 tables [00:18, 10.35 tables/s]175 tables [00:18,  9.76 tables/s]176 tables [00:19,  9.50 tables/s]177 tables [00:19,  8.40 tables/s]178 tables [00:19,  8.46 tables/s]179 tables [00:19,  8.56 tables/s]180 tables [00:19,  8.63 tables/s]182 tables [00:19,  9.55 tables/s]184 tables [00:19, 10.04 tables/s]185 tables [00:20,  9.05 tables/s]187 tables [00:20,  9.35 tables/s]189 tables [00:20,  9.64 tables/s]191 tables [00:20,  9.78 tables/s]193 tables [00:20,  9.71 tables/s]195 tables [00:21, 10.14 tables/s]197 tables [00:21,  9.33 tables/s]198 tables [00:21,  9.36 tables/s]200 tables [00:21,  9.59 tables/s]202 tables [00:21,  8.74 tables/s]                                  Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 254, in main
+    datasets = load_dataset(extension, data_files=data_files)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/load.py", line 847, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/builder.py", line 623, in download_and_prepare
+    self._save_info()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/builder.py", line 733, in _save_info
+    self.info.write_to_directory(self._cache_dir)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/info.py", line 195, in write_to_directory
+    with open(os.path.join(dataset_info_dir, config.LICENSE_FILENAME), "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/work/projects/project01762/.cache/text/default-4456d90ad1241268/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5.incomplete/LICENSE'
+[INFO|configuration_utils.py:588] 2022-05-07 11:03:10,058 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at cache/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-05-07 11:03:10,059 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:588] 2022-05-07 11:03:10,891 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at cache/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-05-07 11:03:10,892 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)[INFO|tokenization_utils_base.py:1742] 2022-05-07 11:03:13,411 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt from cache at cache/45c3f7a79a80e1cf0a489e5c62b43f173c15db47864303a55d623bb3c96f72a5.d789d64ebfe299b0e416afc4a169632f903f693095b4629a7ea271d5a0cf2c99
+[INFO|tokenization_utils_base.py:1742] 2022-05-07 11:03:13,411 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer.json from cache at cache/534479488c54aeaf9c3406f647aa2ec13648c06771ffe269edabebd4c412da1d.7f2721073f19841be16f41b0a70b600ca6b880c8f3df6f3535cbc704371bdfa4
+[INFO|tokenization_utils_base.py:1742] 2022-05-07 11:03:13,411 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-05-07 11:03:13,411 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-05-07 11:03:13,411 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json from cache at cache/c1d7f0a763fb63861cc08553866f1fc3e5a6f4f07621be277452d26d71303b7e.20430bd8e10ef77a7d2977accefe796051e01bc2fc4aa146bc862997a1a15e79
+[INFO|configuration_utils.py:588] 2022-05-07 11:03:13,836 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /work/projects/project01762/.cache/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-05-07 11:03:13,837 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+wandb: / 0.006 MB of 0.006 MB uploaded (0.000 MB deduped)wandb:                                                                                
+[INFO|modeling_utils.py:1340] 2022-05-07 11:03:14,284 >> loading weights file https://huggingface.co/bert-base-uncased/resolve/main/pytorch_model.bin from cache at cache/a8041bf617d7f94ea26d15e218abd04afc2004805632abc0ed2066aa16d50d04.faf6ea826ae9c5867d12b22257f9877e6b8367890837bd60f7c54a29633f7f2f
+[WARNING|modeling_utils.py:1598] 2022-05-07 11:03:15,518 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:1615] 2022-05-07 11:03:15,518 >> All the weights of BertForMaskedLM were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForMaskedLM for predictions without further training.
+  0% 0/20170 [00:00<?, ?ba/s]Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0% 0/20170 [00:00<?, ?ba/s]Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+  0% 0/20170 [00:00<?, ?ba/s]  0% 4/20170 [00:00<17:48, 18.87ba/s]  0% 4/20170 [00:00<18:48, 17.87ba/s]  0% 4/20170 [00:00<26:43, 12.58ba/s]  0% 13/20170 [00:00<07:16, 46.23ba/s]  0% 13/20170 [00:00<07:31, 44.69ba/s]  0% 12/20170 [00:00<10:31, 31.92ba/s]wandb: Synced leafy-durian-242: https://wandb.ai/few_shot/CyBERT/runs/1wclundi
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_110236-1wclundi/logs
+  0% 19/20170 [00:00<08:50, 37.96ba/s]  0% 19/20170 [00:00<08:35, 39.07ba/s]  0% 30/20170 [00:00<05:52, 57.12ba/s]  0% 18/20170 [00:00<11:04, 30.31ba/s]  0% 30/20170 [00:00<05:44, 58.52ba/s]  0% 30/20170 [00:00<06:35, 50.87ba/s]  0% 37/20170 [00:00<06:32, 51.29ba/s]  0% 37/20170 [00:00<06:24, 52.38ba/s]  0% 45/20170 [00:00<05:45, 58.25ba/s]  0% 45/20170 [00:00<05:43, 58.60ba/s]  0% 37/20170 [00:01<08:37, 38.89ba/s]  0% 46/20170 [00:01<06:56, 48.26ba/s]  0% 52/20170 [00:01<07:35, 44.17ba/s]  0% 52/20170 [00:01<06:44, 49.69ba/s]  0% 60/20170 [00:01<06:28, 51.73ba/s]  0% 60/20170 [00:01<05:56, 56.36ba/s]  0% 53/20170 [00:01<07:46, 43.16ba/s]  0% 62/20170 [00:01<07:39, 43.71ba/s]  0% 67/20170 [00:01<09:14, 36.28ba/s]  0% 67/20170 [00:01<08:56, 37.49ba/s]  0% 68/20170 [00:01<07:11, 46.63ba/s]  0% 73/20170 [00:01<08:36, 38.91ba/s]  0% 73/20170 [00:01<08:11, 40.91ba/s]  0% 75/20170 [00:01<06:33, 51.07ba/s]  0% 81/20170 [00:01<07:38, 43.86ba/s]  0% 79/20170 [00:01<10:22, 32.26ba/s]  0% 78/20170 [00:02<11:35, 28.88ba/s]  0% 87/20170 [00:02<07:07, 46.93ba/s]  0% 85/20170 [00:02<09:08, 36.59ba/s]  0% 84/20170 [00:02<10:06, 33.14ba/s]  0% 93/20170 [00:02<08:28, 39.49ba/s]  0% 90/20170 [00:02<10:58, 30.49ba/s]  0% 90/20170 [00:02<10:49, 30.94ba/s]  1% 102/20170 [00:02<06:52, 48.60ba/s]  0% 98/20170 [00:02<08:28, 39.44ba/s]  0% 99/20170 [00:02<08:18, 40.30ba/s]  1% 105/20170 [00:02<09:08, 36.57ba/s]  1% 103/20170 [00:02<09:47, 34.18ba/s]  1% 108/20170 [00:02<09:51, 33.92ba/s]  1% 108/20170 [00:02<09:01, 37.05ba/s]  1% 110/20170 [00:02<08:40, 38.52ba/s]  1% 114/20170 [00:02<09:00, 37.08ba/s]  1% 116/20170 [00:02<07:47, 42.93ba/s]  1% 113/20170 [00:02<08:36, 38.86ba/s]  1% 121/20170 [00:02<07:56, 42.05ba/s]  1% 121/20170 [00:02<08:57, 37.32ba/s]  1% 126/20170 [00:03<09:44, 34.32ba/s]  1% 128/20170 [00:03<07:42, 43.33ba/s]  1% 118/20170 [00:03<12:24, 26.92ba/s]  1% 133/20170 [00:03<08:09, 40.95ba/s]  1% 125/20170 [00:03<09:49, 34.03ba/s]  1% 133/20170 [00:03<10:31, 31.74ba/s]  1% 138/20170 [00:03<09:29, 35.19ba/s]  1% 140/20170 [00:03<08:39, 38.59ba/s]  1% 146/20170 [00:03<07:41, 43.39ba/s]  1% 131/20170 [00:03<11:08, 29.98ba/s][WARNING|tokenization_utils_base.py:3306] 2022-05-07 11:03:19,165 >> Token indices sequence length is longer than the specified maximum sequence length for this model (554 > 512). Running this sequence through the model will result in indexing errors
+  1% 137/20170 [00:03<09:28, 35.25ba/s]  1% 145/20170 [00:03<09:41, 34.43ba/s]  1% 144/20170 [00:03<07:54, 42.17ba/s]  1% 152/20170 [00:03<09:01, 36.95ba/s]Token indices sequence length is longer than the specified maximum sequence length for this model (554 > 512). Running this sequence through the model will result in indexing errors
+  1% 151/20170 [00:03<08:29, 39.30ba/s]  1% 158/20170 [00:03<08:06, 41.13ba/s]  1% 157/20170 [00:03<09:24, 35.44ba/s]Token indices sequence length is longer than the specified maximum sequence length for this model (554 > 512). Running this sequence through the model will result in indexing errors
+  1% 150/20170 [00:04<11:06, 30.04ba/s]  1% 166/20170 [00:04<08:33, 38.94ba/s]  1% 163/20170 [00:04<08:20, 39.97ba/s]  1% 156/20170 [00:04<09:44, 34.22ba/s]  1% 174/20170 [00:04<07:13, 46.09ba/s]  1% 170/20170 [00:04<07:15, 45.94ba/s]  1% 180/20170 [00:04<07:29, 44.49ba/s]  1% 176/20170 [00:04<10:03, 33.11ba/s]  1% 161/20170 [00:04<13:07, 25.42ba/s]  1% 168/20170 [00:04<10:19, 32.27ba/s]  1% 185/20170 [00:04<10:26, 31.88ba/s]  1% 181/20170 [00:04<10:18, 32.30ba/s]  1% 192/20170 [00:04<08:51, 37.59ba/s]  1% 173/20170 [00:04<11:38, 28.63ba/s]  1% 186/20170 [00:04<12:05, 27.56ba/s]  1% 179/20170 [00:05<09:53, 33.68ba/s]  1% 197/20170 [00:05<10:37, 31.32ba/s]  1% 192/20170 [00:05<10:02, 33.14ba/s]ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 1 (pid: 91488) of binary: /shared/apps/.gcc/8.5/python/3.9.5/bin/python
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 3/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=1
+  master_addr=127.0.0.1
+  master_port=29500
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_1/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_1/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_1/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_1/3/error.json
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110326-2h2e232j
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run misunderstood-blaze-250
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2h2e232j
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110327-3tndhhnd
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-surf-251
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/3tndhhnd
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110326-3dy6izsk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run good-sun-252
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/3dy6izsk
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_110328-2f47h0tw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vivid-voice-253
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2f47h0tw
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 3, for key: store_based_barrier_key:1 (world_size=4, worker_count=8, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 1, for key: store_based_barrier_key:1 (world_size=4, worker_count=8, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 2, for key: store_based_barrier_key:1 (world_size=4, worker_count=8, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 0, for key: store_based_barrier_key:1 (world_size=4, worker_count=8, timeout=0:30:00)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: Synced zany-surf-251: https://wandb.ai/few_shot/CyBERT/runs/3tndhhnd
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_110327-3tndhhnd/logs
+wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced good-sun-252: https://wandb.ai/few_shot/CyBERT/runs/3dy6izsk
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_110326-3dy6izsk/logs
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 1 (pid: 99023) of binary: /shared/apps/.gcc/8.5/python/3.9.5/bin/python
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 2/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=2
+  master_addr=127.0.0.1
+  master_port=29500
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_2/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_2/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_2/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_2/3/error.json
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_113343-2fxwubwc
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run absurd-vortex-254
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2fxwubwc
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_113343-156hrsik
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stoic-serenity-255
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/156hrsik
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_113344-1ynf2v1h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run wise-planet-256
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1ynf2v1h
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_113344-c1o0ra85
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run valiant-cloud-257
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/c1o0ra85
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 0, for key: store_based_barrier_key:1 (world_size=4, worker_count=12, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 3, for key: store_based_barrier_key:1 (world_size=4, worker_count=12, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 1, for key: store_based_barrier_key:1 (world_size=4, worker_count=12, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 2, for key: store_based_barrier_key:1 (world_size=4, worker_count=12, timeout=0:30:00)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced absurd-vortex-254: https://wandb.ai/few_shot/CyBERT/runs/2fxwubwc
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_113343-2fxwubwc/logs
+wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced wise-planet-256: https://wandb.ai/few_shot/CyBERT/runs/1ynf2v1h
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_113344-1ynf2v1h/logs
+wandb: Synced valiant-cloud-257: https://wandb.ai/few_shot/CyBERT/runs/c1o0ra85
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_113344-c1o0ra85/logs
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 150143) of binary: /shared/apps/.gcc/8.5/python/3.9.5/bin/python
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:[default] Worker group FAILED. 1/3 attempts left; will restart worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Stopping worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=3
+  master_addr=127.0.0.1
+  master_port=29500
+  group_rank=0
+  group_world_size=1
+  local_ranks=[0, 1, 2, 3]
+  role_ranks=[0, 1, 2, 3]
+  global_ranks=[0, 1, 2, 3]
+  role_world_sizes=[4, 4, 4, 4]
+  global_world_sizes=[4, 4, 4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_3/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_3/1/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker2 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_3/2/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker3 reply file to: /tmp/torchelastic_vxnhktdb/none_aqpczmdh/attempt_3/3/error.json
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_120400-31kaho3o
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run drawn-sun-258
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/31kaho3o
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_120401-2nlq6d87
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run summer-salad-259
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2nlq6d87
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_120401-3jgslt41
+wandb: Run `wandb offline` to turn off syncing.
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220507_120401-o3o3nb1o
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zany-brook-261
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/3jgslt41
+wandb: Syncing run major-durian-260
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/o3o3nb1o
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 0, for key: store_based_barrier_key:1 (world_size=4, worker_count=16, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 3, for key: store_based_barrier_key:1 (world_size=4, worker_count=16, timeout=0:30:00)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/hf_argparser.py", line 206, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 83, in __init__
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 756, in __post_init__
+    if is_torch_available() and self.device.type != "cuda" and (self.fp16 or self.fp16_full_eval):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 2, for key: store_based_barrier_key:1 (world_size=4, worker_count=16, timeout=0:30:00)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 969, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1842, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1852, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/training_args.py", line 954, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl")
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 547, in init_process_group
+    _store_based_barrier(rank, store, timeout)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py", line 219, in _store_based_barrier
+    raise RuntimeError(
+RuntimeError: Timed out initializing process group in store based barrier on rank: 1, for key: store_based_barrier_key:1 (world_size=4, worker_count=16, timeout=0:30:00)
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.005 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.006 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.003 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: | 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: / 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: - 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: \ 0.007 MB of 0.007 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced zany-brook-261: https://wandb.ai/few_shot/CyBERT/runs/3jgslt41
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_120401-3jgslt41/logs
+wandb: Synced major-durian-260: https://wandb.ai/few_shot/CyBERT/runs/o3o3nb1o
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_120401-o3o3nb1o/logs
+wandb: Synced drawn-sun-258: https://wandb.ai/few_shot/CyBERT/runs/31kaho3o
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_120400-31kaho3o/logs
+wandb: Synced summer-salad-259: https://wandb.ai/few_shot/CyBERT/runs/2nlq6d87
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220507_120401-2nlq6d87/logs
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 200165) of binary: /shared/apps/.gcc/8.5/python/3.9.5/bin/python
+ERROR:torch.distributed.elastic.agent.server.local_elastic_agent:[default] Worker group failed
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (FAILED). Waiting 300 seconds for other agents to finish
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/utils/store.py:70: FutureWarning: This is an experimental API and will be changed in future.
+  warnings.warn(
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.0003178119659423828 seconds
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 0, "group_rank": 0, "worker_id": "200165", "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 5557, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python\", \"local_rank\": [0], \"role_rank\": [0], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 1, "group_rank": 0, "worker_id": "200166", "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 5557, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python\", \"local_rank\": [1], \"role_rank\": [1], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 2, "group_rank": 0, "worker_id": "200167", "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 5557, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python\", \"local_rank\": [2], \"role_rank\": [2], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.FAILED", "source": "WORKER", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": 3, "group_rank": 0, "worker_id": "200168", "role": "default", "hostname": "gaqc0003.lcluster", "state": "FAILED", "total_run_time": 5557, "rdzv_backend": "static", "raw_error": "{\"message\": \"<NONE>\"}", "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python\", \"local_rank\": [3], \"role_rank\": [3], \"role_world_size\": [4]}", "agent_restarts": 3}}
+{"name": "torchelastic.worker.status.SUCCEEDED", "source": "AGENT", "timestamp": 0, "metadata": {"run_id": "none", "global_rank": null, "group_rank": 0, "worker_id": null, "role": "default", "hostname": "gaqc0003.lcluster", "state": "SUCCEEDED", "total_run_time": 5557, "rdzv_backend": "static", "raw_error": null, "metadata": "{\"group_world_size\": 1, \"entry_point\": \"python\"}", "agent_restarts": 3}}
+/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py:354: UserWarning: 
+
+**********************************************************************
+               CHILD PROCESS FAILED WITH NO ERROR_FILE                
+**********************************************************************
+CHILD PROCESS FAILED WITH NO ERROR_FILE
+Child process 200165 (local_rank 0) FAILED (exitcode 1)
+Error msg: Process failed with exitcode 1
+Without writing an error file to <N/A>.
+While this DOES NOT affect the correctness of your application,
+no trace information about the error will be available for inspection.
+Consider decorating your top level entrypoint function with
+torch.distributed.elastic.multiprocessing.errors.record. Example:
+
+  from torch.distributed.elastic.multiprocessing.errors import record
+
+  @record
+  def trainer_main(args):
+     # do train
+**********************************************************************
+  warnings.warn(_no_error_file_warning_msg(rank, failure))
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 173, in <module>
+    main()
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launch.py", line 169, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/run.py", line 621, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 116, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 245, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+***************************************
+     cybert/code/run_mlm.py FAILED     
+=======================================
+Root Cause:
+[0]:
+  time: 2022-05-07_12:34:17
+  rank: 0 (local_rank: 0)
+  exitcode: 1 (pid: 200165)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+=======================================
+Other Failures:
+[1]:
+  time: 2022-05-07_12:34:17
+  rank: 1 (local_rank: 1)
+  exitcode: 1 (pid: 200166)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+[2]:
+  time: 2022-05-07_12:34:17
+  rank: 2 (local_rank: 2)
+  exitcode: 1 (pid: 200167)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+[3]:
+  time: 2022-05-07_12:34:17
+  rank: 3 (local_rank: 3)
+  exitcode: 1 (pid: 200168)
+  error_file: <N/A>
+  msg: "Process failed with exitcode 1"
+***************************************
+
+srun: error: gaqc0003: task 0: Exited with exit code 1

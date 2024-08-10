@@ -1,0 +1,181 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.15 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220422_173745-1bt1wqrj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run confused-breeze-214
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1bt1wqrj
+[INFO|configuration_utils.py:588] 2022-04-22 17:37:51,447 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-22 17:37:51,448 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "ner",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:588] 2022-04-22 17:37:52,271 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-22 17:37:52,272 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1742] 2022-04-22 17:37:54,770 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt from cache at /home/mb14sola/.cache/huggingface/transformers/45c3f7a79a80e1cf0a489e5c62b43f173c15db47864303a55d623bb3c96f72a5.d789d64ebfe299b0e416afc4a169632f903f693095b4629a7ea271d5a0cf2c99
+[INFO|tokenization_utils_base.py:1742] 2022-04-22 17:37:54,770 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer.json from cache at /home/mb14sola/.cache/huggingface/transformers/534479488c54aeaf9c3406f647aa2ec13648c06771ffe269edabebd4c412da1d.7f2721073f19841be16f41b0a70b600ca6b880c8f3df6f3535cbc704371bdfa4
+[INFO|tokenization_utils_base.py:1742] 2022-04-22 17:37:54,770 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-04-22 17:37:54,770 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-04-22 17:37:54,771 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json from cache at /home/mb14sola/.cache/huggingface/transformers/c1d7f0a763fb63861cc08553866f1fc3e5a6f4f07621be277452d26d71303b7e.20430bd8e10ef77a7d2977accefe796051e01bc2fc4aa146bc862997a1a15e79
+[INFO|configuration_utils.py:588] 2022-04-22 17:37:55,167 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-22 17:37:55,167 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:1340] 2022-04-22 17:37:55,618 >> loading weights file https://huggingface.co/bert-base-uncased/resolve/main/pytorch_model.bin from cache at /home/mb14sola/.cache/huggingface/transformers/a8041bf617d7f94ea26d15e218abd04afc2004805632abc0ed2066aa16d50d04.faf6ea826ae9c5867d12b22257f9877e6b8367890837bd60f7c54a29633f7f2f
+[WARNING|modeling_utils.py:1598] 2022-04-22 17:37:56,653 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForTokenClassification: ['cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1609] 2022-04-22 17:37:56,653 >> Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0% 0/1 [00:00<?, ?ba/s]100% 1/1 [00:00<00:00, 10.29ba/s]
+[INFO|trainer.py:1081] 2022-04-22 17:38:01,178 >> Loading model from cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-484).
+[INFO|trainer.py:540] 2022-04-22 17:38:01,627 >> The following columns in the training set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words.
+[INFO|trainer.py:1196] 2022-04-22 17:38:02,367 >> ***** Running training *****
+[INFO|trainer.py:1197] 2022-04-22 17:38:02,367 >>   Num examples = 1929
+[INFO|trainer.py:1198] 2022-04-22 17:38:02,367 >>   Num Epochs = 4
+[INFO|trainer.py:1199] 2022-04-22 17:38:02,367 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1200] 2022-04-22 17:38:02,367 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1201] 2022-04-22 17:38:02,367 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1202] 2022-04-22 17:38:02,367 >>   Total optimization steps = 484
+[INFO|trainer.py:1222] 2022-04-22 17:38:02,368 >>   Continuing training from checkpoint, will skip to saved global_step
+[INFO|trainer.py:1223] 2022-04-22 17:38:02,368 >>   Continuing training from epoch 4
+[INFO|trainer.py:1224] 2022-04-22 17:38:02,368 >>   Continuing training from global step 484
+[INFO|trainer.py:1226] 2022-04-22 17:38:02,368 >>   Will skip the first 4 epochs then the first 0 batches in the first epoch. If this takes a lot of time, you can add the `--ignore_data_skip` flag to your launch command, but you will resume the training on data already seen by your model.
+0it [00:00, ?it/s]Skipping the first batches: : 0it [00:00, ?it/s][INFO|integrations.py:500] 2022-04-22 17:38:02,369 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+  0% 0/484 [00:00<?, ?it/s][A[INFO|trainer.py:1409] 2022-04-22 17:38:02,393 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                
+                           [ASkipping the first batches: : 0it [00:00, ?it/s]
+  0% 0/484 [00:00<?, ?it/s][A  0% 0/484 [00:00<?, ?it/s]
+Skipping the first batches: : 0it [00:00, ?it/s]
+[INFO|trainer.py:1995] 2022-04-22 17:38:02,394 >> Saving model checkpoint to cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}
+[INFO|configuration_utils.py:417] 2022-04-22 17:38:02,395 >> Configuration saved in cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}/config.json
+[INFO|modeling_utils.py:1058] 2022-04-22 17:38:03,112 >> Model weights saved in cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2034] 2022-04-22 17:38:03,112 >> tokenizer config file saved in cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2040] 2022-04-22 17:38:03,112 >> Special tokens file saved in cybert/model/OVANA_SN_baseline_${SLURM_ARRAY_TASK_ID}/special_tokens_map.json
+[INFO|trainer.py:540] 2022-04-22 17:38:03,145 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words.
+[INFO|trainer.py:2243] 2022-04-22 17:38:03,147 >> ***** Running Evaluation *****
+[INFO|trainer.py:2245] 2022-04-22 17:38:03,147 >>   Num examples = 483
+[INFO|trainer.py:2248] 2022-04-22 17:38:03,147 >>   Batch size = 8
+  0% 0/61 [00:00<?, ?it/s] 13% 8/61 [00:00<00:00, 75.58it/s] 26% 16/61 [00:00<00:00, 75.24it/s] 39% 24/61 [00:00<00:00, 70.37it/s] 56% 34/61 [00:00<00:00, 79.57it/s] 70% 43/61 [00:00<00:00, 71.43it/s] 87% 53/61 [00:00<00:00, 78.53it/s]/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: SN seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+100% 61/61 [00:01<00:00, 47.34it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.013 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: / 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: - 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: \ 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: | 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb: / 0.026 MB of 0.026 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁
+wandb:                        eval/f1 ▁
+wandb:                      eval/loss ▁
+wandb:                 eval/precision ▁
+wandb:                    eval/recall ▁
+wandb:                   eval/runtime ▁
+wandb:        eval/samples_per_second ▁
+wandb:          eval/steps_per_second ▁
+wandb:                    train/epoch ▁▁
+wandb:              train/global_step ▁▁
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.97913
+wandb:                        eval/f1 0.88067
+wandb:                      eval/loss 0.06633
+wandb:                 eval/precision 0.87355
+wandb:                    eval/recall 0.88792
+wandb:                   eval/runtime 1.3142
+wandb:        eval/samples_per_second 367.52
+wandb:          eval/steps_per_second 46.416
+wandb:                    train/epoch 4.0
+wandb:              train/global_step 484
+wandb:               train/total_flos 781047647288040.0
+wandb:               train/train_loss 0.0
+wandb:            train/train_runtime 0.0255
+wandb: train/train_samples_per_second 302296.416
+wandb:   train/train_steps_per_second 18962.087
+wandb: 
+wandb: Synced confused-breeze-214: https://wandb.ai/few_shot/CyBERT/runs/1bt1wqrj
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220422_173745-1bt1wqrj/logs

@@ -1,0 +1,26 @@
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Configure stats pid to 2587989
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Loading settings from /home/mb14sola/.config/wandb/settings
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Loading settings from /work/projects/project02060/CyBERT/cybert/code/wandb/settings
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_mlm.py', 'program': '/work/projects/project02060/CyBERT/cybert/code/run_mlm.py'}
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Applying login settings: {'anonymous': 'true', 'api_key': '***REDACTED***'}
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-04-18 10:28:29,091 INFO    MainThread:2587989 [wandb_init.py:_log_setup():507] Logging user logs to /work/projects/project02060/CyBERT/cybert/code/wandb/run-20230418_102829-1ucvdbj1/logs/debug.log
+2023-04-18 10:28:29,092 INFO    MainThread:2587989 [wandb_init.py:_log_setup():508] Logging internal logs to /work/projects/project02060/CyBERT/cybert/code/wandb/run-20230418_102829-1ucvdbj1/logs/debug-internal.log
+2023-04-18 10:28:29,092 INFO    MainThread:2587989 [wandb_init.py:init():547] calling init triggers
+2023-04-18 10:28:29,092 INFO    MainThread:2587989 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-04-18 10:28:29,092 INFO    MainThread:2587989 [wandb_init.py:init():595] starting backend
+2023-04-18 10:28:29,092 INFO    MainThread:2587989 [wandb_init.py:init():599] setting up manager
+2023-04-18 10:28:29,101 INFO    MainThread:2587989 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-04-18 10:28:29,112 INFO    MainThread:2587989 [wandb_init.py:init():605] backend started and connected
+2023-04-18 10:28:29,119 INFO    MainThread:2587989 [wandb_init.py:init():695] updated telemetry
+2023-04-18 10:28:29,122 INFO    MainThread:2587989 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-04-18 10:28:29,606 INFO    MainThread:2587989 [wandb_run.py:_on_init():2176] communicating current version
+2023-04-18 10:28:29,645 INFO    MainThread:2587989 [wandb_run.py:_on_init():2185] got version response 
+2023-04-18 10:28:29,646 INFO    MainThread:2587989 [wandb_init.py:init():782] starting run threads in backend
+2023-04-18 10:28:29,800 INFO    MainThread:2587989 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-18 10:28:29,800 INFO    MainThread:2587989 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-04-18 10:28:29,801 INFO    MainThread:2587989 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-18 10:28:29,801 INFO    MainThread:2587989 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-18 10:28:29,801 INFO    MainThread:2587989 [wandb_init.py:init():824] run started, returning control to user process

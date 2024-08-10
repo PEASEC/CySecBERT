@@ -1,0 +1,7 @@
+{
+  "task": "superglue_axg",
+  "paths": {
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/tasks/data/superglue_winogender_diagnostics/test.jsonl"
+  },
+  "name": "superglue_winogender_diagnostics"
+}

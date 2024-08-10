@@ -1,0 +1,2071 @@
+Downloaded and generated configs for 'superglue_broadcoverage_diagnostics' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: False
+  do_val: False
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3555045187
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": false,
+  "do_val": false,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 3555045187,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    superglue_broadcoverage_diagnostics (RteTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/superglue_broadcoverage_diagnostics_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.superglue_broadcoverage_diagnostics.head.dense.bias
+  taskmodels_dict.superglue_broadcoverage_diagnostics.head.out_proj.bias
+Using AdamW
+Downloaded and generated configs for 'record' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_record_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_record_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 211097570
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_record_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_record_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 211097570,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    record (ReCoRDTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/record_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.record.head.dense.bias
+  taskmodels_dict.record.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.6334897619047621,
+  "record": {
+    "loss": 0.42167058320616335,
+    "metrics": {
+      "major": 0.6334897619047621,
+      "minor": {
+        "em": 0.6302,
+        "f1": 0.6367795238095243,
+        "f1_em": 0.6334897619047621
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'rte' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_rte_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_rte_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 2722520175
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_rte_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_rte_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 2722520175,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    rte (RteTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/rte_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.rte.head.dense.bias
+  taskmodels_dict.rte.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.6064981949458483,
+  "rte": {
+    "loss": 0.6456748644510905,
+    "metrics": {
+      "major": 0.6064981949458483,
+      "minor": {
+        "acc": 0.6064981949458483
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'wic' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_wic_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_wic_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3039183227
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_wic_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_wic_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 3039183227,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    wic (WiCTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/wic_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.wic.head.span_attention_extractor._global_attention._module.bias
+  taskmodels_dict.wic.head.classifier.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.6159874608150471,
+  "wic": {
+    "loss": 0.6741989970207214,
+    "metrics": {
+      "major": 0.6159874608150471,
+      "minor": {
+        "acc": 0.6159874608150471
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'wsc' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_wsc_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_wsc_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 962322138
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_wsc_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_wsc_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 962322138,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    wsc (WSCTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/wsc_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.wsc.head.span_attention_extractor._global_attention._module.bias
+  taskmodels_dict.wsc.head.classifier.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.5096153846153846,
+  "wsc": {
+    "loss": 0.7213415503501892,
+    "metrics": {
+      "major": 0.5096153846153846,
+      "minor": {
+        "acc": 0.5096153846153846
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'superglue_winogender_diagnostics' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_superglue_winogender_diagnostics_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_superglue_winogender_diagnostics_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: False
+  do_val: False
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 487974080
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_superglue_winogender_diagnostics_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_superglue_winogender_diagnostics_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": false,
+  "do_val": false,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 487974080,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    superglue_winogender_diagnostics (SuperglueWinogenderDiagnosticsTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/superglue_winogender_diagnostics_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.superglue_winogender_diagnostics.head.dense.bias
+  taskmodels_dict.superglue_winogender_diagnostics.head.out_proj.bias
+Using AdamW
+Downloaded and generated configs for 'boolq' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_boolq_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_boolq_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 1590081726
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_boolq_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_boolq_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 1590081726,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    boolq (BoolQTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/boolq_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.boolq.head.dense.bias
+  taskmodels_dict.boolq.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.689908256880734,
+  "boolq": {
+    "loss": 0.5981376446210421,
+    "metrics": {
+      "major": 0.689908256880734,
+      "minor": {
+        "acc": 0.689908256880734
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'cb' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_cb_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_cb_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3994366612
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_cb_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_cb_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 3994366612,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    cb (CommitmentBankTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/cb_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.cb.head.dense.bias
+  taskmodels_dict.cb.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.5606495405179616,
+  "cb": {
+    "loss": 0.9365512132644653,
+    "metrics": {
+      "major": 0.5606495405179616,
+      "minor": {
+        "acc": 0.6607142857142857,
+        "avg_f1": 0.4605847953216375,
+        "f11": 0.68,
+        "f12": 0.7017543859649122,
+        "f13": 0.0
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'copa' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_copa_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_copa_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 3344591689
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_copa_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_copa_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 3344591689,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    copa (CopaTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/copa_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.copa.head.dense.bias
+  taskmodels_dict.copa.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.58,
+  "copa": {
+    "loss": 0.6902817487716675,
+    "metrics": {
+      "major": 0.58,
+      "minor": {
+        "acc": 0.58
+      }
+    }
+  }
+}
+Downloaded and generated configs for 'multirc' (1/1)
+Running from start
+  jiant_task_container_config_path: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_multirc_cybert_ranada_4_config.json
+  output_dir: /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_multirc_cybert_ranada_4
+  hf_pretrained_model_name_or_path: /work/projects/project01762/CyBERT/model/cybert_ranada
+  model_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p
+  model_config_path: /work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json
+  model_load_mode: from_transformers
+  do_train: True
+  do_val: True
+  do_save: False
+  do_save_last: False
+  do_save_best: False
+  write_val_preds: False
+  write_test_preds: False
+  eval_every_steps: 0
+  save_every_steps: 0
+  save_checkpoint_every_steps: 0
+  no_improvements_for_n_evals: 0
+  keep_checkpoint_when_done: False
+  force_overwrite: False
+  seed: -1
+  learning_rate: 1e-05
+  adam_epsilon: 1e-08
+  max_grad_norm: 1.0
+  optimizer_type: adam
+  no_cuda: False
+  fp16: False
+  fp16_opt_level: O1
+  local_rank: -1
+  server_ip: 
+  server_port: 
+device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+Using seed: 1705425015
+{
+  "jiant_task_container_config_path": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/run_configs/simple_multirc_cybert_ranada_4_config.json",
+  "output_dir": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/runs/simple_multirc_cybert_ranada_4",
+  "hf_pretrained_model_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "model_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/model.p",
+  "model_config_path": "/work/projects/project01762/CyBERT/model/cybert_ranada/model/config.json",
+  "model_load_mode": "from_transformers",
+  "do_train": true,
+  "do_val": true,
+  "do_save": false,
+  "do_save_last": false,
+  "do_save_best": false,
+  "write_val_preds": false,
+  "write_test_preds": false,
+  "eval_every_steps": 0,
+  "save_every_steps": 0,
+  "save_checkpoint_every_steps": 0,
+  "no_improvements_for_n_evals": 0,
+  "keep_checkpoint_when_done": false,
+  "force_overwrite": false,
+  "seed": 1705425015,
+  "learning_rate": 1e-05,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "optimizer_type": "adam",
+  "no_cuda": false,
+  "fp16": false,
+  "fp16_opt_level": "O1",
+  "local_rank": -1,
+  "server_ip": "",
+  "server_port": ""
+}
+1
+Creating Tasks:
+    multirc (MultiRCTask): /work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/configs/multirc_config.json
+No optimizer decay for:
+  encoder.embeddings.LayerNorm.weight
+  encoder.embeddings.LayerNorm.bias
+  encoder.encoder.layer.0.attention.self.query.bias
+  encoder.encoder.layer.0.attention.self.key.bias
+  encoder.encoder.layer.0.attention.self.value.bias
+  encoder.encoder.layer.0.attention.output.dense.bias
+  encoder.encoder.layer.0.attention.output.LayerNorm.weight
+  encoder.encoder.layer.0.attention.output.LayerNorm.bias
+  encoder.encoder.layer.0.intermediate.dense.bias
+  encoder.encoder.layer.0.output.dense.bias
+  encoder.encoder.layer.0.output.LayerNorm.weight
+  encoder.encoder.layer.0.output.LayerNorm.bias
+  encoder.encoder.layer.1.attention.self.query.bias
+  encoder.encoder.layer.1.attention.self.key.bias
+  encoder.encoder.layer.1.attention.self.value.bias
+  encoder.encoder.layer.1.attention.output.dense.bias
+  encoder.encoder.layer.1.attention.output.LayerNorm.weight
+  encoder.encoder.layer.1.attention.output.LayerNorm.bias
+  encoder.encoder.layer.1.intermediate.dense.bias
+  encoder.encoder.layer.1.output.dense.bias
+  encoder.encoder.layer.1.output.LayerNorm.weight
+  encoder.encoder.layer.1.output.LayerNorm.bias
+  encoder.encoder.layer.2.attention.self.query.bias
+  encoder.encoder.layer.2.attention.self.key.bias
+  encoder.encoder.layer.2.attention.self.value.bias
+  encoder.encoder.layer.2.attention.output.dense.bias
+  encoder.encoder.layer.2.attention.output.LayerNorm.weight
+  encoder.encoder.layer.2.attention.output.LayerNorm.bias
+  encoder.encoder.layer.2.intermediate.dense.bias
+  encoder.encoder.layer.2.output.dense.bias
+  encoder.encoder.layer.2.output.LayerNorm.weight
+  encoder.encoder.layer.2.output.LayerNorm.bias
+  encoder.encoder.layer.3.attention.self.query.bias
+  encoder.encoder.layer.3.attention.self.key.bias
+  encoder.encoder.layer.3.attention.self.value.bias
+  encoder.encoder.layer.3.attention.output.dense.bias
+  encoder.encoder.layer.3.attention.output.LayerNorm.weight
+  encoder.encoder.layer.3.attention.output.LayerNorm.bias
+  encoder.encoder.layer.3.intermediate.dense.bias
+  encoder.encoder.layer.3.output.dense.bias
+  encoder.encoder.layer.3.output.LayerNorm.weight
+  encoder.encoder.layer.3.output.LayerNorm.bias
+  encoder.encoder.layer.4.attention.self.query.bias
+  encoder.encoder.layer.4.attention.self.key.bias
+  encoder.encoder.layer.4.attention.self.value.bias
+  encoder.encoder.layer.4.attention.output.dense.bias
+  encoder.encoder.layer.4.attention.output.LayerNorm.weight
+  encoder.encoder.layer.4.attention.output.LayerNorm.bias
+  encoder.encoder.layer.4.intermediate.dense.bias
+  encoder.encoder.layer.4.output.dense.bias
+  encoder.encoder.layer.4.output.LayerNorm.weight
+  encoder.encoder.layer.4.output.LayerNorm.bias
+  encoder.encoder.layer.5.attention.self.query.bias
+  encoder.encoder.layer.5.attention.self.key.bias
+  encoder.encoder.layer.5.attention.self.value.bias
+  encoder.encoder.layer.5.attention.output.dense.bias
+  encoder.encoder.layer.5.attention.output.LayerNorm.weight
+  encoder.encoder.layer.5.attention.output.LayerNorm.bias
+  encoder.encoder.layer.5.intermediate.dense.bias
+  encoder.encoder.layer.5.output.dense.bias
+  encoder.encoder.layer.5.output.LayerNorm.weight
+  encoder.encoder.layer.5.output.LayerNorm.bias
+  encoder.encoder.layer.6.attention.self.query.bias
+  encoder.encoder.layer.6.attention.self.key.bias
+  encoder.encoder.layer.6.attention.self.value.bias
+  encoder.encoder.layer.6.attention.output.dense.bias
+  encoder.encoder.layer.6.attention.output.LayerNorm.weight
+  encoder.encoder.layer.6.attention.output.LayerNorm.bias
+  encoder.encoder.layer.6.intermediate.dense.bias
+  encoder.encoder.layer.6.output.dense.bias
+  encoder.encoder.layer.6.output.LayerNorm.weight
+  encoder.encoder.layer.6.output.LayerNorm.bias
+  encoder.encoder.layer.7.attention.self.query.bias
+  encoder.encoder.layer.7.attention.self.key.bias
+  encoder.encoder.layer.7.attention.self.value.bias
+  encoder.encoder.layer.7.attention.output.dense.bias
+  encoder.encoder.layer.7.attention.output.LayerNorm.weight
+  encoder.encoder.layer.7.attention.output.LayerNorm.bias
+  encoder.encoder.layer.7.intermediate.dense.bias
+  encoder.encoder.layer.7.output.dense.bias
+  encoder.encoder.layer.7.output.LayerNorm.weight
+  encoder.encoder.layer.7.output.LayerNorm.bias
+  encoder.encoder.layer.8.attention.self.query.bias
+  encoder.encoder.layer.8.attention.self.key.bias
+  encoder.encoder.layer.8.attention.self.value.bias
+  encoder.encoder.layer.8.attention.output.dense.bias
+  encoder.encoder.layer.8.attention.output.LayerNorm.weight
+  encoder.encoder.layer.8.attention.output.LayerNorm.bias
+  encoder.encoder.layer.8.intermediate.dense.bias
+  encoder.encoder.layer.8.output.dense.bias
+  encoder.encoder.layer.8.output.LayerNorm.weight
+  encoder.encoder.layer.8.output.LayerNorm.bias
+  encoder.encoder.layer.9.attention.self.query.bias
+  encoder.encoder.layer.9.attention.self.key.bias
+  encoder.encoder.layer.9.attention.self.value.bias
+  encoder.encoder.layer.9.attention.output.dense.bias
+  encoder.encoder.layer.9.attention.output.LayerNorm.weight
+  encoder.encoder.layer.9.attention.output.LayerNorm.bias
+  encoder.encoder.layer.9.intermediate.dense.bias
+  encoder.encoder.layer.9.output.dense.bias
+  encoder.encoder.layer.9.output.LayerNorm.weight
+  encoder.encoder.layer.9.output.LayerNorm.bias
+  encoder.encoder.layer.10.attention.self.query.bias
+  encoder.encoder.layer.10.attention.self.key.bias
+  encoder.encoder.layer.10.attention.self.value.bias
+  encoder.encoder.layer.10.attention.output.dense.bias
+  encoder.encoder.layer.10.attention.output.LayerNorm.weight
+  encoder.encoder.layer.10.attention.output.LayerNorm.bias
+  encoder.encoder.layer.10.intermediate.dense.bias
+  encoder.encoder.layer.10.output.dense.bias
+  encoder.encoder.layer.10.output.LayerNorm.weight
+  encoder.encoder.layer.10.output.LayerNorm.bias
+  encoder.encoder.layer.11.attention.self.query.bias
+  encoder.encoder.layer.11.attention.self.key.bias
+  encoder.encoder.layer.11.attention.self.value.bias
+  encoder.encoder.layer.11.attention.output.dense.bias
+  encoder.encoder.layer.11.attention.output.LayerNorm.weight
+  encoder.encoder.layer.11.attention.output.LayerNorm.bias
+  encoder.encoder.layer.11.intermediate.dense.bias
+  encoder.encoder.layer.11.output.dense.bias
+  encoder.encoder.layer.11.output.LayerNorm.weight
+  encoder.encoder.layer.11.output.LayerNorm.bias
+  encoder.pooler.dense.bias
+  taskmodels_dict.multirc.head.dense.bias
+  taskmodels_dict.multirc.head.out_proj.bias
+Using AdamW
+Loading Best
+{
+  "aggregated": 0.40942566212707904,
+  "multirc": {
+    "loss": 0.6197274374334436,
+    "metrics": {
+      "major": 0.40942566212707904,
+      "minor": {
+        "em": 0.16684155299055614,
+        "f1": 0.6520097712636019
+      }
+    }
+  }
+}

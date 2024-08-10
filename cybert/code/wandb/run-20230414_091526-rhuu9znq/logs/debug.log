@@ -1,0 +1,27 @@
+2023-04-14 09:15:26,302 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Configure stats pid to 2547455
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Loading settings from /home/mb14sola/.config/wandb/settings
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Loading settings from /work/projects/project02060/CyBERT/cybert/code/wandb/settings
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_mlm.py', 'program': 'run_mlm.py'}
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Applying login settings: {'anonymous': 'true', 'api_key': '***REDACTED***'}
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:_log_setup():507] Logging user logs to /work/projects/project02060/CyBERT/cybert/code/wandb/run-20230414_091526-rhuu9znq/logs/debug.log
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:_log_setup():508] Logging internal logs to /work/projects/project02060/CyBERT/cybert/code/wandb/run-20230414_091526-rhuu9znq/logs/debug-internal.log
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:init():547] calling init triggers
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:init():555] wandb.init called with sweep_config: {}
+config: {}
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:init():595] starting backend
+2023-04-14 09:15:26,303 INFO    MainThread:2547455 [wandb_init.py:init():599] setting up manager
+2023-04-14 09:15:26,312 INFO    MainThread:2547455 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-04-14 09:15:26,318 INFO    MainThread:2547455 [wandb_init.py:init():605] backend started and connected
+2023-04-14 09:15:26,325 INFO    MainThread:2547455 [wandb_init.py:init():695] updated telemetry
+2023-04-14 09:15:26,326 INFO    MainThread:2547455 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-04-14 09:15:26,688 INFO    MainThread:2547455 [wandb_run.py:_on_init():2176] communicating current version
+2023-04-14 09:15:26,729 INFO    MainThread:2547455 [wandb_run.py:_on_init():2185] got version response 
+2023-04-14 09:15:26,729 INFO    MainThread:2547455 [wandb_init.py:init():782] starting run threads in backend
+2023-04-14 09:15:26,848 INFO    MainThread:2547455 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-14 09:15:26,849 INFO    MainThread:2547455 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-04-14 09:15:26,849 INFO    MainThread:2547455 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-14 09:15:26,849 INFO    MainThread:2547455 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-14 09:15:26,850 INFO    MainThread:2547455 [wandb_init.py:init():824] run started, returning control to user process
+2023-04-14 09:15:31,912 WARNING MsgRouterThr:2547455 [router.py:message_loop():77] message_loop has been closed

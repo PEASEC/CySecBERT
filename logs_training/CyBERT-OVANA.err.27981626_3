@@ -1,0 +1,9 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_SN_baseline.py", line 226
+    print("##############SEED################')
+                                               ^
+srun: error: gaqc0002: task 0: Exited with exit code 1
+SyntaxError: EOL while scanning string literal

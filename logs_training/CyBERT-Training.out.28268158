@@ -1,0 +1,109 @@
+04/26/2022 12:45:18 - WARNING - __main__ -   Process rank: 1, device: cuda:1, n_gpu: 1distributed training: True, 16-bits training: False
+04/26/2022 12:45:18 - WARNING - __main__ -   Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+04/26/2022 12:45:18 - WARNING - __main__ -   Process rank: 3, device: cuda:3, n_gpu: 1distributed training: True, 16-bits training: False
+04/26/2022 12:45:18 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-06,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.NO,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=model/cybert_V100/runs/Apr26_12-45-18_gvqc0002,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=30.0,
+output_dir=model/cybert_V100,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=model/cybert_V100,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.EPOCH,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=10000,
+weight_decay=0.01,
+xpu_backend=None,
+)
+04/26/2022 12:45:18 - WARNING - __main__ -   Process rank: 2, device: cuda:2, n_gpu: 1distributed training: True, 16-bits training: False
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Using custom data configuration default-976ce9ebff8e8a3d
+Downloading and preparing dataset text/default (download: Unknown size, generated: Unknown size, post-processed: Unknown size, total: Unknown size) to /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5...
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Using custom data configuration default-976ce9ebff8e8a3d
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Using custom data configuration default-976ce9ebff8e8a3d
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Using custom data configuration default-976ce9ebff8e8a3d
+Dataset text downloaded and prepared to /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5. Subsequent calls will reuse this data.
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Reusing dataset text (/work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5)
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Reusing dataset text (/work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5)
+04/26/2022 12:45:18 - WARNING - datasets.builder -   Reusing dataset text (/work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5)
+04/26/2022 12:45:32 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5/cache-1d0c462df2202c42.arrow
+04/26/2022 12:45:32 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5/cache-5b794fd236474fbb.arrow
+04/26/2022 12:45:32 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5/cache-1d0c462df2202c42.arrow
+04/26/2022 12:45:32 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /work/projects/project01762/.cache/text/default-976ce9ebff8e8a3d/0.0.0/e16f44aa1b321ece1f87b07977cc5d70be93d69b20486d6dacd62e12cf25c9a5/cache-5b794fd236474fbb.arrow
+{'train_runtime': 63.935, 'train_samples_per_second': 2.815, 'train_steps_per_second': 0.469, 'train_loss': 3.848655192057292, 'epoch': 30.0}
+***** train metrics *****
+  epoch                    =       30.0
+  train_loss               =     3.8487
+  train_runtime            = 0:01:03.93
+  train_samples_per_second =      2.815
+  train_steps_per_second   =      0.469
+
+
+
+

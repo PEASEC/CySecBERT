@@ -1,0 +1,9 @@
+{
+  "task": "record",
+  "paths": {
+    "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/record/train.jsonl",
+    "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/record/val.jsonl",
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/record/test.jsonl"
+  },
+  "name": "record"
+}

@@ -1,0 +1,6 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+/shared/apps/.gcc/8.5/python/3.9.5/bin/python: can't open file '/work/projects/project01762/CyBERT/cybert/code/CySecAlert/run_msexchange_baseline.py': [Errno 2] No such file or directory
+srun: error: gvqc0002: task 0: Exited with exit code 2

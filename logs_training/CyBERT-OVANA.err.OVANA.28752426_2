@@ -1,0 +1,157 @@
+Lmod: unloading python 3.9.5 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.17 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.16
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220527_133423-25c16z7c
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-dawn-378
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/25c16z7c
+[INFO|configuration_utils.py:654] 2022-05-27 13:34:28,686 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:690] 2022-05-27 13:34:28,687 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "ner",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.18.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:654] 2022-05-27 13:34:29,535 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:690] 2022-05-27 13:34:29,535 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.18.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1778] 2022-05-27 13:34:32,086 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt from cache at /home/mb14sola/.cache/huggingface/transformers/45c3f7a79a80e1cf0a489e5c62b43f173c15db47864303a55d623bb3c96f72a5.d789d64ebfe299b0e416afc4a169632f903f693095b4629a7ea271d5a0cf2c99
+[INFO|tokenization_utils_base.py:1778] 2022-05-27 13:34:32,087 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer.json from cache at /home/mb14sola/.cache/huggingface/transformers/534479488c54aeaf9c3406f647aa2ec13648c06771ffe269edabebd4c412da1d.7f2721073f19841be16f41b0a70b600ca6b880c8f3df6f3535cbc704371bdfa4
+[INFO|tokenization_utils_base.py:1778] 2022-05-27 13:34:32,087 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1778] 2022-05-27 13:34:32,087 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1778] 2022-05-27 13:34:32,087 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json from cache at /home/mb14sola/.cache/huggingface/transformers/c1d7f0a763fb63861cc08553866f1fc3e5a6f4f07621be277452d26d71303b7e.20430bd8e10ef77a7d2977accefe796051e01bc2fc4aa146bc862997a1a15e79
+[INFO|configuration_utils.py:654] 2022-05-27 13:34:32,520 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:690] 2022-05-27 13:34:32,520 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.18.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:1772] 2022-05-27 13:34:32,978 >> loading weights file https://huggingface.co/bert-base-uncased/resolve/main/pytorch_model.bin from cache at /home/mb14sola/.cache/huggingface/transformers/a8041bf617d7f94ea26d15e218abd04afc2004805632abc0ed2066aa16d50d04.faf6ea826ae9c5867d12b22257f9877e6b8367890837bd60f7c54a29633f7f2f
+[WARNING|modeling_utils.py:2048] 2022-05-27 13:34:34,006 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForTokenClassification: ['cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:2059] 2022-05-27 13:34:34,006 >> Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:566] 2022-05-27 13:34:43,814 >> The following columns in the training set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[INFO|trainer.py:1290] 2022-05-27 13:34:43,824 >> ***** Running training *****
+[INFO|trainer.py:1291] 2022-05-27 13:34:43,824 >>   Num examples = 1929
+[INFO|trainer.py:1292] 2022-05-27 13:34:43,824 >>   Num Epochs = 4
+[INFO|trainer.py:1293] 2022-05-27 13:34:43,824 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1294] 2022-05-27 13:34:43,824 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1295] 2022-05-27 13:34:43,825 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1296] 2022-05-27 13:34:43,825 >>   Total optimization steps = 484
+[INFO|integrations.py:576] 2022-05-27 13:34:43,826 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0% 0/484 [00:00<?, ?it/s]  0% 1/484 [00:00<03:20,  2.41it/s]  1% 3/484 [00:00<02:29,  3.22it/s]  1% 5/484 [00:00<01:54,  4.19it/s]  1% 7/484 [00:00<01:27,  5.45it/s]  2% 9/484 [00:00<01:10,  6.77it/s]  2% 11/484 [00:01<00:58,  8.06it/s]  3% 13/484 [00:01<00:56,  8.36it/s]  3% 15/484 [00:01<00:48,  9.76it/s]  4% 17/484 [00:01<00:45, 10.16it/s]  4% 19/484 [00:01<00:39, 11.81it/s]  4% 21/484 [00:01<00:36, 12.71it/s]  5% 23/484 [00:01<00:33, 13.77it/s]  5% 25/484 [00:02<00:32, 14.07it/s]  6% 27/484 [00:02<00:33, 13.84it/s]  6% 29/484 [00:02<00:38, 11.80it/s]  6% 31/484 [00:02<00:37, 11.98it/s]  7% 33/484 [00:02<00:39, 11.50it/s]  7% 35/484 [00:02<00:38, 11.76it/s]  8% 38/484 [00:03<00:33, 13.26it/s]  8% 41/484 [00:03<00:30, 14.30it/s]  9% 43/484 [00:03<00:29, 14.91it/s]  9% 45/484 [00:03<00:27, 15.77it/s] 10% 47/484 [00:03<00:31, 13.73it/s] 10% 49/484 [00:03<00:29, 14.70it/s] 11% 51/484 [00:03<00:31, 13.81it/s] 11% 53/484 [00:04<00:31, 13.60it/s] 11% 55/484 [00:04<00:30, 14.18it/s] 12% 57/484 [00:04<00:30, 13.90it/s] 12% 59/484 [00:04<00:29, 14.23it/s] 13% 61/484 [00:04<00:29, 14.47it/s] 13% 63/484 [00:04<00:27, 15.34it/s] 13% 65/484 [00:04<00:26, 15.65it/s] 14% 67/484 [00:05<00:25, 16.22it/s] 14% 69/484 [00:05<00:28, 14.42it/s] 15% 71/484 [00:05<00:28, 14.33it/s] 15% 73/484 [00:05<00:28, 14.41it/s] 15% 75/484 [00:05<00:27, 14.78it/s] 16% 77/484 [00:05<00:28, 14.44it/s] 16% 79/484 [00:05<00:30, 13.34it/s] 17% 82/484 [00:06<00:27, 14.79it/s] 17% 84/484 [00:06<00:29, 13.67it/s] 18% 86/484 [00:06<00:27, 14.30it/s] 18% 88/484 [00:06<00:31, 12.71it/s] 19% 90/484 [00:06<00:28, 13.69it/s] 19% 92/484 [00:06<00:26, 14.78it/s] 19% 94/484 [00:06<00:25, 15.37it/s] 20% 96/484 [00:07<00:25, 14.98it/s] 20% 98/484 [00:07<00:24, 15.46it/s] 21% 100/484 [00:07<00:23, 16.39it/s] 21% 102/484 [00:07<00:25, 14.85it/s] 22% 105/484 [00:07<00:24, 15.68it/s] 22% 107/484 [00:07<00:22, 16.68it/s] 23% 109/484 [00:07<00:27, 13.53it/s] 23% 111/484 [00:08<00:25, 14.64it/s] 23% 113/484 [00:08<00:24, 15.02it/s] 24% 116/484 [00:08<00:22, 16.44it/s] 24% 118/484 [00:08<00:22, 16.24it/s] 25% 120/484 [00:08<00:22, 16.24it/s][INFO|trainer.py:566] 2022-05-27 13:34:52,466 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-27 13:34:52,468 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-27 13:34:52,468 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-27 13:34:52,468 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 18% 11/61 [00:00<00:00, 104.04it/s][A
+ 31% 19/61 [00:00<00:00, 92.44it/s] [A
+ 46% 28/61 [00:00<00:00, 90.53it/s][A
+ 62% 38/61 [00:00<00:00, 92.18it/s][A
+ 77% 47/61 [00:00<00:00, 91.43it/s][A
+ 93% 57/61 [00:00<00:00, 92.95it/s][ATraceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 524, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 457, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 1512, in train
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 1624, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 2284, in evaluate
+    output = eval_loop(
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 2535, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 420, in compute_metrics
+    results = metric.compute(predictions=true_predictions, references=true_labels)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/metric.py", line 402, in compute
+    output = self._compute(predictions=predictions, references=references, **kwargs)
+  File "/home/mb14sola/.cache/huggingface/modules/datasets_modules/metrics/seqeval/1fde2544ac1f3f7e54c639c73221d3a5e5377d2213b9b0fdb579b96980b84b2e/seqeval.py", line 136, in _compute
+    report = classification_report(
+TypeError: classification_report() got an unexpected keyword argument 'output_dict'
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: / 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: - 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: \ 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: | 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: / 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: - 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: \ 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb: | 0.024 MB of 0.024 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced clean-dawn-378: https://wandb.ai/few_shot/CyBERT/runs/25c16z7c
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220527_133423-25c16z7c/logs
+srun: error: gaqc0004: task 0: Exited with exit code 1

@@ -1,0 +1,267 @@
+04/14/2023 09:17:48 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+04/14/2023 09:17:48 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-06,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'fsdp_min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=model/cybert_v100_test/runs/Apr14_09-17-48_logc0007,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=30.0,
+optim=adamw_hf,
+optim_args=None,
+output_dir=model/cybert_v100_test,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=model/cybert_v100_test,
+save_on_each_node=False,
+save_safetensors=False,
+save_steps=500,
+save_strategy=epoch,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=10000,
+weight_decay=0.01,
+xpu_backend=None,
+)
+Downloading and preparing dataset text/default to /work/projects/project02060/.cache/text/default-ab0732a45908e5f1/0.0.0/cb1e9bd71a82ad27976be3b12b407850fe2837d80c22c5e03a28949843a8ace2...
+Dataset text downloaded and prepared to /work/projects/project02060/.cache/text/default-ab0732a45908e5f1/0.0.0/cb1e9bd71a82ad27976be3b12b407850fe2837d80c22c5e03a28949843a8ace2. Subsequent calls will reuse this data.
+Downloading data files: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 3041.55it/s]
+Extracting data files: 100%|█████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 426.94it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 388.25it/s]
+Downloading (…)lve/main/config.json: 100%|█████████████████████████████████████████████| 570/570 [00:00<00:00, 94.5kB/s]
+[INFO|configuration_utils.py:668] 2023-04-14 09:17:49,734 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 09:17:49,735 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+Downloading (…)okenizer_config.json: 100%|███████████████████████████████████████████| 28.0/28.0 [00:00<00:00, 8.19kB/s]
+[INFO|configuration_utils.py:668] 2023-04-14 09:17:50,001 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 09:17:50,003 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+Downloading (…)solve/main/vocab.txt: 100%|███████████████████████████████████████████| 232k/232k [00:00<00:00, 1.28MB/s]
+Downloading (…)/main/tokenizer.json: 100%|███████████████████████████████████████████| 466k/466k [00:00<00:00, 5.00MB/s]
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 09:17:51,076 >> loading file vocab.txt from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/vocab.txt
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 09:17:51,076 >> loading file tokenizer.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer.json
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 09:17:51,077 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 09:17:51,077 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 09:17:51,077 >> loading file tokenizer_config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer_config.json
+[INFO|configuration_utils.py:668] 2023-04-14 09:17:51,078 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 09:17:51,079 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+Downloading pytorch_model.bin: 100%|█████████████████████████████████████████████████| 440M/440M [00:05<00:00, 83.9MB/s]
+[INFO|modeling_utils.py:2534] 2023-04-14 09:17:56,556 >> loading weights file pytorch_model.bin from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/pytorch_model.bin
+[INFO|configuration_utils.py:575] 2023-04-14 09:17:56,893 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "pad_token_id": 0,
+  "transformers_version": "4.28.0"
+}
+[WARNING|modeling_utils.py:3181] 2023-04-14 09:17:59,162 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:3199] 2023-04-14 09:17:59,163 >> All the weights of BertForMaskedLM were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForMaskedLM for predictions without further training.
+[INFO|modeling_utils.py:2840] 2023-04-14 09:18:08,971 >> Generation config file not found, using a generation config created from the model config.
+
+Map:   0%|                                                                               | 0/140 [00:00<?, ? examples/s]
+[INFO|trainer.py:763] 2023-04-14 09:18:14,073 >> The following columns in the training set don't have a corresponding argument in `BertForMaskedLM.forward` and have been ignored: special_tokens_mask. If special_tokens_mask are not expected by `BertForMaskedLM.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.7/site-packages/transformers/optimization.py:395: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  FutureWarning,
+[INFO|trainer.py:1769] 2023-04-14 09:18:14,086 >> ***** Running training *****
+[INFO|trainer.py:1770] 2023-04-14 09:18:14,086 >>   Num examples = 6
+[INFO|trainer.py:1771] 2023-04-14 09:18:14,087 >>   Num Epochs = 30
+[INFO|trainer.py:1772] 2023-04-14 09:18:14,087 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1773] 2023-04-14 09:18:14,087 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1774] 2023-04-14 09:18:14,087 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1775] 2023-04-14 09:18:14,087 >>   Total optimization steps = 30
+[INFO|trainer.py:1776] 2023-04-14 09:18:14,088 >>   Number of trainable parameters = 109,514,298
+[INFO|integrations.py:721] 2023-04-14 09:18:14,090 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0%|                                                                                            | 0/30 [00:00<?, ?it/s][WARNING|logging.py:280] 2023-04-14 09:18:14,110 >> You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+  3%|██▊                                                                                 | 1/30 [00:00<00:22,  1.27it/s][INFO|trainer.py:2868] 2023-04-14 09:18:14,894 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-1
+[INFO|configuration_utils.py:457] 2023-04-14 09:18:14,896 >> Configuration saved in model/cybert_v100_test/checkpoint-1/config.json
+[INFO|configuration_utils.py:362] 2023-04-14 09:18:14,897 >> Configuration saved in model/cybert_v100_test/checkpoint-1/generation_config.json
+[INFO|modeling_utils.py:1847] 2023-04-14 09:18:15,472 >> Model weights saved in model/cybert_v100_test/checkpoint-1/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2171] 2023-04-14 09:18:15,473 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2178] 2023-04-14 09:18:15,474 >> Special tokens file saved in model/cybert_v100_test/checkpoint-1/special_tokens_map.json
+  7%|█████▌                                                                              | 2/30 [00:03<00:52,  1.87s/it][INFO|trainer.py:2868] 2023-04-14 09:18:17,519 >> Saving model checkpoint to model/cybert_v100_test/checkpoint-2
+[INFO|configuration_utils.py:457] 2023-04-14 09:18:17,521 >> Configuration saved in model/cybert_v100_test/checkpoint-2/config.json
+[INFO|configuration_utils.py:362] 2023-04-14 09:18:17,523 >> Configuration saved in model/cybert_v100_test/checkpoint-2/generation_config.json
+[INFO|modeling_utils.py:1847] 2023-04-14 09:18:18,081 >> Model weights saved in model/cybert_v100_test/checkpoint-2/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2171] 2023-04-14 09:18:18,082 >> tokenizer config file saved in model/cybert_v100_test/checkpoint-2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2178] 2023-04-14 09:18:18,083 >> Special tokens file saved in model/cybert_v100_test/checkpoint-2/special_tokens_map.json
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/serialization.py", line 372, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/serialization.py", line 491, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "run_mlm.py", line 453, in <module>
+    main()
+  File "run_mlm.py", line 423, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/trainer.py", line 1666, in train
+    ignore_keys_for_eval=ignore_keys_for_eval,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/trainer.py", line 2021, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/trainer.py", line 2291, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/trainer.py", line 2382, in _save_checkpoint
+    torch.save(self.optimizer.state_dict(), os.path.join(output_dir, OPTIMIZER_NAME))
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/serialization.py", line 373, in save
+    return
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:274] . unexpected pos 755773952 vs 755773840

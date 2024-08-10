@@ -1,0 +1,27 @@
+Lmod: unloading cuDNN 8.3.1 
+Lmod: unloading cuda 11.6 
+Lmod: unloading python 3.7.4 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+2022-07-05 13:23:43.545804: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+Reusing dataset super_glue (/home/mb14sola/.cache/huggingface/datasets/super_glue/axb/1.0.2/41d9edb3935257e1da4b7ce54cd90df0e8bb255a15e46cfe5cbc7e1c04f177de)
+Traceback (most recent call last):
+  File "cybert/code/SuperGLUE/superglue_baseline.py", line 56, in <module>
+    simple_run.run_simple(args)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/simple/runscript.py", line 263, in run_simple
+    runscript.run_loop(args=run_args, checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runscript.py", line 134, in run_loop
+    quick_init_out = initialization.quick_init(args=args, verbose=True)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/shared/initialization.py", line 43, in quick_init
+    log_writer = init_log_writer(output_dir=args.output_dir)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/shared/initialization.py", line 159, in init_log_writer
+    return zlog.ZLogger(os.path.join(output_dir, str(int(time.time()))), overwrite=True)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/utils/zlog.py", line 33, in __init__
+    os.makedirs(fol_path)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/runs/simple_superglue_broadcoverage_diagnostics_cybert_ranada_2/1657020255'
+srun: error: gvqc0003: task 0: Exited with exit code 1

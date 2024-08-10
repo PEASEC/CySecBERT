@@ -1,0 +1,179 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.16 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220510_140423-1m0iook1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cerulean-breeze-276
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1m0iook1
+Cannot find the requested files in the cached path and outgoing traffic has been disabled. To enable model look-ups and downloads online, set 'local_files_only' to False.
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/configuration_utils.py", line 550, in get_config_dict
+    resolved_config_file = cached_path(
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1491, in cached_path
+    output_path = get_from_cache(
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/file_utils.py", line 1709, in get_from_cache
+    raise FileNotFoundError(
+FileNotFoundError: Cannot find the requested files in the cached path and outgoing traffic has been disabled. To enable model look-ups and downloads online, set 'local_files_only' to False.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/MSExchange/run_msexchange_Ranada.py", line 29, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/models/auto/tokenization_auto.py", line 470, in from_pretrained
+    config = AutoConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/models/auto/configuration_auto.py", line 558, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/configuration_utils.py", line 575, in get_config_dict
+    raise EnvironmentError(msg)
+OSError: Can't load config for 'cybert/model/cybert-ranada/'. Make sure that:
+
+- 'cybert/model/cybert-ranada/' is a correct model identifier listed on 'https://huggingface.co/models'
+  (make sure 'cybert/model/cybert-ranada/' is not a path to a local directory with something else, in that case)
+
+- or 'cybert/model/cybert-ranada/' is the correct path to a directory containing a config.json file
+
+
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.000 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+wandb: | 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: | 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/1m0iook1.
+wandb: | 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: / 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: - 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb: \ 0.000 MB of 0.006 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: Synced cerulean-breeze-276: https://wandb.ai/few_shot/CyBERT/runs/1m0iook1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220510_140423-1m0iook1/logs
+srun: error: gaqc0001: task 0: Exited with exit code 1

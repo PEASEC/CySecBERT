@@ -1,0 +1,218 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.15 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.11
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220421_200040-16gr3b0y
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run young-moon-150
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/16gr3b0y
+[INFO|configuration_utils.py:588] 2022-04-21 20:00:45,104 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-21 20:00:45,104 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "ner",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:588] 2022-04-21 20:00:45,907 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-21 20:00:45,908 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1742] 2022-04-21 20:00:48,400 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt from cache at /home/mb14sola/.cache/huggingface/transformers/45c3f7a79a80e1cf0a489e5c62b43f173c15db47864303a55d623bb3c96f72a5.d789d64ebfe299b0e416afc4a169632f903f693095b4629a7ea271d5a0cf2c99
+[INFO|tokenization_utils_base.py:1742] 2022-04-21 20:00:48,400 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer.json from cache at /home/mb14sola/.cache/huggingface/transformers/534479488c54aeaf9c3406f647aa2ec13648c06771ffe269edabebd4c412da1d.7f2721073f19841be16f41b0a70b600ca6b880c8f3df6f3535cbc704371bdfa4
+[INFO|tokenization_utils_base.py:1742] 2022-04-21 20:00:48,400 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-04-21 20:00:48,400 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1742] 2022-04-21 20:00:48,400 >> loading file https://huggingface.co/bert-base-uncased/resolve/main/tokenizer_config.json from cache at /home/mb14sola/.cache/huggingface/transformers/c1d7f0a763fb63861cc08553866f1fc3e5a6f4f07621be277452d26d71303b7e.20430bd8e10ef77a7d2977accefe796051e01bc2fc4aa146bc862997a1a15e79
+[INFO|configuration_utils.py:588] 2022-04-21 20:00:48,795 >> loading configuration file https://huggingface.co/bert-base-uncased/resolve/main/config.json from cache at /home/mb14sola/.cache/huggingface/transformers/3c61d016573b14f7f008c02c4e51a366c67ab274726fe2910691e2a761acf43e.37395cee442ab11005bcd270f3c34464dc1704b715b5d7d52b1a461abe3b9e4e
+[INFO|configuration_utils.py:625] 2022-04-21 20:00:48,796 >> Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.12.3",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:1340] 2022-04-21 20:00:49,244 >> loading weights file https://huggingface.co/bert-base-uncased/resolve/main/pytorch_model.bin from cache at /home/mb14sola/.cache/huggingface/transformers/a8041bf617d7f94ea26d15e218abd04afc2004805632abc0ed2066aa16d50d04.faf6ea826ae9c5867d12b22257f9877e6b8367890837bd60f7c54a29633f7f2f
+[WARNING|modeling_utils.py:1598] 2022-04-21 20:00:50,299 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForTokenClassification: ['cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:1609] 2022-04-21 20:00:50,299 >> Some weights of BertForTokenClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  0% 0/1 [00:00<?, ?ba/s]100% 1/1 [00:00<00:00, 10.66ba/s]
+[INFO|trainer.py:540] 2022-04-21 20:00:54,786 >> The following columns in the training set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: words, ner.
+[INFO|trainer.py:1196] 2022-04-21 20:00:54,795 >> ***** Running training *****
+[INFO|trainer.py:1197] 2022-04-21 20:00:54,795 >>   Num examples = 1929
+[INFO|trainer.py:1198] 2022-04-21 20:00:54,795 >>   Num Epochs = 4
+[INFO|trainer.py:1199] 2022-04-21 20:00:54,795 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1200] 2022-04-21 20:00:54,795 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1201] 2022-04-21 20:00:54,795 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1202] 2022-04-21 20:00:54,795 >>   Total optimization steps = 484
+[INFO|integrations.py:500] 2022-04-21 20:00:54,797 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0% 0/484 [00:00<?, ?it/s]  0% 1/484 [00:00<00:53,  9.01it/s]  1% 3/484 [00:00<00:36, 13.17it/s]  1% 5/484 [00:00<00:32, 14.81it/s]  1% 7/484 [00:00<00:31, 15.06it/s]  2% 9/484 [00:00<00:38, 12.39it/s]  2% 11/484 [00:00<00:34, 13.90it/s]  3% 13/484 [00:01<00:40, 11.62it/s]  3% 15/484 [00:01<00:36, 12.97it/s]  4% 17/484 [00:01<00:39, 11.81it/s]  4% 19/484 [00:01<00:37, 12.41it/s]  4% 21/484 [00:01<00:34, 13.50it/s]  5% 23/484 [00:01<00:31, 14.49it/s]  5% 25/484 [00:01<00:31, 14.57it/s]  6% 27/484 [00:02<00:32, 14.05it/s]  6% 30/484 [00:02<00:27, 16.33it/s]  7% 32/484 [00:02<00:27, 16.23it/s]  7% 34/484 [00:02<00:33, 13.61it/s]  7% 36/484 [00:02<00:34, 13.16it/s]  8% 38/484 [00:02<00:31, 13.99it/s]  8% 40/484 [00:02<00:32, 13.67it/s]  9% 42/484 [00:03<00:29, 14.93it/s]  9% 44/484 [00:03<00:28, 15.26it/s] 10% 46/484 [00:03<00:27, 15.81it/s] 10% 48/484 [00:03<00:29, 14.90it/s] 10% 50/484 [00:03<00:30, 14.14it/s] 11% 52/484 [00:03<00:30, 14.39it/s] 11% 54/484 [00:03<00:27, 15.46it/s] 12% 57/484 [00:03<00:25, 16.69it/s] 12% 59/484 [00:04<00:25, 16.86it/s] 13% 61/484 [00:04<00:27, 15.28it/s] 13% 63/484 [00:04<00:28, 14.75it/s] 13% 65/484 [00:04<00:26, 15.66it/s] 14% 67/484 [00:04<00:31, 13.17it/s] 14% 69/484 [00:04<00:29, 14.08it/s] 15% 71/484 [00:04<00:27, 14.81it/s] 15% 73/484 [00:05<00:26, 15.39it/s] 16% 76/484 [00:05<00:23, 17.23it/s] 16% 78/484 [00:05<00:24, 16.64it/s] 17% 80/484 [00:05<00:25, 16.09it/s] 17% 82/484 [00:05<00:23, 16.80it/s] 17% 84/484 [00:05<00:23, 17.29it/s] 18% 86/484 [00:05<00:25, 15.53it/s] 18% 89/484 [00:06<00:23, 16.81it/s] 19% 91/484 [00:06<00:23, 16.57it/s] 19% 94/484 [00:06<00:24, 15.64it/s] 20% 96/484 [00:06<00:26, 14.61it/s] 20% 98/484 [00:06<00:25, 15.37it/s] 21% 100/484 [00:06<00:24, 15.73it/s] 21% 102/484 [00:06<00:25, 14.83it/s] 21% 104/484 [00:07<00:27, 14.07it/s] 22% 106/484 [00:07<00:24, 15.22it/s] 22% 108/484 [00:07<00:23, 15.70it/s] 23% 110/484 [00:07<00:24, 15.52it/s] 23% 112/484 [00:07<00:25, 14.48it/s] 24% 114/484 [00:07<00:24, 15.41it/s] 24% 116/484 [00:08<00:54,  6.78it/s] 24% 118/484 [00:08<00:44,  8.27it/s] 25% 120/484 [00:08<00:41,  8.84it/s][INFO|trainer.py:540] 2022-04-21 20:01:03,534 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: words, ner.
+[INFO|trainer.py:2243] 2022-04-21 20:01:03,536 >> ***** Running Evaluation *****
+[INFO|trainer.py:2245] 2022-04-21 20:01:03,536 >>   Num examples = 483
+[INFO|trainer.py:2248] 2022-04-21 20:01:03,536 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 18% 11/61 [00:00<00:00, 100.03it/s][A
+ 36% 22/61 [00:00<00:00, 85.83it/s] [A
+ 51% 31/61 [00:00<00:00, 85.71it/s][A
+ 67% 41/61 [00:00<00:00, 89.54it/s][A
+ 84% 51/61 [00:00<00:00, 88.75it/s][A
+100% 61/61 [00:00<00:00, 91.71it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+
+                                   [A                                     
+100% 61/61 [00:02<00:00, 91.71it/s][A 25% 121/484 [00:10<00:41,  8.84it/s]
+                                   [A[INFO|trainer.py:1995] 2022-04-21 20:01:05,713 >> Saving model checkpoint to cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-121
+[INFO|configuration_utils.py:417] 2022-04-21 20:01:05,714 >> Configuration saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-121/config.json
+[INFO|modeling_utils.py:1058] 2022-04-21 20:01:06,263 >> Model weights saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-121/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2034] 2022-04-21 20:01:06,264 >> tokenizer config file saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-121/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2040] 2022-04-21 20:01:06,264 >> Special tokens file saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-121/special_tokens_map.json
+ 25% 121/484 [00:19<00:41,  8.84it/s] 25% 122/484 [01:39<1:22:19, 13.65s/it] 26% 124/484 [01:39<57:28,  9.58s/it]   26% 126/484 [01:39<40:10,  6.73s/it] 26% 128/484 [01:39<28:08,  4.74s/it] 27% 129/484 [01:49<28:03,  4.74s/it] 27% 130/484 [01:49<28:36,  4.85s/it] 27% 131/484 [01:50<23:39,  4.02s/it] 27% 133/484 [01:50<15:48,  2.70s/it] 28% 135/484 [01:50<10:48,  1.86s/it] 28% 137/484 [01:50<07:28,  1.29s/it] 29% 139/484 [01:50<05:17,  1.09it/s] 29% 141/484 [01:50<03:45,  1.52it/s] 30% 143/484 [01:51<02:42,  2.10it/s] 30% 145/484 [01:51<02:01,  2.79it/s] 30% 147/484 [01:51<01:30,  3.72it/s] 31% 149/484 [01:51<01:09,  4.80it/s] 31% 151/484 [01:51<00:54,  6.10it/s] 32% 153/484 [01:51<00:44,  7.46it/s] 32% 155/484 [01:51<00:39,  8.28it/s] 32% 157/484 [01:52<00:35,  9.30it/s] 33% 159/484 [01:52<00:32, 10.13it/s] 33% 161/484 [01:52<00:29, 10.81it/s] 34% 163/484 [01:52<00:26, 12.25it/s] 34% 165/484 [01:52<00:25, 12.42it/s] 35% 167/484 [01:52<00:28, 11.15it/s] 35% 169/484 [01:53<00:26, 11.73it/s] 35% 171/484 [01:53<00:24, 12.80it/s] 36% 173/484 [01:53<00:27, 11.31it/s] 36% 175/484 [01:53<00:24, 12.66it/s] 37% 177/484 [01:53<00:24, 12.79it/s] 37% 179/484 [01:53<00:23, 13.21it/s] 37% 181/484 [01:53<00:21, 13.89it/s] 38% 183/484 [01:54<00:21, 13.81it/s] 38% 185/484 [01:54<00:21, 14.03it/s] 39% 187/484 [01:54<00:22, 13.21it/s] 39% 189/484 [01:54<00:22, 12.98it/s] 39% 191/484 [01:54<00:24, 12.16it/s] 40% 193/484 [01:54<00:23, 12.38it/s] 40% 195/484 [01:55<00:24, 11.69it/s] 41% 197/484 [01:55<00:22, 12.72it/s] 41% 199/484 [01:55<00:25, 11.16it/s] 42% 201/484 [01:55<00:23, 11.85it/s] 42% 203/484 [01:55<00:23, 11.73it/s] 42% 205/484 [01:55<00:21, 12.70it/s] 43% 207/484 [01:56<00:19, 13.86it/s] 43% 209/484 [01:56<00:19, 13.85it/s] 44% 211/484 [01:56<00:20, 13.28it/s] 44% 213/484 [01:56<00:18, 14.47it/s] 44% 215/484 [01:56<00:17, 15.59it/s] 45% 217/484 [01:56<00:17, 15.27it/s] 45% 220/484 [01:56<00:16, 16.46it/s] 46% 222/484 [01:57<00:18, 13.98it/s] 46% 225/484 [01:57<00:16, 15.96it/s] 47% 227/484 [01:57<00:15, 16.62it/s] 48% 230/484 [01:57<00:14, 17.54it/s] 48% 232/484 [01:57<00:14, 17.53it/s] 49% 235/484 [01:57<00:13, 18.49it/s] 49% 237/484 [01:57<00:14, 17.09it/s] 49% 239/484 [01:57<00:14, 17.38it/s] 50% 241/484 [01:58<00:13, 17.86it/s][INFO|trainer.py:540] 2022-04-21 20:02:52,911 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: words, ner.
+[INFO|trainer.py:2243] 2022-04-21 20:02:52,913 >> ***** Running Evaluation *****
+[INFO|trainer.py:2245] 2022-04-21 20:02:52,913 >>   Num examples = 483
+[INFO|trainer.py:2248] 2022-04-21 20:02:52,913 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 18% 11/61 [00:00<00:00, 100.48it/s][A
+ 36% 22/61 [00:00<00:00, 85.31it/s] [A
+ 51% 31/61 [00:00<00:00, 84.49it/s][A
+ 67% 41/61 [00:00<00:00, 89.03it/s][A
+ 82% 50/61 [00:00<00:00, 89.17it/s][A
+ 98% 60/61 [00:00<00:00, 91.14it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+                                     
+                                   [A 50% 242/484 [01:59<00:13, 17.86it/s]
+100% 61/61 [00:01<00:00, 91.14it/s][A
+                                   [A[INFO|trainer.py:1995] 2022-04-21 20:02:54,092 >> Saving model checkpoint to cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-242
+[INFO|configuration_utils.py:417] 2022-04-21 20:02:54,092 >> Configuration saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-242/config.json
+[INFO|modeling_utils.py:1058] 2022-04-21 20:02:54,905 >> Model weights saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-242/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2034] 2022-04-21 20:02:54,906 >> tokenizer config file saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-242/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2040] 2022-04-21 20:02:54,906 >> Special tokens file saved in cybert/model/OVANA_AC_baseline_${SLURM_ARRAY_TASK_ID}/checkpoint-242/special_tokens_map.json
+ 50% 243/484 [02:01<02:05,  1.92it/s] 51% 245/484 [02:01<01:33,  2.56it/s] 51% 247/484 [02:01<01:14,  3.20it/s] 51% 249/484 [02:01<00:56,  4.18it/s] 52% 251/484 [02:02<00:44,  5.18it/s] 52% 253/484 [02:02<00:37,  6.18it/s] 53% 255/484 [02:02<00:29,  7.68it/s] 53% 257/484 [02:02<00:27,  8.28it/s] 54% 259/484 [02:02<00:24,  9.13it/s] 54% 261/484 [02:02<00:22, 10.11it/s] 54% 263/484 [02:03<00:20, 10.61it/s] 55% 265/484 [02:03<00:18, 11.63it/s] 55% 267/484 [02:03<00:20, 10.70it/s] 56% 269/484 [02:03<00:18, 11.75it/s] 56% 271/484 [02:03<00:16, 13.04it/s] 56% 273/484 [02:03<00:15, 13.59it/s] 57% 275/484 [02:04<00:16, 12.78it/s] 57% 277/484 [02:04<00:15, 13.62it/s] 58% 279/484 [02:04<00:15, 13.56it/s] 58% 281/484 [02:04<00:15, 13.32it/s] 58% 283/484 [02:04<00:14, 13.58it/s] 59% 285/484 [02:04<00:13, 14.56it/s] 59% 287/484 [02:04<00:12, 15.39it/s] 60% 289/484 [02:04<00:12, 15.25it/s] 60% 291/484 [02:05<00:14, 13.18it/s] 61% 293/484 [02:05<00:13, 13.91it/s] 61% 295/484 [02:05<00:13, 14.11it/s] 61% 297/484 [02:05<00:13, 14.10it/s] 62% 299/484 [02:05<00:13, 13.92it/s] 62% 301/484 [02:05<00:12, 14.75it/s] 63% 303/484 [02:05<00:11, 15.39it/s] 63% 305/484 [02:06<00:13, 13.49it/s] 63% 307/484 [02:06<00:12, 14.00it/s] 64% 309/484 [02:06<00:12, 13.75it/s] 64% 311/484 [02:06<00:11, 14.93it/s] 65% 313/484 [02:06<00:10, 15.78it/s] 65% 315/484 [02:06<00:10, 16.36it/s] 65% 317/484 [02:06<00:09, 16.81it/s] 66% 319/484 [02:07<00:10, 15.29it/s] 66% 321/484 [02:07<00:12, 13.58it/s] 67% 323/484 [02:07<00:11, 13.73it/s] 67% 325/484 [02:07<00:11, 13.80it/s] 68% 327/484 [02:07<00:10, 14.43it/s] 68% 329/484 [02:07<00:11, 13.96it/s] 68% 331/484 [02:07<00:10, 14.94it/s] 69% 333/484 [02:07<00:10, 14.94it/s] 69% 335/484 [02:08<00:10, 13.92it/s] 70% 337/484 [02:08<00:11, 12.27it/s] 70% 339/484 [02:08<00:12, 11.87it/s] 70% 341/484 [02:08<00:13, 10.47it/s] 71% 343/484 [02:09<00:13, 10.18it/s] 71% 345/484 [02:09<00:14,  9.48it/s] 72% 347/484 [02:09<00:12, 10.66it/s] 72% 349/484 [02:09<00:12, 11.16it/s] 73% 351/484 [02:09<00:10, 12.24it/s] 73% 353/484 [02:09<00:09, 13.13it/s] 73% 355/484 [02:09<00:09, 13.58it/s] 74% 357/484 [02:10<00:09, 13.90it/s] 74% 359/484 [02:10<00:08, 14.62it/s] 75% 361/484 [02:10<00:08, 14.64it/s] 75% 363/484 [02:10<00:07, 15.59it/s][INFO|trainer.py:540] 2022-04-21 20:03:05,240 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: words, ner.
+[INFO|trainer.py:2243] 2022-04-21 20:03:05,242 >> ***** Running Evaluation *****
+[INFO|trainer.py:2245] 2022-04-21 20:03:05,242 >>   Num examples = 483
+[INFO|trainer.py:2248] 2022-04-21 20:03:05,242 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 15% 9/61 [00:00<00:00, 87.64it/s][A
+ 30% 18/61 [00:00<00:00, 80.02it/s][A
+ 44% 27/61 [00:00<00:00, 74.46it/s][A
+ 59% 36/61 [00:00<00:00, 78.36it/s][A
+ 72% 44/61 [00:00<00:00, 78.11it/s][A
+ 87% 53/61 [00:00<00:00, 80.00it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 519, in <module>
+    main()
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 452, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 1391, in train
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 1491, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 2113, in evaluate
+    output = eval_loop(
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/transformers/trainer.py", line 2354, in evaluation_loop
+    metrics = self.compute_metrics(EvalPrediction(predictions=all_preds, label_ids=all_labels))
+  File "/work/projects/project01762/CyBERT/cybert/code/OVANA/run_ner_AC_baseline.py", line 415, in compute_metrics
+    results = metric.compute(predictions=true_predictions, references=true_labels)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/datasets/metric.py", line 416, in compute
+    os.remove(file_path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/mb14sola/.cache/huggingface/metrics/seqeval/default/default_experiment-1-0.arrow'
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: \ 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: | 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: / 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: - 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: \ 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: | 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: / 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: - 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:           eval/accuracy ▁█
+wandb:                 eval/f1 ▁█
+wandb:               eval/loss ▁█
+wandb:          eval/precision ▁█
+wandb:             eval/recall ▁█
+wandb:            eval/runtime █▁
+wandb: eval/samples_per_second ▁█
+wandb:   eval/steps_per_second ▁█
+wandb:             train/epoch ▁█
+wandb:       train/global_step ▁█
+wandb: 
+wandb: Run summary:
+wandb:           eval/accuracy 0.94385
+wandb:                 eval/f1 0.31276
+wandb:               eval/loss 0.14649
+wandb:          eval/precision 0.30481
+wandb:             eval/recall 0.32113
+wandb:            eval/runtime 1.1772
+wandb: eval/samples_per_second 410.293
+wandb:   eval/steps_per_second 51.818
+wandb:             train/epoch 2.0
+wandb:       train/global_step 242
+wandb: 
+wandb: Synced young-moon-150: https://wandb.ai/few_shot/CyBERT/runs/16gr3b0y
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220421_200040-16gr3b0y/logs
+srun: error: gaqc0004: task 0: Exited with exit code 1

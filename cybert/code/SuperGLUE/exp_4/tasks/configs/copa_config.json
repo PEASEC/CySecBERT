@@ -1,0 +1,9 @@
+{
+  "task": "copa",
+  "paths": {
+    "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/copa/train.jsonl",
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/copa/test.jsonl",
+    "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_4/tasks/data/copa/val.jsonl"
+  },
+  "name": "copa"
+}

@@ -1,0 +1,9 @@
+{
+  "task": "boolq",
+  "paths": {
+    "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/tasks/data/boolq/train.jsonl",
+    "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/tasks/data/boolq/test.jsonl",
+    "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/tasks/data/boolq/val.jsonl"
+  },
+  "name": "boolq"
+}

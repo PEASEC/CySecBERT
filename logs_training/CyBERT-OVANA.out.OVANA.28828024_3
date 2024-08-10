@@ -1,0 +1,118 @@
+05/31/2022 06:37:22 - WARNING - __main__ -   Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+05/31/2022 06:37:22 - INFO - __main__ -   Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=IntervalStrategy.EPOCH,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_strategy=HubStrategy.EVERY_SAVE,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=5e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=-1,
+log_level=-1,
+log_level_replica=-1,
+log_on_each_node=True,
+logging_dir=cybert/model/OVANA_SV_baseline/runs/May31_06-37-22_gvqc0003,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=IntervalStrategy.STEPS,
+lr_scheduler_type=SchedulerType.LINEAR,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=4.0,
+optim=OptimizerNames.ADAMW_HF,
+output_dir=cybert/model/OVANA_SV_baseline_3_2022-05-31-06-37-22,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=cybert/model/OVANA_SV_baseline,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=IntervalStrategy.EPOCH,
+save_total_limit=None,
+seed=3,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_legacy_prediction_loop=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+05/31/2022 06:37:23 - WARNING - datasets.builder -   Using custom data configuration default-e1de2ed1b10b2006
+05/31/2022 06:37:23 - WARNING - datasets.builder -   Reusing dataset json (/home/mb14sola/.cache/huggingface/datasets/json/default-e1de2ed1b10b2006/0.0.0/45636811569ec4a6630521c18235dfbbab83b7ab572e3393c5ba68ccabe98264)
+05/31/2022 06:37:29 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /home/mb14sola/.cache/huggingface/datasets/json/default-e1de2ed1b10b2006/0.0.0/45636811569ec4a6630521c18235dfbbab83b7ab572e3393c5ba68ccabe98264/cache-5d8fef4a34f5ec3f.arrow
+05/31/2022 06:37:29 - WARNING - datasets.arrow_dataset -   Loading cached processed dataset at /home/mb14sola/.cache/huggingface/datasets/json/default-e1de2ed1b10b2006/0.0.0/45636811569ec4a6630521c18235dfbbab83b7ab572e3393c5ba68ccabe98264/cache-56fe693e68af914d.arrow
+{'eval_loss': 0.03990517556667328, 'eval_precision': 0.9470232088799193, 'eval_recall': 0.8862134088762984, 'eval_f1': 0.9156097560975611, 'eval_accuracy': 0.9845680388921101, 'eval_runtime': 2.2344, 'eval_samples_per_second': 216.161, 'eval_steps_per_second': 27.3, 'epoch': 1.0}
+{'eval_loss': 0.04189872369170189, 'eval_precision': 0.9486005089058525, 'eval_recall': 0.8800755429650614, 'eval_f1': 0.9130541268674994, 'eval_accuracy': 0.9841666294991303, 'eval_runtime': 2.1178, 'eval_samples_per_second': 228.072, 'eval_steps_per_second': 28.804, 'epoch': 2.0}
+{'eval_loss': 0.03580902889370918, 'eval_precision': 0.9361702127659575, 'eval_recall': 0.9140698772426817, 'eval_f1': 0.924988055422838, 'eval_accuracy': 0.9859952722893716, 'eval_runtime': 2.1017, 'eval_samples_per_second': 229.812, 'eval_steps_per_second': 29.024, 'epoch': 3.0}
+{'eval_loss': 0.03793557360768318, 'eval_precision': 0.9352030947775629, 'eval_recall': 0.9131255901794145, 'eval_f1': 0.9240324892498807, 'eval_accuracy': 0.9858168681147139, 'eval_runtime': 2.1038, 'eval_samples_per_second': 229.586, 'eval_steps_per_second': 28.995, 'epoch': 4.0}
+{'train_runtime': 112.9803, 'train_samples_per_second': 68.295, 'train_steps_per_second': 4.284, 'train_loss': 0.03489250388027223, 'epoch': 4.0}
+***** train metrics *****
+  epoch                    =        4.0
+  train_loss               =     0.0349
+  train_runtime            = 0:01:52.98
+  train_samples            =       1929
+  train_samples_per_second =     68.295
+  train_steps_per_second   =      4.284
+05/31/2022 06:39:27 - INFO - __main__ -   *** Evaluate ***
+***** eval metrics *****
+  epoch                   =        4.0
+  eval_accuracy           =     0.9858
+  eval_f1                 =      0.924
+  eval_loss               =     0.0379
+  eval_precision          =     0.9352
+  eval_recall             =     0.9131
+  eval_runtime            = 0:00:02.11
+  eval_samples            =        483
+  eval_samples_per_second =    228.047
+  eval_steps_per_second   =     28.801

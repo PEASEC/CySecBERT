@@ -1,0 +1,484 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.7.4 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+2023-04-14 11:05:24.555839: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555856: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555852: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555863: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555846: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555854: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.555864: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.661076: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.663397: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.679509: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.679714: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.679734: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.679971: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.679983: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.778127: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2023-04-14 11:05:24.805232: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-78ux30xj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fancy-thunder-499
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/78ux30xj
+wandb: Tracking run with wandb version 0.14.2
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-1napt9pu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-gk2bc55v
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run fine-sky-500
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/1napt9pu
+wandb: Syncing run comfy-blaze-500
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/gk2bc55v
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-vsruluno
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run summer-moon-503
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/vsruluno
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-8bj74qt0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-mo7vdwp2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run resilient-dew-511
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/8bj74qt0
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-2pcydlu0
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run flowing-salad-502
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/mo7vdwp2
+wandb: Syncing run worldly-haze-505
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/2pcydlu0
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-rarotud2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run floral-frog-503
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/rarotud2
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-tsz9oycp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run stellar-shadow-506
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/tsz9oycp
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-hzl38mb1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run feasible-galaxy-504
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/hzl38mb1
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-fbjjh9sx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run elated-oath-511
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/fbjjh9sx
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-vvrw16sa
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run noble-brook-506
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/vvrw16sa
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/hf_argparser.py", line 332, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 109, in __init__
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1259, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1694, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1679, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl", timeout=self.ddp_timeout_delta)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/distributed_c10d.py", line 500, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/rendezvous.py", line 190, in _env_rendezvous_handler
+    store = TCPStore(master_addr, master_port, world_size, start_daemon, timeout)
+RuntimeError: Address already in use
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-4xrz4eru
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vibrant-fire-506
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/4xrz4eru
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-ymedpbys
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run clean-wood-513
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/ymedpbys
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-5axml62k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /work/projects/project02060/CyBERT/wandb/run-20230414_110529-9w6cjhrj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run denim-darkness-506
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/5axml62k
+wandb: Syncing run blooming-fire-513
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/9w6cjhrj
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/hf_argparser.py", line 332, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 109, in __init__
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1259, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1694, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1679, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl", timeout=self.ddp_timeout_delta)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/distributed_c10d.py", line 500, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/rendezvous.py", line 190, in _env_rendezvous_handler
+    store = TCPStore(master_addr, master_port, world_size, start_daemon, timeout)
+RuntimeError: Address already in use
+Traceback (most recent call last):
+  File "cybert/code/run_mlm.py", line 453, in <module>
+    main()
+  File "cybert/code/run_mlm.py", line 182, in main
+    model_args, data_args, training_args = parser.parse_args_into_dataclasses()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/hf_argparser.py", line 332, in parse_args_into_dataclasses
+    obj = dtype(**inputs)
+  File "<string>", line 109, in __init__
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1259, in __post_init__
+    and (self.device.type != "cuda")
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1694, in device
+    return self._setup_devices
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/utils/generic.py", line 54, in __get__
+    cached = self.fget(obj)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/training_args.py", line 1679, in _setup_devices
+    torch.distributed.init_process_group(backend="nccl", timeout=self.ddp_timeout_delta)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/distributed_c10d.py", line 500, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/rendezvous.py", line 190, in _env_rendezvous_handler
+    store = TCPStore(master_addr, master_port, world_size, start_daemon, timeout)
+RuntimeError: Address already in use
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+WARNING:__main__:Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+INFO:__main__:Training/evaluation parameters TrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-06,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=False,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=no,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_config={'fsdp_min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=2e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=model/cybert_v100_test/runs/Apr14_11-05-30_gvqc0001,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=steps,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=30.0,
+optim=adamw_hf,
+optim_args=None,
+output_dir=model/cybert_v100_test,
+overwrite_output_dir=False,
+past_index=-1,
+per_device_eval_batch_size=8,
+per_device_train_batch_size=16,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=model/cybert_v100_test,
+save_on_each_node=False,
+save_safetensors=False,
+save_steps=500,
+save_strategy=epoch,
+save_total_limit=None,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+tf32=None,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=10000,
+weight_decay=0.01,
+xpu_backend=None,
+)
+WARNING:datasets.builder:Found cached dataset text (/work/projects/project02060/.cache/text/default-ab0732a45908e5f1/0.0.0/cb1e9bd71a82ad27976be3b12b407850fe2837d80c22c5e03a28949843a8ace2)
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 276.89it/s]
+[INFO|configuration_utils.py:668] 2023-04-14 11:05:32,524 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 11:05:32,525 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|configuration_utils.py:668] 2023-04-14 11:05:32,649 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 11:05:32,650 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 11:05:32,652 >> loading file vocab.txt from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/vocab.txt
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 11:05:32,652 >> loading file tokenizer.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer.json
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 11:05:32,652 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 11:05:32,652 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:1809] 2023-04-14 11:05:32,652 >> loading file tokenizer_config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/tokenizer_config.json
+[INFO|configuration_utils.py:668] 2023-04-14 11:05:32,653 >> loading configuration file config.json from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/config.json
+[INFO|configuration_utils.py:720] 2023-04-14 11:05:32,654 >> Model config BertConfig {
+  "_name_or_path": "bert-base-uncased",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.28.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+[INFO|modeling_utils.py:2534] 2023-04-14 11:05:32,691 >> loading weights file pytorch_model.bin from cache at cache/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b/pytorch_model.bin
+[INFO|configuration_utils.py:575] 2023-04-14 11:05:32,960 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "pad_token_id": 0,
+  "transformers_version": "4.28.0"
+}
+
+wandb: 🚀 View run noble-brook-506 at: https://wandb.ai/few_shot/CyBERT/runs/vvrw16sa
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_110529-vvrw16sa/logs
+wandb: 🚀 View run clean-wood-513 at: https://wandb.ai/few_shot/CyBERT/runs/ymedpbys
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_110529-ymedpbys/logs
+wandb: 🚀 View run blooming-fire-513 at: https://wandb.ai/few_shot/CyBERT/runs/9w6cjhrj
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230414_110529-9w6cjhrj/logs
+[WARNING|modeling_utils.py:3181] 2023-04-14 11:05:35,005 >> Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[INFO|modeling_utils.py:3199] 2023-04-14 11:05:35,006 >> All the weights of BertForMaskedLM were initialized from the model checkpoint at bert-base-uncased.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use BertForMaskedLM for predictions without further training.
+[INFO|modeling_utils.py:2840] 2023-04-14 11:05:35,139 >> Generation config file not found, using a generation config created from the model config.
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /work/projects/project02060/.cache/text/default-ab0732a45908e5f1/0.0.0/cb1e9bd71a82ad27976be3b12b407850fe2837d80c22c5e03a28949843a8ace2/cache-dbbcecdce8397113.arrow
+WARNING:datasets.arrow_dataset:Loading cached processed dataset at /work/projects/project02060/.cache/text/default-ab0732a45908e5f1/0.0.0/cb1e9bd71a82ad27976be3b12b407850fe2837d80c22c5e03a28949843a8ace2/cache-3a231ccfc8148ef5.arrow
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/shared/apps/.gcc/8.5/python/3.7.4/bin/python', '-u', 'cybert/code/run_mlm.py', '--local_rank=3', '--model_name_or_path', 'bert-base-uncased', '--train_file', 'cybert/input/Corpus/cysec_corpus_test.txt', '--do_train', '--num_train_epochs', '30', '--per_device_train_batch_size', '16', '--learning_rate', '2e-5', '--weight_decay', '0.01', '--adam_beta1', '0.9', '--adam_beta2', '0.999', '--adam_epsilon', '0.000001', '--output_dir', 'model/cybert_v100_test', '--save_strategy', 'epoch', '--warmup_steps', '10000', '--cache_dir', 'cache', '--report_to=wandb']' returned non-zero exit status 1.
+srun: error: gvqc0001: tasks 0,2-3: Exited with exit code 1
+[INFO|trainer.py:2116] 2023-04-14 11:05:39,776 >> Loading model from model/cybert_v100_test/checkpoint-30.
+[WARNING|trainer.py:2123] 2023-04-14 11:05:39,777 >> You are resuming training from a checkpoint trained with 4.17.0 of Transformers but your current version is 4.28.0. This is not recommended and could yield to errors or unwanted behaviors.
+[INFO|trainer.py:763] 2023-04-14 11:05:40,292 >> The following columns in the training set don't have a corresponding argument in `BertForMaskedLM.forward` and have been ignored: special_tokens_mask. If special_tokens_mask are not expected by `BertForMaskedLM.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.7/site-packages/transformers/optimization.py:395: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  FutureWarning,
+slurmstepd: error: *** STEP 41373366.0 ON gvqc0001 CANCELLED AT 2023-04-14T11:35:19 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 41373366 ON gvqc0001 CANCELLED AT 2023-04-14T11:35:19 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

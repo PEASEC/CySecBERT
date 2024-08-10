@@ -1,0 +1,12 @@
+{"task": "cb", "task_step": 1, "global_step": 1, "loss_val": 1.126967430114746, "TIMESTAMP": 1657142592.9968069}
+{"task": "cb", "task_step": 2, "global_step": 2, "loss_val": 1.1088178157806396, "TIMESTAMP": 1657142593.8783975}
+{"task": "cb", "task_step": 3, "global_step": 3, "loss_val": 1.0604617595672607, "TIMESTAMP": 1657142594.7598884}
+{"task": "cb", "task_step": 4, "global_step": 4, "loss_val": 1.0452229976654053, "TIMESTAMP": 1657142595.5652869}
+{"task": "cb", "task_step": 5, "global_step": 5, "loss_val": 1.0122722387313843, "TIMESTAMP": 1657142596.4474523}
+{"task": "cb", "task_step": 6, "global_step": 6, "loss_val": 1.0170209407806396, "TIMESTAMP": 1657142597.3264}
+{"task": "cb", "task_step": 7, "global_step": 7, "loss_val": 0.9436614513397217, "TIMESTAMP": 1657142598.2081923}
+{"task": "cb", "task_step": 8, "global_step": 8, "loss_val": 0.9471267461776733, "TIMESTAMP": 1657142599.0154061}
+{"task": "cb", "task_step": 9, "global_step": 9, "loss_val": 0.9507887363433838, "TIMESTAMP": 1657142599.9000976}
+{"task": "cb", "task_step": 10, "global_step": 10, "loss_val": 0.9898514151573181, "TIMESTAMP": 1657142600.781303}
+{"task": "cb", "task_step": 11, "global_step": 11, "loss_val": 0.8941683769226074, "TIMESTAMP": 1657142601.6640625}
+{"task": "cb", "task_step": 12, "global_step": 12, "loss_val": 0.9238935708999634, "TIMESTAMP": 1657142602.4697864}

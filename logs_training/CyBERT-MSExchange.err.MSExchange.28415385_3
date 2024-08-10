@@ -1,0 +1,49 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: few_shot (use `wandb login --relogin` to force relogin)
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: Network error (ReadTimeout), entering retry loop.
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/2zqehz4z.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 56, in run
+    success = self.push()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1411, in upload_urls
+    raise CommError(
+wandb.errors.CommError: Run does not exist few_shot/CyBERT/2zqehz4z.
+wandb: ERROR Error communicating with wandb process
+wandb: ERROR try: wandb.init(settings=wandb.Settings(start_method='fork'))
+wandb: ERROR or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+wandb: ERROR For more info see: https://docs.wandb.ai/library/init#init-start-error
+Traceback (most recent call last):
+  File "/work/projects/project01762/CyBERT/cybert/code/MSExchange/run_msexchange_Ranada.py", line 15, in <module>
+    wandb.init(project="CyBERT", entity="few_shot", group="MSExchange_Ranada")
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 954, in init
+    run = wi.init()
+  File "/home/mb14sola/.local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 616, in init
+    raise UsageError(error_message)
+wandb.errors.UsageError: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error
+srun: error: gaqc0001: task 0: Exited with exit code 1

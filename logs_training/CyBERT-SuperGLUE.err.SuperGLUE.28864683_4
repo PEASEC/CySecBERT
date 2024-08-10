@@ -1,0 +1,22 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+2022-06-02 15:51:19.768841: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+Traceback (most recent call last):
+  File "cybert/code/SuperGLUE/superglue_baseline.py", line 37, in <module>
+    downloader.download_data([TASK_NAME], DATA_DIR)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/scripts/download_data/runscript.py", line 75, in download_data
+    task_config_path=os.path.join(task_config_base_path, f"{task_name}_config.json"),
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/scripts/download_data/dl_datasets/files_tasks.py", line 26, in download_task_data_and_write_config
+    task_name=task_name, task_data_path=task_data_path, task_config_path=task_config_path
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/scripts/download_data/dl_datasets/files_tasks.py", line 163, in download_superglue_data_and_write_config
+    DIRECT_SUPERGLUE_TASKS_TO_DATA_URLS[task_name], task_data_path
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/scripts/download_data/utils.py", line 72, in download_and_unzip
+    unzip_file(zip_path=zip_path, extract_location=extract_location, delete=True)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/scripts/download_data/utils.py", line 77, in unzip_file
+    with zipfile.ZipFile(zip_path) as zip_ref:
+  File "/shared/apps/.gcc/8.5/python/3.7.4/lib/python3.7/zipfile.py", line 1207, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp/tasks/data/record/ReCoRD.zip'
+srun: error: gvqc0003: task 0: Exited with exit code 1

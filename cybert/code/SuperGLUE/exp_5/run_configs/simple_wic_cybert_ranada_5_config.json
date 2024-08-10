@@ -1,0 +1,53 @@
+{
+  "task_config_path_dict": {
+    "wic": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/tasks/configs/wic_config.json"
+  },
+  "task_cache_config_dict": {
+    "wic": {
+      "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/cache/bert/wic/train",
+      "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/cache/bert/wic/val",
+      "val_labels": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/cache/bert/wic/val_labels",
+      "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_5/cache/bert/wic/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 255,
+    "warmup_steps": 25
+  },
+  "task_specific_configs_dict": {
+    "wic": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "wic": "wic"
+    },
+    "taskmodel_config_map": {
+      "wic": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [
+      "wic"
+    ],
+    "train_val_task_list": [
+      "wic"
+    ],
+    "val_task_list": [
+      "wic"
+    ],
+    "test_task_list": [
+      "wic"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

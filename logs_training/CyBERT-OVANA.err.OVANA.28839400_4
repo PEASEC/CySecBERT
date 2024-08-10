@@ -1,0 +1,1539 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.9.5 
+Lmod: loading cuda 11.6 
+Lmod: loading cuDNN 8.3.1 
+wandb: Currently logged in as: bayer (few_shot). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/mb14sola/.netrc
+wandb: wandb version 0.12.17 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.16
+wandb: Run data is saved locally in /work/projects/project01762/CyBERT/wandb/run-20220531_160708-15ev20gs
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run magic-durian-429
+wandb: ⭐️ View project at https://wandb.ai/few_shot/CyBERT
+wandb: 🚀 View run at https://wandb.ai/few_shot/CyBERT/runs/15ev20gs
+[INFO|configuration_utils.py:652] 2022-05-31 16:07:13,374 >> loading configuration file /work/projects/project01762/CyBERT/model/cybert_ranada/config.json
+[INFO|configuration_utils.py:690] 2022-05-31 16:07:13,375 >> Model config BertConfig {
+  "_name_or_path": "/work/projects/project01762/CyBERT/model/cybert_ranada",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "finetuning_task": "ner",
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "torch_dtype": "float32",
+  "transformers_version": "4.18.0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 31820
+}
+
+[INFO|tokenization_utils_base.py:1698] 2022-05-31 16:07:13,376 >> Didn't find file /work/projects/project01762/CyBERT/model/cybert_ranada/tokenizer.json. We won't load it.
+[INFO|tokenization_utils_base.py:1776] 2022-05-31 16:07:13,376 >> loading file /work/projects/project01762/CyBERT/model/cybert_ranada/vocab.txt
+[INFO|tokenization_utils_base.py:1776] 2022-05-31 16:07:13,376 >> loading file None
+[INFO|tokenization_utils_base.py:1776] 2022-05-31 16:07:13,376 >> loading file /work/projects/project01762/CyBERT/model/cybert_ranada/added_tokens.json
+[INFO|tokenization_utils_base.py:1776] 2022-05-31 16:07:13,376 >> loading file /work/projects/project01762/CyBERT/model/cybert_ranada/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1776] 2022-05-31 16:07:13,376 >> loading file /work/projects/project01762/CyBERT/model/cybert_ranada/tokenizer_config.json
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding cvss to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding cve to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding xss to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding authenticated to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding unauthenticated to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,398 >> Adding malware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding overflow to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding exploitable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding scripting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding admin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding plugin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding snapdragon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding confidentiality to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,399 >> Adding mysql to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding krebsonsecurity to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding firmware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding vulnerabilities to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding escalation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding javascript to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,400 >> Adding url to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,401 >> Adding wordpress to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,401 >> Adding subcomponent to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,401 >> Adding csrf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,401 >> Adding permissions to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,401 >> Adding phishing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,402 >> Adding passwords to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,402 >> Adding inject to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,402 >> Adding zdi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,402 >> Adding upload to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,403 >> Adding equifax to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,403 >> Adding login to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,403 >> Adding iot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,403 >> Adding vm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,404 >> Adding improperly to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,404 >> Adding 011 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,404 >> Adding 006 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,405 >> Adding magento to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,405 >> Adding delete to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,405 >> Adding dns to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,406 >> Adding ransomware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,406 >> Adding tcp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,406 >> Adding traversal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,407 >> Adding dereference to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,407 >> Adding maliciously to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,407 >> Adding virtualbox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,408 >> Adding androidversions to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,408 >> Adding cybercrime to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,408 >> Adding macos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,409 >> Adding firefox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,410 >> Adding dll to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,410 >> Adding 10android to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,411 >> Adding v1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,411 >> Adding username to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,411 >> Adding insecure to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,412 >> Adding cybersecurity to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,412 >> Adding netgear to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,413 >> Adding redirect to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,413 >> Adding cli to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,413 >> Adding uri to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,414 >> Adding botnet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,414 >> Adding 010 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,415 >> Adding ddos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,415 >> Adding forgery to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,416 >> Adding encrypted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,416 >> Adding foxit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,417 >> Adding spam to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,417 >> Adding gitlab to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,418 >> Adding hackers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,418 >> Adding acrobat to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,419 >> Adding peoplesoft to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,419 >> Adding untrusted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,420 >> Adding vpn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,420 >> Adding bluetooth to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,421 >> Adding endpoint to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,421 >> Adding bitcoin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,422 >> Adding cpp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,422 >> Adding parsing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,423 >> Adding spoofing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,423 >> Adding validate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,424 >> Adding coinhive to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,425 >> Adding exe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,425 >> Adding ssl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,426 >> Adding router to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,426 >> Adding repeatable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,427 >> Adding backdoor to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,428 >> Adding mojave to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,428 >> Adding js to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,429 >> Adding sve to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,429 >> Adding icloud to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,430 >> Adding firewall to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,431 >> Adding hpe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,431 >> Adding v2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,432 >> Adding cgi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,433 >> Adding cryptographic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,433 >> Adding persuading to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,434 >> Adding ms3000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,435 >> Adding tvos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,435 >> Adding uninitialized to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,436 >> Adding watchos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,437 >> Adding mishandles to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,437 >> Adding executes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,438 >> Adding 4009 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,439 >> Adding cnssi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,440 >> Adding nx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,440 >> Adding malformed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,441 >> Adding hijack to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,442 >> Adding config to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,443 >> Adding unencrypted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,443 >> Adding executable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,444 >> Adding escalate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,445 >> Adding whois to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,446 >> Adding filesystem to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,446 >> Adding peopletools to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,447 >> Adding v3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,448 >> Adding scam to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,449 >> Adding phantompdf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,450 >> Adding wp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,451 >> Adding mirai to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,452 >> Adding ssh to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,453 >> Adding cybercriminals to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,454 >> Adding 012 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,454 >> Adding fraudsters to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,455 >> Adding accessing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,456 >> Adding imc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,457 >> Adding routers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,458 >> Adding screenshot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,459 >> Adding mishandled to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,460 >> Adding ftp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,460 >> Adding cms to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,461 >> Adding embed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,462 >> Adding appliance to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,463 >> Adding scammers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,464 >> Adding middleware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,465 >> Adding overwrite to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,466 >> Adding libxaac to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,467 >> Adding weblogic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,468 >> Adding exploiting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,469 >> Adding hijacking to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,470 >> Adding ssrf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,471 >> Adding tibco to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,472 >> Adding debit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,473 >> Adding tls to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,474 >> Adding credential to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,475 >> Adding cryptocurrency to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,476 >> Adding usernames to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,477 >> Adding mattermost to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,478 >> Adding barriss to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,479 >> Adding parser to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,480 >> Adding fingerprint to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,481 >> Adding vdos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,482 >> Adding chakra to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,483 >> Adding antivirus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,484 >> Adding fireeye to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,485 >> Adding simatic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,486 >> Adding apt41 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,487 >> Adding booter to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,489 >> Adding plat to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,490 >> Adding e0506p09 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,491 >> Adding scams to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,492 >> Adding queries to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,493 >> Adding refund to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,494 >> Adding crooks to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,495 >> Adding directories to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,496 >> Adding solaris to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,498 >> Adding disable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,499 >> Adding wipro to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,500 >> Adding logon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,501 >> Adding sharepoint to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,502 >> Adding authenticating to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,503 >> Adding solarwinds to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,505 >> Adding tokens to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,506 >> Adding cleartext to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,507 >> Adding sanitization to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,508 >> Adding joomla to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,510 >> Adding browsers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,511 >> Adding waterbug to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,512 >> Adding decrypt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,513 >> Adding openssl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,514 >> Adding godaddy to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,516 >> Adding jsp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,517 >> Adding 20069 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,518 >> Adding huawei to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,519 >> Adding offline to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,521 >> Adding briansclub to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,522 >> Adding breaches to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,523 >> Adding patched to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,525 >> Adding phony to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,526 >> Adding unprivileged to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,527 >> Adding hijacked to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,528 >> Adding filename to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,530 >> Adding v4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,531 >> Adding sandbox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,532 >> Adding uscourtsgov to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,534 >> Adding json to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,535 >> Adding spoof to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,536 >> Adding decryption to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,538 >> Adding ids to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,539 >> Adding 20035 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,540 >> Adding xxe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,542 >> Adding skimmer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,543 >> Adding reload to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,544 >> Adding intruders to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,546 >> Adding debug to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,547 >> Adding 30148 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,549 >> Adding 30503 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,550 >> Adding nonce to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,551 >> Adding ogusers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,553 >> Adding imagemagick to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,554 >> Adding instagram to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,556 >> Adding jira to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,557 >> Adding cwe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,559 >> Adding gmail to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,560 >> Adding urls to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,562 >> Adding wifi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,563 >> Adding dhs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,565 >> Adding pr0gramm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,566 >> Adding installer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,567 >> Adding bgp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,569 >> Adding incl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,571 >> Adding uploading to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,572 >> Adding plaintext to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,574 >> Adding encrypt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,575 >> Adding vmware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,577 >> Adding telnet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,578 >> Adding jetbrains to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,580 >> Adding siplus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,581 >> Adding covid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,583 >> Adding i7 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,585 >> Adding notifications to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,586 >> Adding ldap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,588 >> Adding gdi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,590 >> Adding subsystem to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,591 >> Adding cybercriminal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,593 >> Adding virtualization to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,595 >> Adding usps to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,597 >> Adding asp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,598 >> Adding cryptography to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,600 >> Adding thunderbird to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,602 >> Adding reboot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,603 >> Adding udp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,605 >> Adding sanitize to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,606 >> Adding zyxel to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,608 >> Adding deletion to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,610 >> Adding locationsmart to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,611 >> Adding rsa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,613 >> Adding rdbms to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,615 >> Adding nist to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,616 >> Adding esr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,618 >> Adding segmentation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,620 >> Adding shellcode to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,622 >> Adding 8217 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,623 >> Adding crm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,625 >> Adding v5 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,627 >> Adding discloses to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,628 >> Adding securus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,630 >> Adding fixes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,632 >> Adding v7 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,633 >> Adding metacharacters to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,635 >> Adding sinvr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,637 >> Adding junos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,639 >> Adding sandboxed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,640 >> Adding webex to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,642 >> Adding experian to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,644 >> Adding qcs605 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,645 >> Adding authenticate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,647 >> Adding versioncode to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,649 >> Adding versionname to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,651 >> Adding sys to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,787 >> Adding paypal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,789 >> Adding sm8150 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,790 >> Adding coders to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,792 >> Adding modicon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,794 >> Adding headers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,796 >> Adding lib to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,797 >> Adding sdks to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,799 >> Adding suse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,801 >> Adding leakage to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,803 >> Adding dhcp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,805 >> Adding stash to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,807 >> Adding onap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,808 >> Adding allot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,810 >> Adding lol to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,812 >> Adding manageengine to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,814 >> Adding smb to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,816 >> Adding skimmers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,818 >> Adding alerts to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,820 >> Adding ipv6 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,821 >> Adding registrars to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,823 >> Adding tweet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,825 >> Adding skimming to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,827 >> Adding botnets to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,829 >> Adding krebs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,831 >> Adding optimizer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,833 >> Adding apis to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,835 >> Adding parse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,837 >> Adding bureaus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,839 >> Adding src to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,841 >> Adding sppa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,842 >> Adding t3000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,844 >> Adding sugarcrm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,846 >> Adding virustotal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,848 >> Adding validating to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,850 >> Adding mdm9607 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,852 >> Adding mishandling to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,854 >> Adding csv to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,856 >> Adding lifecycle to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,858 >> Adding spammers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,860 >> Adding unsanitized to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,862 >> Adding xe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,864 >> Adding fs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,866 >> Adding sm6150 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,868 >> Adding 9000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,870 >> Adding intrusions to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,872 >> Adding hansa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,874 >> Adding deployments to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,876 >> Adding validates to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,879 >> Adding ciphertext to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,891 >> Adding sdm845 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,893 >> Adding troia to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,895 >> Adding libreoffice to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,898 >> Adding zoho to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,900 >> Adding atms to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,902 >> Adding firepower to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,904 >> Adding tweets to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,906 >> Adding leakedsource to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,908 >> Adding teamcity to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,910 >> Adding sdm660 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,912 >> Adding py to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,914 >> Adding crambus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,917 >> Adding leveraged to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,919 >> Adding symlink to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,921 >> Adding mitm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,923 >> Adding sm7150 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,925 >> Adding bento4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,927 >> Adding flexcube to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,929 >> Adding enumeration to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,932 >> Adding verizon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,934 >> Adding glossary to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,936 >> Adding carbanak to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,938 >> Adding substring to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,940 >> Adding symantec to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,943 >> Adding tricking to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,945 >> Adding elevate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,947 >> Adding exec to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,949 >> Adding enumerate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,952 >> Adding pandemic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,954 >> Adding browsing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,956 >> Adding sxr1130 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,958 >> Adding templates to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,961 >> Adding sda845 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,963 >> Adding skype to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,965 >> Adding sdm710 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,967 >> Adding sda660 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,970 >> Adding ipv4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,972 >> Adding escrow to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,980 >> Adding sdm630 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,982 >> Adding alphabay to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,990 >> Adding swapping to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,992 >> Adding forensics to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,995 >> Adding github to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,997 >> Adding p1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:13,999 >> Adding sdm670 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,002 >> Adding leveraging to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,004 >> Adding swatting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,006 >> Adding updating to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,009 >> Adding xen to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,011 >> Adding msm8996au to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,013 >> Adding mongodb to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,016 >> Adding ricoh to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,018 >> Adding sdx24 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,020 >> Adding centos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,023 >> Adding sdk to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,025 >> Adding insynq to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,028 >> Adding atlassian to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,030 >> Adding 3865 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,032 >> Adding dropper to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,035 >> Adding wasm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,037 >> Adding mdm9206 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,040 >> Adding openshift to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,042 >> Adding unrestricted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,045 >> Adding codesys to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,047 >> Adding linkedin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,049 >> Adding setups to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,052 >> Adding screenshots to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,054 >> Adding wearables to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,057 >> Adding workstation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,059 >> Adding backdoors to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,062 >> Adding sxr2130 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,064 >> Adding glpi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,067 >> Adding libredwg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,070 >> Adding plugins to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,077 >> Adding endpoints to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,080 >> Adding 18c to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,083 >> Adding lts to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,091 >> Adding mime to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,099 >> Adding lookup to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,107 >> Adding hostname to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,115 >> Adding win32k to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,123 >> Adding md5 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,131 >> Adding moodle to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,139 >> Adding doorgets to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,147 >> Adding backend to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,155 >> Adding icann to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,158 >> Adding ccs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,166 >> Adding sdm439 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,174 >> Adding mimikatz to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,182 >> Adding guilmette to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,190 >> Adding rdp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,303 >> Adding workday to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,305 >> Adding powershell to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,312 >> Adding trello to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,315 >> Adding crafting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,318 >> Adding coronavirus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,321 >> Adding impersonate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,323 >> Adding deserialization to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,326 >> Adding integrator to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,329 >> Adding asus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,331 >> Adding nicobar to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,334 >> Adding gaskill to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,337 >> Adding chipsets to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,339 >> Adding carding to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,342 >> Adding sender to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,345 >> Adding ipados to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,347 >> Adding hashes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,350 >> Adding apq8096au to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,353 >> Adding extortion to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,356 >> Adding 002 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,358 >> Adding q16 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,361 >> Adding lamo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,364 >> Adding mdm9650 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,367 >> Adding mules to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,369 >> Adding hashing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,372 >> Adding rpc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,375 >> Adding sdx20 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,378 >> Adding encode to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,380 >> Adding msm8909w to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,383 >> Adding r1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,386 >> Adding truglia to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,389 >> Adding uncontrolled to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,392 >> Adding sdm636 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,395 >> Adding mitigate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,397 >> Adding apq8098 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,400 >> Adding burkov to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,403 >> Adding 30113 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,406 >> Adding 30464 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,409 >> Adding apq8053 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,412 >> Adding accesses to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,415 >> Adding unintended to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,417 >> Adding logout to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,420 >> Adding lg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,423 >> Adding photoshop to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,426 >> Adding snmp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,429 >> Adding counterfeit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,432 >> Adding f3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,435 >> Adding backups to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,438 >> Adding hardcoded to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,440 >> Adding loader to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,443 >> Adding forwarding to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,446 >> Adding moxa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,449 >> Adding fusionpbx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,452 >> Adding kaspersky to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,455 >> Adding frp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,458 >> Adding stresser to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,461 >> Adding 30493 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,464 >> Adding 20100 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,467 >> Adding 30138 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,470 >> Adding 30495 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,473 >> Adding 30140 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,476 >> Adding 20099 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,479 >> Adding gpu to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,482 >> Adding crypto to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,485 >> Adding msm8917 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,488 >> Adding compromises to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,491 >> Adding injecting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,494 >> Adding chappell to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,497 >> Adding 30142 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,500 >> Adding takedown to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,503 >> Adding spyware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,506 >> Adding cryptocurrencies to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,509 >> Adding minecraft to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,512 >> Adding phished to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,515 >> Adding asm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,519 >> Adding attachments to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,522 >> Adding rennell to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,525 >> Adding dumps to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,528 >> Adding 2fa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,531 >> Adding phishers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,534 >> Adding xiongmai to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,537 >> Adding 30143 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,541 >> Adding 30498 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,544 >> Adding 30497 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,547 >> Adding helper to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,550 >> Adding rce to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,553 >> Adding configure to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,556 >> Adding 20040 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,560 >> Adding kba to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,563 >> Adding apq8009 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,566 >> Adding jha to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,569 >> Adding rcmp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,572 >> Adding svg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,576 >> Adding nagios to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,579 >> Adding s7 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,582 >> Adding readable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,585 >> Adding parsed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,588 >> Adding sdm450 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,592 >> Adding msm8953 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,595 >> Adding ioctl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,598 >> Adding wago to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,601 >> Adding cachet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,605 >> Adding talx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,608 >> Adding swaps to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,611 >> Adding v0 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,614 >> Adding wireshark to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,618 >> Adding decode to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,621 >> Adding htm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,624 >> Adding zoneminder to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,628 >> Adding sm8250 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,631 >> Adding msm8937 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,634 >> Adding subscriber to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,637 >> Adding mcafee to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,641 >> Adding lifelock to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,644 >> Adding dicom to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,647 >> Adding sdl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,651 >> Adding inbox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,654 >> Adding safeguards to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,657 >> Adding redacted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,661 >> Adding lexicon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,664 >> Adding scalance to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,667 >> Adding ipc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,671 >> Adding gpac to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,674 >> Adding msm8940 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,678 >> Adding msm8920 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,681 >> Adding msm8998 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,684 >> Adding signatureorsystem to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,688 >> Adding citrix to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,691 >> Adding sdx55 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,695 >> Adding 20098 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,698 >> Adding whitelist to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,701 >> Adding iframe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,705 >> Adding trickbot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,708 >> Adding sdm632 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,712 >> Adding sdm429 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,715 >> Adding xpdf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,719 >> Adding downloading to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,722 >> Adding securemail to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,726 >> Adding wannacry to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,729 >> Adding memcpy to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,733 >> Adding wlan to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,736 >> Adding qm215 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,740 >> Adding mitigation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,743 >> Adding exynos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,747 >> Adding indictments to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,750 >> Adding qcs405 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,754 >> Adding sdm850 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,757 >> Adding ise to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,761 >> Adding exfiltration to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,764 >> Adding jpeg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,768 >> Adding evpn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,771 >> Adding updater to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,775 >> Adding outage to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,778 >> Adding oom to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,782 >> Adding vovnenko to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,785 >> Adding smartphones to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,789 >> Adding mdm9640 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,793 >> Adding recursion to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,796 >> Adding runtime to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,800 >> Adding crowdstrike to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,803 >> Adding 20723 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,807 >> Adding libavc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,811 >> Adding qualys to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,814 >> Adding sc8180x to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,818 >> Adding saml to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,822 >> Adding debugging to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,826 >> Adding mypayrollhr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,834 >> Adding viner to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,904 >> Adding apq8017 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,918 >> Adding cert to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:14,922 >> Adding freezes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,030 >> Adding mqtt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,039 >> Adding 3945 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,048 >> Adding forwarded to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,057 >> Adding i4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,067 >> Adding zte to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,072 >> Adding undocumented to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,075 >> Adding baratov to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,079 >> Adding abb to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,083 >> Adding omnibox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,087 >> Adding insufficiently to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,091 >> Adding uploads to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,094 >> Adding expiration to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,098 >> Adding deploying to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,102 >> Adding usr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,106 >> Adding admins to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,110 >> Adding booby to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,114 >> Adding talos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,118 >> Adding calif to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,122 >> Adding agi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,126 >> Adding 3904 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,130 >> Adding nvidia to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,134 >> Adding cpanel to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,138 >> Adding eval to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,142 >> Adding mediawiki to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,145 >> Adding ssa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,149 >> Adding dacl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,153 >> Adding chaewon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,157 >> Adding 5010 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,161 >> Adding xr500 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,164 >> Adding graalvm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,168 >> Adding eap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,172 >> Adding base64 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,176 >> Adding miscreants to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,180 >> Adding adware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,184 >> Adding voip to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,188 >> Adding ihg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,191 >> Adding citi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,195 >> Adding matio to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,199 >> Adding spoofed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,203 >> Adding setuid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,207 >> Adding recursive to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,211 >> Adding 3500 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,215 >> Adding cached to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,219 >> Adding redirected to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,223 >> Adding clusterware to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,227 >> Adding msm8905 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,230 >> Adding unsuspecting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,234 >> Adding tlds to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,238 >> Adding tweeted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,242 >> Adding passwd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,246 >> Adding yalishanda to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,250 >> Adding encoder to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,254 >> Adding apt34 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,258 >> Adding submitting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,262 >> Adding db2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,266 >> Adding xnview to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,270 >> Adding csp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,274 >> Adding cybercrooks to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,278 >> Adding istore to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,282 >> Adding whatsapp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,286 >> Adding oauth to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,290 >> Adding msm8909 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,294 >> Adding isp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,298 >> Adding ver to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,302 >> Adding emc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,306 >> Adding obfuscated to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,310 >> Adding shader to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,314 >> Adding pci to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,318 >> Adding webmail to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,322 >> Adding ssn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,326 >> Adding pcm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,331 >> Adding lenovo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,335 >> Adding domaintools to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,339 >> Adding opensuse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,343 >> Adding amca to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,347 >> Adding tampering to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,351 >> Adding honeypot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,355 >> Adding sanitized to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,359 >> Adding cpe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,363 >> Adding fla to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,368 >> Adding libyang to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,372 >> Adding jssd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,376 >> Adding directwrite to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,380 >> Adding npm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,384 >> Adding cisa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,388 >> Adding django to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,392 >> Adding sdc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,397 >> Adding wowza to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,401 >> Adding disabling to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,405 >> Adding reddit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,409 >> Adding sp2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,413 >> Adding asymmetric to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,418 >> Adding acl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,422 >> Adding uid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,426 >> Adding firewalls to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,430 >> Adding videolan to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,435 >> Adding blaauw to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,439 >> Adding spamming to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,443 >> Adding bulletproof to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,447 >> Adding hostapd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,452 >> Adding ndash to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,456 >> Adding payloads to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,460 >> Adding mdm9150 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,465 >> Adding srx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,469 >> Adding xor to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,473 >> Adding auth to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,575 >> Adding vlc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,580 >> Adding avivore to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,584 >> Adding validated to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,588 >> Adding silverstripe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,593 >> Adding ncsd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,597 >> Adding initialization to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,602 >> Adding renderer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,606 >> Adding hutchins to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,610 >> Adding magickcore to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,615 >> Adding clickjacking to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,619 >> Adding brokers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,623 >> Adding txt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,628 >> Adding analyzer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,632 >> Adding tamper to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,637 >> Adding wirex to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,641 >> Adding youphptube to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,645 >> Adding logcat to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,650 >> Adding dyn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,654 >> Adding ospf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,659 >> Adding mss to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,663 >> Adding myequifax to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,668 >> Adding pos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,672 >> Adding 7000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,676 >> Adding hnap1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,681 >> Adding hyperion to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,685 >> Adding barcode to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,690 >> Adding 3683 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,694 >> Adding markdown to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,699 >> Adding diebold to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,703 >> Adding schuchman to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,708 >> Adding bsa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,712 >> Adding mdm9207c to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,717 >> Adding hackforums to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,721 >> Adding librelogo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,726 >> Adding browse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,730 >> Adding tiff to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,735 >> Adding b2b to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,739 >> Adding cyberattacks to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,744 >> Adding underflow to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,749 >> Adding youtrack to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,753 >> Adding nextcloud to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,758 >> Adding centreon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,762 >> Adding keylogger to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,767 >> Adding o11019 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,771 >> Adding severa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,776 >> Adding tortoiseshell to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,781 >> Adding exiv2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,785 >> Adding r2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,790 >> Adding git to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,794 >> Adding p2p to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,799 >> Adding 3626 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,804 >> Adding binaries to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,808 >> Adding xiaomi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,813 >> Adding overflows to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,818 >> Adding folders to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,822 >> Adding logins to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,827 >> Adding mq to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,832 >> Adding webaccess to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,836 >> Adding rename to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,841 >> Adding padlock to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,846 >> Adding emv to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,850 >> Adding ucs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,855 >> Adding docusign to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,860 >> Adding uaa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,865 >> Adding interestingly to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,869 >> Adding nicehash to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,874 >> Adding vasty to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,879 >> Adding hnap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,883 >> Adding xerx3s to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,888 >> Adding orchestrator to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,893 >> Adding ghidra to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,898 >> Adding anonymity to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:15,996 >> Adding snippet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,001 >> Adding registrant to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,005 >> Adding unsupported to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,010 >> Adding ips to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,015 >> Adding aws to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,022 >> Adding valuevault to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,027 >> Adding lite to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,032 >> Adding markula to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,037 >> Adding bots to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,042 >> Adding maximo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,047 >> Adding nctue to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,052 >> Adding nva to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,057 >> Adding polymorphic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,062 >> Adding kubernetes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,067 >> Adding ghostscript to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,072 >> Adding specialize to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,077 >> Adding terpin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,087 >> Adding dahua to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,092 >> Adding bmc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,102 >> Adding siphon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,113 >> Adding ragebooter to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,124 >> Adding d6000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,129 >> Adding infect to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,140 >> Adding handshake to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,150 >> Adding bios to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,155 >> Adding mozilla to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,166 >> Adding kerskie to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,171 >> Adding filtration to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,181 >> Adding newtek to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,195 >> Adding mediatek to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,200 >> Adding vbscript to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,205 >> Adding remexi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,210 >> Adding spf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,215 >> Adding markup to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,220 >> Adding usatyuk to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,225 >> Adding bidani to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,230 >> Adding rumpus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,235 >> Adding hmi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,240 >> Adding cwp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,245 >> Adding keystroke to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,250 >> Adding keystrokes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,256 >> Adding gh0st to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,261 >> Adding util to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,266 >> Adding configuring to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,271 >> Adding impersonating to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,276 >> Adding osi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,281 >> Adding encrypting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,286 >> Adding cardholder to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,291 >> Adding sdm429w to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,296 >> Adding monero to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,417 >> Adding invoke to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,423 >> Adding cognos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,428 >> Adding x86 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,433 >> Adding root9b to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,438 >> Adding dynamically to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,443 >> Adding phish to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,448 >> Adding wincc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,454 >> Adding amd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,459 >> Adding d3600 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,464 >> Adding modem to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,470 >> Adding sae to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,475 >> Adding highnoon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,480 >> Adding insecurely to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,485 >> Adding r3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,490 >> Adding resold to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,496 >> Adding fraudster to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,501 >> Adding cmd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,506 >> Adding rc4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,512 >> Adding rancher to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,517 >> Adding steganography to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,522 >> Adding gateways to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,528 >> Adding ryuk to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,533 >> Adding drupal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,538 >> Adding broadcom to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,544 >> Adding lnk to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,549 >> Adding extradited to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,554 >> Adding shipboard to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,560 >> Adding alleges to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,565 >> Adding injections to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,570 >> Adding stepparent to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,576 >> Adding otrs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,581 >> Adding abusing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,586 >> Adding wawa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,592 >> Adding bitbucket to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,597 >> Adding seleznev to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,602 >> Adding verifying to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,608 >> Adding sextortion to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,613 >> Adding bypassing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,619 >> Adding 1x49 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,624 >> Adding aspx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,630 >> Adding 3par to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,635 >> Adding jpg to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,640 >> Adding thrift to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,646 >> Adding circumvent to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,651 >> Adding patching to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,657 >> Adding captcha to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,662 >> Adding wrf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,668 >> Adding arf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,673 >> Adding mailing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,679 >> Adding pki to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,684 >> Adding websphere to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,690 >> Adding macros to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,700 >> Adding compromising to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,711 >> Adding swautistic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,722 >> Adding doj to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,731 >> Adding tmp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,737 >> Adding labcorp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,841 >> Adding tp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,847 >> Adding jwt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,853 >> Adding bitdefender to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,858 >> Adding supermicro to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,864 >> Adding utils to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,869 >> Adding bec to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,875 >> Adding reuse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,880 >> Adding siebel to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,886 >> Adding xr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,892 >> Adding ivanti to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,897 >> Adding levashov to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,903 >> Adding provisioning to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,909 >> Adding removable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,914 >> Adding notify to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,920 >> Adding fafsa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,925 >> Adding deloitte to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,931 >> Adding gdpr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,937 >> Adding ascii to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,942 >> Adding reshipping to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,948 >> Adding buffers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,954 >> Adding pcp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,960 >> Adding ietf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,965 >> Adding parses to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,971 >> Adding 509 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,976 >> Adding webpanel to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,982 >> Adding writable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,988 >> Adding avast to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,993 >> Adding massively to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:16,999 >> Adding programmable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,005 >> Adding wpa2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,010 >> Adding subnet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,016 >> Adding perl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,022 >> Adding cj to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,028 >> Adding marques to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,088 >> Adding exif to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,094 >> Adding outsourcing to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,100 >> Adding crippling to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,106 >> Adding uris to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,112 >> Adding mastercard to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,118 >> Adding directmedia to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,123 >> Adding redmond to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,129 >> Adding proxies to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,135 >> Adding ferri to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,141 >> Adding websocket to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,147 >> Adding sendgrid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,153 >> Adding sa6155p to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,159 >> Adding activex to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,165 >> Adding ttps to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,171 >> Adding airbnb to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,177 >> Adding reachable to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,183 >> Adding wls to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,189 >> Adding eavesdropping to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,195 >> Adding identifiers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,300 >> Adding identifier to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,312 >> Adding exabyte to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,323 >> Adding fmc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,333 >> Adding ebay to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,338 >> Adding 471 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,344 >> Adding 8220 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,350 >> Adding metrics to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,356 >> Adding infraud to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,362 >> Adding webpage to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,368 >> Adding scheduler to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,374 >> Adding downgrade to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,380 >> Adding xerox to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,386 >> Adding rtu to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,392 >> Adding webserver to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,397 >> Adding handlers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,403 >> Adding snapshot to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,409 >> Adding tweeting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,415 >> Adding namespace to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,421 >> Adding apophis to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,427 >> Adding rar to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,433 >> Adding webcam to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,439 >> Adding coelho to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,445 >> Adding exposes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,451 >> Adding installs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,457 >> Adding activematrix to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,463 >> Adding smtp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,469 >> Adding webui to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,475 >> Adding neutralization to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,481 >> Adding dma to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,487 >> Adding scp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,493 >> Adding 30152 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,499 >> Adding sizmek to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,505 >> Adding eos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,511 >> Adding wana to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,517 >> Adding nfvis to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,523 >> Adding cpus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,530 >> Adding goznym to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,536 >> Adding perpetrated to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,542 >> Adding gunnebo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,548 >> Adding onelogin to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,554 >> Adding guardium to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,560 >> Adding siem to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,566 >> Adding foothold to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,572 >> Adding dnc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,672 >> Adding n1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,678 >> Adding cohan to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,684 >> Adding leadtools to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,690 >> Adding inserting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,696 >> Adding telepresence to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,702 >> Adding mkv to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,709 >> Adding callback to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,715 >> Adding huddleston to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,721 >> Adding onos to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,727 >> Adding gl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,733 >> Adding comcast to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,740 >> Adding isps to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,746 >> Adding 8216 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,752 >> Adding css to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,758 >> Adding shadowserver to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,765 >> Adding cyberbunker to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,771 >> Adding arby to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,777 >> Adding conf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,783 >> Adding nca to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,789 >> Adding directdefense to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,796 >> Adding decrypted to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,802 >> Adding lookups to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,808 >> Adding ipq8074 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,814 >> Adding resnet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,821 >> Adding adapter to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,827 >> Adding verifies to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,844 >> Adding recorders to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,857 >> Adding mdm9205 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,863 >> Adding bpm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,870 >> Adding dotestconnection to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,876 >> Adding 007 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,883 >> Adding encrypts to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,889 >> Adding solr to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,896 >> Adding misuse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,903 >> Adding conspirators to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,909 >> Adding u2f to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,916 >> Adding geolocation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,924 >> Adding shockwave to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,931 >> Adding quarantine to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,939 >> Adding unprotected to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,947 >> Adding sp1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,955 >> Adding impl to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,962 >> Adding fraudulently to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:17,971 >> Adding sc7180 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,088 >> Adding sprintf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,096 >> Adding limesurvey to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,104 >> Adding c919 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,112 >> Adding checkout to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,120 >> Adding ecdsa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,128 >> Adding surreptitiously to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,135 >> Adding qcs404 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,143 >> Adding routeros to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,151 >> Adding qcn7605 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,159 >> Adding atas to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,167 >> Adding adapters to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,175 >> Adding spa100 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,183 >> Adding perpetrator to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,191 >> Adding imei to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,199 >> Adding rentals to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,207 >> Adding allocate to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,215 >> Adding igmp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,223 >> Adding medantex to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,231 >> Adding coap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,239 >> Adding qemu to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,247 >> Adding 004 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,255 >> Adding gammell to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,263 >> Adding deleting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,271 >> Adding sanixer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,279 >> Adding ansible to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,287 >> Adding bogus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,295 >> Adding qanon to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,303 >> Adding inzirillo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,311 >> Adding netweaver to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,319 >> Adding ontap to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,327 >> Adding rbs50 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,335 >> Adding rbr50 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,344 >> Adding rbk50 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,351 >> Adding stealer to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,470 >> Adding adb to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,481 >> Adding overwriting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,491 >> Adding dnspionage to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,498 >> Adding advertiser to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,505 >> Adding reopen to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,511 >> Adding jmx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,518 >> Adding flashpoint to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,524 >> Adding proxypipe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,531 >> Adding al00b to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,538 >> Adding jackpotting to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,544 >> Adding localhost to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,551 >> Adding aliases to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,558 >> Adding wfo to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,564 >> Adding idor to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,571 >> Adding carder to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,578 >> Adding diagnostics to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,585 >> Adding trojans to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,591 >> Adding knx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,598 >> Adding škorjanc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,604 >> Adding ubuntu to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,611 >> Adding flagged to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,618 >> Adding ppp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,625 >> Adding 665 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,631 >> Adding idn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,638 >> Adding hy to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,645 >> Adding vee to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,652 >> Adding percsoft to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,659 >> Adding webstresser to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,665 >> Adding mariposa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,672 >> Adding applets to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,679 >> Adding diligence to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,686 >> Adding undetected to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,693 >> Adding businessobjects to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,699 >> Adding abusewith to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,706 >> Adding openvpn to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,713 >> Adding rootkit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,720 >> Adding nicknames to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,726 >> Adding brazen to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,733 >> Adding privnotes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,740 >> Adding openid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,747 >> Adding vms to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,754 >> Adding qcm2150 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,761 >> Adding hashed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,767 >> Adding adsense to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,774 >> Adding ftc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,781 >> Adding exxonmobil to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,883 >> Adding numeric to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,890 >> Adding registries to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,897 >> Adding init to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,904 >> Adding invokes to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,911 >> Adding authoring to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,918 >> Adding decoding to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,925 >> Adding m580 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,932 >> Adding 8kun to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,939 >> Adding liska to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,946 >> Adding adversaries to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,953 >> Adding tftp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,960 >> Adding powershower to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,967 >> Adding shutdown to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,974 >> Adding intermediary to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,981 >> Adding disruptive to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:18,988 >> Adding v12 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,001 >> Adding uart to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,018 >> Adding saipan to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,025 >> Adding disconnect to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,032 >> Adding xwd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,039 >> Adding refunds to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,046 >> Adding netflow to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,054 >> Adding symlinks to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,060 >> Adding apq8096 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,068 >> Adding cvv to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,075 >> Adding sunburst to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,082 >> Adding fico to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,089 >> Adding filenames to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,097 >> Adding tsys to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,134 >> Adding vbs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,142 >> Adding ssid to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,149 >> Adding kyocera to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,157 >> Adding iocheckd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,262 >> Adding apm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,269 >> Adding spamhaus to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,277 >> Adding 855 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,284 >> Adding currencies to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,291 >> Adding farsight to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,298 >> Adding mdm9655 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,305 >> Adding countermeasures to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,312 >> Adding dcs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,319 >> Adding homepage to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,326 >> Adding reames to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,334 >> Adding 3770 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,341 >> Adding 8800 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,348 >> Adding qualcomm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,355 >> Adding takeovers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,362 >> Adding sakula to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,369 >> Adding groovy to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,376 >> Adding dodgy to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,383 >> Adding 9android to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,391 >> Adding obtains to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,398 >> Adding shinji to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,405 >> Adding unsealed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,412 >> Adding tmm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,419 >> Adding unsecured to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,426 >> Adding jdhcpd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,434 >> Adding r7800 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,441 >> Adding bitcanal to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,448 >> Adding orvis to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,455 >> Adding kmart to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,462 >> Adding eq to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,470 >> Adding ccu3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,477 >> Adding homematic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,484 >> Adding 30482 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,491 >> Adding 30127 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,499 >> Adding keylogging to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,506 >> Adding m5526cdw to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,513 >> Adding ecosys to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,526 >> Adding 2r7_2000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,538 >> Adding 701 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,549 >> Adding pii to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,556 >> Adding tunneling to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,657 >> Adding r9000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,665 >> Adding nyse to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,673 >> Adding advisories to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,680 >> Adding bradstreet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,689 >> Adding deli to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,696 >> Adding lovelyfont to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,705 >> Adding authenticator to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,712 >> Adding tecno to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,720 >> Adding privnote to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,728 >> Adding fec to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,735 >> Adding gigabit to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,743 >> Adding authedmine to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,751 >> Adding allege to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,758 >> Adding k0pa to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,766 >> Adding reselling to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,773 >> Adding s3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,781 >> Adding tomcat to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,788 >> Adding pfc to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,796 >> Adding advertisers to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,803 >> Adding openprovider to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,811 >> Adding dvrs to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,818 >> Adding waf to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,826 >> Adding filings to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,833 >> Adding docker to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,841 >> Adding v9 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,848 >> Adding csme to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,856 >> Adding handschumacher to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,863 >> Adding fips to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,871 >> Adding advertises to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,978 >> Adding maven to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,986 >> Adding 845 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:19,993 >> Adding sdp to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,001 >> Adding advertise to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,008 >> Adding 4r2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,016 >> Adding programdata to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,023 >> Adding msm8996 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,031 >> Adding cyberspace to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,038 >> Adding mdm9615 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,051 >> Adding themecenter to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,065 >> Adding v15 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,072 >> Adding simphony to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,080 >> Adding freebsd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,088 >> Adding devops to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,095 >> Adding invocation to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,103 >> Adding jspwiki to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,111 >> Adding discord to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,118 >> Adding 712 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,126 >> Adding rx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,134 >> Adding scm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,141 >> Adding mdm9635m to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,149 >> Adding 1099 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,157 >> Adding phar to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,164 >> Adding loglogic to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,172 >> Adding techsmith to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,180 >> Adding laserjet to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,284 >> Adding 835 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,292 >> Adding msm8939 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,300 >> Adding 1024 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,308 >> Adding 636 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,316 >> Adding 1d to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,323 >> Adding dlpe to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,331 >> Adding qca8081 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,339 >> Adding qca6574au to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,346 >> Adding m340 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,354 >> Adding mdm9645 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,362 >> Adding nrd90m to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,370 >> Adding 675 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,378 >> Adding 1x53 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,385 >> Adding 820a to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,393 >> Adding mdm9625 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,401 >> Adding s1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,409 >> Adding 3x48 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,417 >> Adding ipq6018 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,424 >> Adding 2r2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,432 >> Adding 427 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,440 >> Adding 1r3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,448 >> Adding baseband to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,456 >> Adding 003 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,463 >> Adding ipq4019 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,471 >> Adding v14 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,479 >> Adding 22ext to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,487 >> Adding 21ext to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,495 >> Adding drm to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,503 >> Adding autocad to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,511 >> Adding kamorta to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,623 >> Adding zenfone to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,631 >> Adding 30505 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,640 >> Adding 30155 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,647 >> Adding 20056 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,655 >> Adding 021 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,663 >> Adding 439 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,671 >> Adding 429 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,679 >> Adding pfc200 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,687 >> Adding ipq8064 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,695 >> Adding 632 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,702 >> Adding apq8064 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,710 >> Adding sa415m to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,719 >> Adding pfc100 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,726 >> Adding qca6174a to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,734 >> Adding qca9379 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,742 >> Adding sinamics to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,750 >> Adding qca9377 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,758 >> Adding 7000100 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,766 >> Adding 615 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,775 >> Adding crt to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,782 >> Adding 1x46 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,791 >> Adding 0002 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,798 >> Adding 2x75 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,806 >> Adding 1r2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,815 >> Adding meg6501 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,822 >> Adding meg6260 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,925 >> Adding 2r3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,933 >> Adding zed to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,941 >> Adding 500ki to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,949 >> Adding 500mi to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,957 >> Adding 3r3 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,965 >> Adding 1r7 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,974 >> Adding s4 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,982 >> Adding autodesk to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,990 >> Adding apq8076 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:20,998 >> Adding 1010 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,006 >> Adding siveillance to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,014 >> Adding snapdragon_high_med_2016 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,022 >> Adding jenkinsci to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,030 >> Adding 1012 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,039 >> Adding upd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,047 >> Adding s5 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,055 >> Adding icd to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,064 >> Adding s2 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,072 >> Adding qcs610 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,080 >> Adding 0000000 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,088 >> Adding s8 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,096 >> Adding 0912 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,105 >> Adding 0891 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,113 >> Adding 0893 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,121 >> Adding tokenmacro to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,129 >> Adding 2r1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,148 >> Adding qca9886 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,280 >> Adding 8cx to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,289 >> Adding 4r1 to the vocabulary
+[INFO|tokenization_utils.py:425] 2022-05-31 16:07:21,297 >> Adding s6 to the vocabulary
+[INFO|modeling_utils.py:1770] 2022-05-31 16:07:24,063 >> loading weights file /work/projects/project01762/CyBERT/model/cybert_ranada/pytorch_model.bin
+[WARNING|modeling_utils.py:2048] 2022-05-31 16:07:25,075 >> Some weights of the model checkpoint at /work/projects/project01762/CyBERT/model/cybert_ranada were not used when initializing BertForTokenClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[WARNING|modeling_utils.py:2059] 2022-05-31 16:07:25,075 >> Some weights of BertForTokenClassification were not initialized from the model checkpoint at /work/projects/project01762/CyBERT/model/cybert_ranada and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[INFO|trainer.py:566] 2022-05-31 16:07:28,885 >> The following columns in the training set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+/home/mb14sola/.local/lib/python3.9/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+[INFO|trainer.py:1290] 2022-05-31 16:07:28,895 >> ***** Running training *****
+[INFO|trainer.py:1291] 2022-05-31 16:07:28,895 >>   Num examples = 1929
+[INFO|trainer.py:1292] 2022-05-31 16:07:28,895 >>   Num Epochs = 4
+[INFO|trainer.py:1293] 2022-05-31 16:07:28,895 >>   Instantaneous batch size per device = 16
+[INFO|trainer.py:1294] 2022-05-31 16:07:28,895 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1295] 2022-05-31 16:07:28,895 >>   Gradient Accumulation steps = 1
+[INFO|trainer.py:1296] 2022-05-31 16:07:28,895 >>   Total optimization steps = 484
+[INFO|integrations.py:576] 2022-05-31 16:07:28,896 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0% 0/484 [00:00<?, ?it/s]  0% 1/484 [00:00<01:47,  4.51it/s]  0% 2/484 [00:00<01:40,  4.80it/s]  1% 3/484 [00:00<01:31,  5.27it/s]  1% 4/484 [00:00<01:36,  5.00it/s]  1% 5/484 [00:00<01:28,  5.43it/s]  1% 6/484 [00:01<01:34,  5.06it/s]  1% 7/484 [00:01<01:40,  4.75it/s]  2% 8/484 [00:01<01:55,  4.13it/s]  2% 9/484 [00:01<01:40,  4.75it/s]  2% 10/484 [00:01<01:31,  5.18it/s]  2% 11/484 [00:02<01:28,  5.34it/s]  2% 12/484 [00:02<01:28,  5.35it/s]  3% 13/484 [00:02<01:37,  4.83it/s]  3% 14/484 [00:02<01:32,  5.08it/s]  3% 15/484 [00:02<01:29,  5.27it/s]  3% 16/484 [00:03<01:22,  5.65it/s]  4% 17/484 [00:03<01:31,  5.09it/s]  4% 18/484 [00:03<01:28,  5.25it/s]  4% 19/484 [00:03<01:26,  5.41it/s]  4% 20/484 [00:03<01:24,  5.49it/s]  4% 21/484 [00:03<01:14,  6.25it/s]  5% 22/484 [00:04<01:25,  5.41it/s]  5% 23/484 [00:04<01:36,  4.80it/s]  5% 24/484 [00:04<01:29,  5.11it/s]  5% 26/484 [00:04<01:17,  5.91it/s]  6% 27/484 [00:05<01:25,  5.37it/s]  6% 28/484 [00:05<01:52,  4.05it/s]  6% 29/484 [00:05<01:52,  4.06it/s]  6% 30/484 [00:05<01:35,  4.74it/s]  6% 31/484 [00:06<01:33,  4.86it/s]  7% 32/484 [00:06<01:27,  5.14it/s]  7% 33/484 [00:06<01:18,  5.75it/s]  7% 34/484 [00:06<01:42,  4.39it/s]  7% 35/484 [00:06<01:44,  4.30it/s]  7% 36/484 [00:07<01:32,  4.82it/s]  8% 37/484 [00:07<01:34,  4.72it/s]  8% 38/484 [00:07<01:58,  3.78it/s]  8% 39/484 [00:07<01:47,  4.15it/s]  8% 40/484 [00:08<01:52,  3.95it/s]  8% 41/484 [00:08<01:49,  4.03it/s]  9% 42/484 [00:08<01:37,  4.55it/s]  9% 43/484 [00:08<01:33,  4.71it/s]  9% 44/484 [00:08<01:28,  4.99it/s]  9% 45/484 [00:09<01:24,  5.21it/s] 10% 46/484 [00:09<01:24,  5.20it/s] 10% 47/484 [00:09<01:23,  5.25it/s] 10% 48/484 [00:09<01:29,  4.89it/s] 10% 49/484 [00:09<01:32,  4.70it/s] 10% 50/484 [00:10<01:24,  5.12it/s] 11% 51/484 [00:10<01:12,  5.96it/s] 11% 52/484 [00:10<01:15,  5.70it/s] 11% 53/484 [00:10<01:16,  5.60it/s] 11% 54/484 [00:10<01:16,  5.64it/s] 11% 55/484 [00:10<01:06,  6.45it/s] 12% 56/484 [00:11<01:49,  3.91it/s] 12% 57/484 [00:11<01:34,  4.52it/s] 12% 58/484 [00:11<01:27,  4.88it/s] 12% 59/484 [00:11<01:25,  4.98it/s] 12% 60/484 [00:12<01:27,  4.83it/s] 13% 61/484 [00:12<01:28,  4.80it/s] 13% 62/484 [00:12<01:24,  5.00it/s] 13% 63/484 [00:12<01:21,  5.14it/s] 13% 64/484 [00:12<01:28,  4.72it/s] 13% 65/484 [00:13<01:24,  4.94it/s] 14% 66/484 [00:13<01:16,  5.47it/s] 14% 67/484 [00:13<01:20,  5.21it/s] 14% 68/484 [00:13<01:23,  4.97it/s] 14% 69/484 [00:14<01:44,  3.99it/s] 14% 70/484 [00:14<01:27,  4.71it/s] 15% 71/484 [00:14<01:40,  4.10it/s] 15% 72/484 [00:14<01:34,  4.37it/s] 15% 73/484 [00:14<01:21,  5.02it/s] 15% 74/484 [00:14<01:14,  5.49it/s] 15% 75/484 [00:15<01:10,  5.81it/s] 16% 76/484 [00:15<01:15,  5.41it/s] 16% 77/484 [00:15<01:07,  6.01it/s] 16% 78/484 [00:15<01:10,  5.75it/s] 16% 79/484 [00:15<01:16,  5.28it/s] 17% 80/484 [00:16<02:01,  3.32it/s] 17% 81/484 [00:16<01:48,  3.73it/s] 17% 82/484 [00:16<01:41,  3.97it/s] 17% 83/484 [00:16<01:33,  4.28it/s] 17% 84/484 [00:17<01:25,  4.67it/s] 18% 85/484 [00:17<01:18,  5.11it/s] 18% 86/484 [00:17<01:09,  5.69it/s] 18% 87/484 [00:17<01:40,  3.94it/s] 18% 88/484 [00:18<01:28,  4.49it/s] 18% 89/484 [00:18<01:34,  4.19it/s] 19% 90/484 [00:18<01:21,  4.86it/s] 19% 91/484 [00:18<01:09,  5.69it/s] 19% 92/484 [00:18<01:06,  5.90it/s] 19% 93/484 [00:18<00:58,  6.70it/s] 19% 94/484 [00:19<01:06,  5.89it/s] 20% 95/484 [00:19<01:14,  5.24it/s] 20% 96/484 [00:19<01:04,  6.04it/s] 20% 97/484 [00:19<01:44,  3.72it/s] 20% 98/484 [00:20<01:32,  4.15it/s] 20% 99/484 [00:20<01:37,  3.96it/s] 21% 100/484 [00:20<01:32,  4.16it/s] 21% 101/484 [00:20<01:27,  4.39it/s] 21% 102/484 [00:20<01:26,  4.40it/s] 21% 103/484 [00:21<01:14,  5.09it/s] 21% 104/484 [00:21<01:06,  5.75it/s] 22% 106/484 [00:21<00:59,  6.38it/s] 22% 107/484 [00:21<01:26,  4.38it/s] 22% 108/484 [00:22<01:21,  4.62it/s] 23% 109/484 [00:22<01:15,  4.94it/s] 23% 110/484 [00:22<01:21,  4.59it/s] 23% 111/484 [00:22<01:13,  5.11it/s] 23% 112/484 [00:22<01:05,  5.67it/s] 23% 113/484 [00:22<01:04,  5.74it/s] 24% 114/484 [00:23<01:13,  5.06it/s] 24% 115/484 [00:23<01:05,  5.63it/s] 24% 116/484 [00:23<01:20,  4.56it/s] 24% 117/484 [00:23<01:10,  5.18it/s] 24% 118/484 [00:23<01:04,  5.67it/s] 25% 119/484 [00:24<01:06,  5.49it/s] 25% 120/484 [00:24<01:01,  5.91it/s][INFO|trainer.py:566] 2022-05-31 16:07:53,157 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-31 16:07:53,159 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-31 16:07:53,159 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-31 16:07:53,159 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 10% 6/61 [00:00<00:01, 41.25it/s][A
+ 18% 11/61 [00:00<00:01, 42.00it/s][A
+ 25% 15/61 [00:00<00:01, 38.86it/s][A
+ 30% 18/61 [00:00<00:01, 31.89it/s][A
+ 34% 21/61 [00:00<00:01, 28.65it/s][A
+ 39% 24/61 [00:00<00:01, 26.33it/s][A
+ 48% 29/61 [00:00<00:01, 30.16it/s][A
+ 56% 34/61 [00:00<00:00, 33.85it/s][A
+ 62% 38/61 [00:01<00:00, 35.43it/s][A
+ 70% 43/61 [00:01<00:00, 34.60it/s][A
+ 79% 48/61 [00:01<00:00, 36.10it/s][A
+ 85% 52/61 [00:01<00:00, 35.65it/s][A
+ 92% 56/61 [00:01<00:00, 36.62it/s][A
+100% 61/61 [00:01<00:00, 39.52it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+                                     
+                                   [A 25% 121/484 [00:26<01:01,  5.91it/s]
+100% 61/61 [00:02<00:00, 39.52it/s][A
+                                   [A[INFO|trainer.py:2166] 2022-05-31 16:07:55,286 >> Saving model checkpoint to cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-121
+[INFO|configuration_utils.py:441] 2022-05-31 16:07:55,287 >> Configuration saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-121/config.json
+[INFO|modeling_utils.py:1378] 2022-05-31 16:07:55,867 >> Model weights saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-121/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2086] 2022-05-31 16:07:55,868 >> tokenizer config file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-121/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2092] 2022-05-31 16:07:55,868 >> Special tokens file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-121/special_tokens_map.json
+ 25% 122/484 [00:28<04:19,  1.40it/s] 25% 123/484 [00:28<03:22,  1.78it/s] 26% 124/484 [00:28<02:39,  2.25it/s] 26% 125/484 [00:28<02:06,  2.84it/s] 26% 126/484 [00:28<01:51,  3.21it/s] 26% 127/484 [00:29<01:59,  2.99it/s] 26% 128/484 [00:29<01:57,  3.03it/s] 27% 129/484 [00:29<01:37,  3.65it/s] 27% 130/484 [00:29<01:21,  4.32it/s] 27% 132/484 [00:30<01:11,  4.90it/s] 27% 133/484 [00:30<01:14,  4.71it/s] 28% 134/484 [00:30<01:09,  5.01it/s] 28% 135/484 [00:30<01:00,  5.81it/s] 28% 136/484 [00:30<01:05,  5.34it/s] 28% 137/484 [00:31<01:01,  5.63it/s] 29% 138/484 [00:31<00:55,  6.21it/s] 29% 139/484 [00:31<00:54,  6.31it/s] 29% 140/484 [00:31<01:14,  4.61it/s] 29% 141/484 [00:31<01:17,  4.45it/s] 29% 142/484 [00:32<01:17,  4.39it/s] 30% 143/484 [00:32<01:17,  4.38it/s] 30% 144/484 [00:32<01:09,  4.89it/s] 30% 145/484 [00:32<01:06,  5.10it/s] 30% 146/484 [00:32<01:01,  5.52it/s] 30% 147/484 [00:33<01:34,  3.57it/s] 31% 148/484 [00:33<01:49,  3.06it/s] 31% 149/484 [00:33<01:28,  3.77it/s] 31% 150/484 [00:34<01:16,  4.35it/s] 31% 151/484 [00:34<01:08,  4.86it/s] 31% 152/484 [00:34<01:04,  5.14it/s] 32% 153/484 [00:34<01:06,  4.99it/s] 32% 154/484 [00:34<01:01,  5.39it/s] 32% 155/484 [00:34<00:57,  5.75it/s] 32% 156/484 [00:35<00:53,  6.09it/s] 32% 157/484 [00:35<00:50,  6.47it/s] 33% 158/484 [00:35<00:53,  6.09it/s] 33% 159/484 [00:35<01:00,  5.40it/s] 33% 160/484 [00:35<01:06,  4.85it/s] 33% 161/484 [00:36<01:13,  4.41it/s] 33% 162/484 [00:36<01:05,  4.89it/s] 34% 163/484 [00:36<01:09,  4.62it/s] 34% 164/484 [00:36<01:09,  4.58it/s] 34% 165/484 [00:36<01:06,  4.82it/s] 34% 166/484 [00:37<01:09,  4.57it/s] 35% 167/484 [00:37<01:09,  4.56it/s] 35% 168/484 [00:37<01:36,  3.26it/s] 35% 169/484 [00:38<01:18,  4.02it/s] 35% 170/484 [00:38<01:11,  4.42it/s] 35% 171/484 [00:38<01:00,  5.17it/s] 36% 172/484 [00:38<00:59,  5.25it/s] 36% 173/484 [00:38<00:55,  5.56it/s] 36% 174/484 [00:38<00:55,  5.60it/s] 36% 175/484 [00:39<00:56,  5.47it/s] 36% 176/484 [00:39<00:53,  5.77it/s] 37% 177/484 [00:39<00:59,  5.20it/s] 37% 178/484 [00:39<00:56,  5.40it/s] 37% 179/484 [00:39<00:58,  5.18it/s] 37% 180/484 [00:40<01:17,  3.94it/s] 37% 181/484 [00:40<01:14,  4.07it/s] 38% 182/484 [00:40<01:05,  4.62it/s] 38% 183/484 [00:40<01:10,  4.25it/s] 38% 184/484 [00:41<01:07,  4.46it/s] 38% 185/484 [00:41<00:59,  5.04it/s] 38% 186/484 [00:41<00:57,  5.20it/s] 39% 187/484 [00:41<00:51,  5.77it/s] 39% 188/484 [00:41<01:01,  4.83it/s] 39% 189/484 [00:41<00:53,  5.49it/s] 39% 190/484 [00:42<00:53,  5.53it/s] 39% 191/484 [00:42<00:57,  5.12it/s] 40% 192/484 [00:42<00:59,  4.90it/s] 40% 193/484 [00:42<00:51,  5.65it/s] 40% 194/484 [00:42<00:59,  4.90it/s] 40% 195/484 [00:43<00:58,  4.98it/s] 40% 196/484 [00:43<00:59,  4.82it/s] 41% 197/484 [00:43<00:56,  5.10it/s] 41% 198/484 [00:43<00:52,  5.46it/s] 41% 199/484 [00:43<00:48,  5.93it/s] 42% 201/484 [00:43<00:42,  6.74it/s] 42% 202/484 [00:44<00:40,  6.92it/s] 42% 203/484 [00:44<00:44,  6.31it/s] 42% 204/484 [00:44<00:46,  5.99it/s] 42% 205/484 [00:44<00:41,  6.72it/s] 43% 206/484 [00:44<00:41,  6.72it/s] 43% 207/484 [00:45<01:01,  4.53it/s] 43% 208/484 [00:45<01:12,  3.78it/s] 43% 209/484 [00:45<01:10,  3.90it/s] 43% 210/484 [00:45<01:09,  3.92it/s] 44% 211/484 [00:46<01:04,  4.23it/s] 44% 212/484 [00:46<00:55,  4.90it/s] 44% 213/484 [00:46<00:53,  5.07it/s] 44% 214/484 [00:46<00:47,  5.64it/s] 44% 215/484 [00:46<00:44,  6.01it/s] 45% 216/484 [00:46<00:43,  6.20it/s] 45% 217/484 [00:47<00:41,  6.39it/s] 45% 218/484 [00:47<00:42,  6.26it/s] 45% 219/484 [00:47<00:47,  5.54it/s] 45% 220/484 [00:47<00:48,  5.39it/s] 46% 221/484 [00:47<00:47,  5.52it/s] 46% 222/484 [00:47<00:43,  6.02it/s] 46% 223/484 [00:48<00:44,  5.80it/s] 46% 224/484 [00:48<00:46,  5.63it/s] 46% 225/484 [00:48<00:47,  5.45it/s] 47% 226/484 [00:48<00:57,  4.49it/s] 47% 227/484 [00:48<00:50,  5.08it/s] 47% 228/484 [00:49<00:48,  5.26it/s] 47% 229/484 [00:49<00:50,  5.01it/s] 48% 230/484 [00:49<00:52,  4.87it/s] 48% 231/484 [00:49<00:47,  5.33it/s] 48% 232/484 [00:49<00:46,  5.43it/s] 48% 233/484 [00:50<00:45,  5.56it/s] 48% 234/484 [00:50<00:47,  5.29it/s] 49% 235/484 [00:50<00:50,  4.88it/s] 49% 236/484 [00:50<00:45,  5.43it/s] 49% 237/484 [00:51<01:08,  3.61it/s] 49% 238/484 [00:51<01:04,  3.83it/s] 49% 239/484 [00:51<01:01,  3.97it/s] 50% 240/484 [00:51<00:51,  4.72it/s] 50% 241/484 [00:51<00:46,  5.26it/s] 50% 242/484 [00:51<00:40,  6.03it/s][INFO|trainer.py:566] 2022-05-31 16:08:20,887 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-31 16:08:20,890 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-31 16:08:20,890 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-31 16:08:20,890 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 10% 6/61 [00:00<00:01, 41.15it/s][A
+ 18% 11/61 [00:00<00:01, 41.84it/s][A
+ 25% 15/61 [00:00<00:01, 38.73it/s][A
+ 30% 18/61 [00:00<00:01, 31.90it/s][A
+ 34% 21/61 [00:00<00:01, 28.49it/s][A
+ 39% 24/61 [00:00<00:01, 26.11it/s][A
+ 48% 29/61 [00:00<00:01, 29.78it/s][A
+ 56% 34/61 [00:01<00:00, 33.47it/s][A
+ 62% 38/61 [00:01<00:00, 35.06it/s][A
+ 70% 43/61 [00:01<00:00, 34.28it/s][A
+ 77% 47/61 [00:01<00:00, 35.68it/s][A
+ 84% 51/61 [00:01<00:00, 34.24it/s][A
+ 92% 56/61 [00:01<00:00, 36.30it/s][A
+100% 61/61 [00:01<00:00, 39.26it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+
+                                   [A                                     
+100% 61/61 [00:02<00:00, 39.26it/s][A 50% 242/484 [00:54<00:40,  6.03it/s]
+                                   [A[INFO|trainer.py:2166] 2022-05-31 16:08:23,174 >> Saving model checkpoint to cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-242
+[INFO|configuration_utils.py:441] 2022-05-31 16:08:23,175 >> Configuration saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-242/config.json
+[INFO|modeling_utils.py:1378] 2022-05-31 16:08:23,782 >> Model weights saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-242/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2086] 2022-05-31 16:08:23,784 >> tokenizer config file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-242/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2092] 2022-05-31 16:08:23,784 >> Special tokens file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-242/special_tokens_map.json
+ 50% 243/484 [00:56<05:26,  1.36s/it] 50% 244/484 [00:56<04:13,  1.06s/it] 51% 245/484 [00:56<03:07,  1.28it/s] 51% 246/484 [00:56<02:27,  1.62it/s] 51% 247/484 [00:57<02:19,  1.70it/s] 51% 248/484 [00:57<01:55,  2.04it/s] 51% 249/484 [00:57<01:33,  2.51it/s] 52% 250/484 [00:58<01:20,  2.90it/s] 52% 251/484 [00:58<01:11,  3.25it/s] 52% 252/484 [00:58<01:00,  3.85it/s] 52% 253/484 [00:58<00:55,  4.15it/s] 52% 254/484 [00:58<00:50,  4.52it/s] 53% 255/484 [00:59<00:51,  4.47it/s] 53% 256/484 [00:59<00:46,  4.93it/s] 53% 257/484 [00:59<00:39,  5.78it/s] 53% 258/484 [00:59<00:43,  5.15it/s] 54% 259/484 [00:59<00:39,  5.67it/s] 54% 260/484 [00:59<00:35,  6.30it/s] 54% 261/484 [01:00<00:43,  5.17it/s] 54% 262/484 [01:00<00:40,  5.51it/s] 54% 263/484 [01:00<00:44,  4.94it/s] 55% 264/484 [01:00<00:52,  4.21it/s] 55% 265/484 [01:01<01:01,  3.54it/s] 55% 266/484 [01:01<00:55,  3.92it/s] 55% 267/484 [01:01<00:48,  4.47it/s] 55% 268/484 [01:01<00:49,  4.35it/s] 56% 269/484 [01:01<00:50,  4.22it/s] 56% 270/484 [01:02<00:42,  5.08it/s] 56% 271/484 [01:02<00:38,  5.52it/s] 56% 272/484 [01:02<00:38,  5.57it/s] 56% 273/484 [01:02<00:40,  5.15it/s] 57% 274/484 [01:02<00:39,  5.32it/s] 57% 275/484 [01:02<00:36,  5.69it/s] 57% 276/484 [01:03<00:39,  5.23it/s] 57% 277/484 [01:03<00:36,  5.62it/s] 57% 278/484 [01:03<00:43,  4.79it/s] 58% 279/484 [01:03<00:39,  5.23it/s] 58% 280/484 [01:03<00:41,  4.96it/s] 58% 281/484 [01:04<00:52,  3.84it/s] 58% 282/484 [01:04<00:45,  4.41it/s] 58% 283/484 [01:04<00:40,  4.90it/s] 59% 284/484 [01:04<00:43,  4.59it/s] 59% 285/484 [01:05<00:52,  3.81it/s] 59% 286/484 [01:05<00:45,  4.37it/s] 59% 287/484 [01:05<00:40,  4.90it/s] 60% 288/484 [01:05<00:41,  4.73it/s] 60% 289/484 [01:05<00:37,  5.27it/s] 60% 290/484 [01:06<00:33,  5.75it/s] 60% 291/484 [01:06<00:36,  5.33it/s] 60% 292/484 [01:06<00:43,  4.43it/s] 61% 293/484 [01:06<00:42,  4.45it/s] 61% 294/484 [01:07<00:38,  4.93it/s] 61% 295/484 [01:07<00:39,  4.77it/s] 61% 296/484 [01:07<00:34,  5.38it/s] 61% 297/484 [01:07<00:30,  6.15it/s] 62% 298/484 [01:07<00:34,  5.35it/s] 62% 299/484 [01:07<00:33,  5.53it/s] 62% 300/484 [01:08<00:34,  5.26it/s] 62% 301/484 [01:08<00:32,  5.64it/s] 62% 302/484 [01:08<00:29,  6.24it/s] 63% 303/484 [01:08<00:25,  7.00it/s] 63% 304/484 [01:08<00:27,  6.54it/s] 63% 305/484 [01:08<00:31,  5.77it/s] 63% 306/484 [01:09<00:34,  5.19it/s] 63% 307/484 [01:09<00:33,  5.28it/s] 64% 308/484 [01:09<00:32,  5.39it/s] 64% 309/484 [01:09<00:32,  5.46it/s] 64% 310/484 [01:09<00:33,  5.18it/s] 64% 311/484 [01:09<00:30,  5.72it/s] 64% 312/484 [01:10<00:29,  5.78it/s] 65% 313/484 [01:10<00:30,  5.65it/s] 65% 314/484 [01:10<00:29,  5.83it/s] 65% 315/484 [01:10<00:33,  5.09it/s] 65% 316/484 [01:10<00:32,  5.10it/s] 65% 317/484 [01:11<00:30,  5.55it/s] 66% 318/484 [01:11<00:40,  4.11it/s] 66% 319/484 [01:11<00:36,  4.52it/s] 66% 320/484 [01:11<00:34,  4.78it/s] 66% 321/484 [01:12<00:34,  4.70it/s] 67% 322/484 [01:12<00:30,  5.34it/s] 67% 323/484 [01:12<00:36,  4.41it/s] 67% 324/484 [01:12<00:30,  5.28it/s] 67% 325/484 [01:12<00:28,  5.59it/s] 67% 326/484 [01:12<00:28,  5.51it/s] 68% 327/484 [01:13<00:27,  5.63it/s] 68% 328/484 [01:13<00:30,  5.05it/s] 68% 329/484 [01:13<00:28,  5.45it/s] 68% 330/484 [01:13<00:27,  5.53it/s] 68% 331/484 [01:13<00:25,  5.95it/s] 69% 332/484 [01:13<00:24,  6.17it/s] 69% 333/484 [01:14<00:28,  5.37it/s] 69% 334/484 [01:14<00:25,  5.89it/s] 69% 335/484 [01:14<00:25,  5.90it/s] 69% 336/484 [01:14<00:28,  5.28it/s] 70% 337/484 [01:15<00:38,  3.79it/s] 70% 339/484 [01:15<00:31,  4.53it/s] 70% 340/484 [01:15<00:31,  4.59it/s] 70% 341/484 [01:15<00:30,  4.74it/s] 71% 342/484 [01:15<00:26,  5.27it/s] 71% 343/484 [01:16<00:23,  6.08it/s] 71% 344/484 [01:16<00:21,  6.53it/s] 71% 345/484 [01:16<00:21,  6.60it/s] 71% 346/484 [01:16<00:20,  6.76it/s] 72% 347/484 [01:16<00:21,  6.48it/s] 72% 348/484 [01:16<00:22,  6.02it/s] 72% 349/484 [01:17<00:21,  6.24it/s] 72% 350/484 [01:17<00:21,  6.13it/s] 73% 351/484 [01:17<00:24,  5.40it/s] 73% 352/484 [01:17<00:26,  4.93it/s] 73% 353/484 [01:17<00:23,  5.52it/s] 73% 354/484 [01:17<00:23,  5.64it/s] 73% 355/484 [01:18<00:20,  6.23it/s] 74% 356/484 [01:18<00:25,  5.08it/s] 74% 357/484 [01:18<00:24,  5.20it/s] 74% 358/484 [01:18<00:22,  5.53it/s] 74% 359/484 [01:19<00:34,  3.57it/s] 74% 360/484 [01:19<00:29,  4.27it/s] 75% 361/484 [01:19<00:28,  4.31it/s] 75% 362/484 [01:19<00:26,  4.67it/s] 75% 363/484 [01:19<00:22,  5.38it/s][INFO|trainer.py:566] 2022-05-31 16:08:48,756 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-31 16:08:48,758 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-31 16:08:48,759 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-31 16:08:48,759 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 10% 6/61 [00:00<00:01, 40.98it/s][A
+ 18% 11/61 [00:00<00:01, 41.69it/s][A
+ 25% 15/61 [00:00<00:01, 38.58it/s][A
+ 30% 18/61 [00:00<00:01, 31.76it/s][A
+ 34% 21/61 [00:00<00:01, 28.49it/s][A
+ 39% 24/61 [00:00<00:01, 26.15it/s][A
+ 48% 29/61 [00:00<00:01, 29.94it/s][A
+ 56% 34/61 [00:01<00:00, 33.63it/s][A
+ 62% 38/61 [00:01<00:00, 35.17it/s][A
+ 70% 43/61 [00:01<00:00, 34.37it/s][A
+ 77% 47/61 [00:01<00:00, 35.72it/s][A
+ 84% 51/61 [00:01<00:00, 34.29it/s][A
+ 92% 56/61 [00:01<00:00, 36.44it/s][A
+100% 61/61 [00:01<00:00, 39.39it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+                                     
+                                   [A 75% 363/484 [01:22<00:22,  5.38it/s]
+100% 61/61 [00:02<00:00, 39.39it/s][A
+                                   [A[INFO|trainer.py:2166] 2022-05-31 16:08:51,141 >> Saving model checkpoint to cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-363
+[INFO|configuration_utils.py:441] 2022-05-31 16:08:51,142 >> Configuration saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-363/config.json
+[INFO|modeling_utils.py:1378] 2022-05-31 16:08:51,754 >> Model weights saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-363/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2086] 2022-05-31 16:08:51,755 >> tokenizer config file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-363/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2092] 2022-05-31 16:08:51,756 >> Special tokens file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-363/special_tokens_map.json
+ 75% 364/484 [01:24<02:46,  1.39s/it] 75% 365/484 [01:24<01:59,  1.00s/it] 76% 366/484 [01:24<01:27,  1.34it/s] 76% 367/484 [01:24<01:06,  1.77it/s] 76% 368/484 [01:24<00:50,  2.29it/s] 76% 369/484 [01:24<00:38,  2.96it/s] 76% 370/484 [01:24<00:37,  3.01it/s] 77% 371/484 [01:25<00:31,  3.62it/s] 77% 372/484 [01:25<00:26,  4.21it/s] 77% 373/484 [01:25<00:22,  5.04it/s] 77% 374/484 [01:25<00:21,  5.03it/s] 77% 375/484 [01:25<00:26,  4.05it/s] 78% 376/484 [01:26<00:24,  4.44it/s] 78% 377/484 [01:26<00:23,  4.50it/s] 78% 378/484 [01:26<00:21,  4.83it/s] 78% 379/484 [01:26<00:20,  5.25it/s] 79% 380/484 [01:26<00:20,  5.05it/s] 79% 381/484 [01:27<00:26,  3.91it/s] 79% 382/484 [01:27<00:24,  4.14it/s] 79% 383/484 [01:27<00:21,  4.75it/s] 79% 384/484 [01:27<00:20,  4.94it/s] 80% 385/484 [01:28<00:20,  4.84it/s] 80% 386/484 [01:28<00:18,  5.24it/s] 80% 387/484 [01:28<00:20,  4.79it/s] 80% 389/484 [01:28<00:17,  5.47it/s] 81% 390/484 [01:28<00:16,  5.56it/s] 81% 392/484 [01:29<00:15,  5.83it/s] 81% 393/484 [01:29<00:14,  6.18it/s] 82% 395/484 [01:29<00:12,  6.90it/s] 82% 396/484 [01:29<00:12,  7.11it/s] 82% 397/484 [01:29<00:13,  6.56it/s] 82% 398/484 [01:29<00:12,  6.63it/s] 82% 399/484 [01:30<00:14,  5.81it/s] 83% 400/484 [01:30<00:13,  6.04it/s] 83% 401/484 [01:30<00:16,  5.05it/s] 83% 402/484 [01:30<00:16,  4.84it/s] 83% 403/484 [01:31<00:18,  4.36it/s] 83% 404/484 [01:31<00:17,  4.64it/s] 84% 405/484 [01:31<00:17,  4.52it/s] 84% 406/484 [01:31<00:14,  5.21it/s] 84% 407/484 [01:31<00:16,  4.81it/s] 84% 408/484 [01:32<00:18,  4.17it/s] 85% 409/484 [01:32<00:15,  4.87it/s] 85% 410/484 [01:32<00:13,  5.32it/s] 85% 411/484 [01:32<00:12,  5.91it/s] 85% 412/484 [01:32<00:16,  4.39it/s] 85% 413/484 [01:33<00:14,  4.90it/s] 86% 414/484 [01:33<00:12,  5.54it/s] 86% 415/484 [01:33<00:13,  5.14it/s] 86% 416/484 [01:33<00:15,  4.30it/s] 86% 417/484 [01:33<00:14,  4.62it/s] 86% 418/484 [01:34<00:12,  5.21it/s] 87% 419/484 [01:34<00:12,  5.34it/s] 87% 420/484 [01:34<00:12,  5.06it/s] 87% 421/484 [01:34<00:11,  5.49it/s] 87% 422/484 [01:34<00:12,  5.09it/s] 87% 423/484 [01:35<00:12,  5.08it/s] 88% 424/484 [01:35<00:17,  3.44it/s] 88% 425/484 [01:35<00:14,  4.12it/s] 88% 426/484 [01:35<00:12,  4.67it/s] 88% 427/484 [01:36<00:11,  4.90it/s] 88% 428/484 [01:36<00:11,  4.74it/s] 89% 429/484 [01:36<00:16,  3.31it/s] 89% 430/484 [01:36<00:13,  3.94it/s] 89% 431/484 [01:37<00:12,  4.09it/s] 89% 432/484 [01:37<00:11,  4.48it/s] 89% 433/484 [01:37<00:10,  4.70it/s] 90% 434/484 [01:37<00:09,  5.12it/s] 90% 435/484 [01:38<00:13,  3.73it/s] 90% 436/484 [01:38<00:10,  4.43it/s] 90% 437/484 [01:38<00:10,  4.62it/s] 90% 438/484 [01:38<00:09,  4.90it/s] 91% 439/484 [01:38<00:09,  4.76it/s] 91% 440/484 [01:39<00:09,  4.60it/s] 91% 441/484 [01:39<00:08,  5.18it/s] 91% 442/484 [01:39<00:07,  5.77it/s] 92% 443/484 [01:39<00:06,  6.00it/s] 92% 444/484 [01:39<00:06,  6.00it/s] 92% 445/484 [01:39<00:07,  5.27it/s] 92% 446/484 [01:40<00:06,  5.61it/s] 92% 447/484 [01:40<00:06,  6.03it/s] 93% 448/484 [01:40<00:07,  5.09it/s] 93% 449/484 [01:40<00:07,  4.85it/s] 93% 450/484 [01:40<00:07,  4.53it/s] 93% 451/484 [01:41<00:07,  4.51it/s] 93% 452/484 [01:41<00:07,  4.43it/s] 94% 453/484 [01:41<00:06,  5.16it/s] 94% 454/484 [01:41<00:05,  5.57it/s] 94% 455/484 [01:41<00:05,  5.65it/s] 94% 457/484 [01:42<00:04,  6.35it/s] 95% 458/484 [01:42<00:04,  6.48it/s] 95% 459/484 [01:42<00:04,  6.12it/s] 95% 460/484 [01:42<00:04,  5.03it/s] 95% 461/484 [01:42<00:04,  5.28it/s] 95% 462/484 [01:42<00:03,  5.73it/s] 96% 463/484 [01:43<00:03,  6.32it/s] 96% 464/484 [01:43<00:02,  6.79it/s] 96% 465/484 [01:43<00:03,  5.60it/s] 96% 466/484 [01:43<00:03,  5.52it/s] 96% 467/484 [01:43<00:03,  5.13it/s] 97% 468/484 [01:43<00:02,  5.99it/s] 97% 469/484 [01:44<00:02,  5.30it/s] 97% 470/484 [01:44<00:02,  5.66it/s] 97% 471/484 [01:44<00:02,  5.49it/s] 98% 472/484 [01:44<00:02,  5.01it/s] 98% 473/484 [01:44<00:02,  5.42it/s] 98% 474/484 [01:45<00:02,  4.96it/s] 98% 475/484 [01:45<00:01,  5.35it/s] 98% 476/484 [01:45<00:01,  5.36it/s] 99% 477/484 [01:45<00:01,  5.43it/s] 99% 478/484 [01:45<00:01,  5.70it/s] 99% 479/484 [01:46<00:01,  4.17it/s] 99% 480/484 [01:46<00:00,  4.26it/s] 99% 481/484 [01:46<00:00,  4.11it/s]100% 482/484 [01:46<00:00,  4.45it/s]100% 483/484 [01:47<00:00,  3.60it/s][INFO|trainer.py:566] 2022-05-31 16:09:16,311 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-31 16:09:16,314 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-31 16:09:16,314 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-31 16:09:16,314 >>   Batch size = 8
+
+  0% 0/61 [00:00<?, ?it/s][A
+ 10% 6/61 [00:00<00:01, 40.80it/s][A
+ 18% 11/61 [00:00<00:01, 41.28it/s][A
+ 23% 14/61 [00:00<00:01, 36.45it/s][A
+ 30% 18/61 [00:00<00:01, 31.54it/s][A
+ 34% 21/61 [00:00<00:01, 28.28it/s][A
+ 39% 24/61 [00:00<00:01, 25.45it/s][A
+ 46% 28/61 [00:00<00:01, 27.42it/s][A
+ 52% 32/61 [00:01<00:01, 28.81it/s][A
+ 59% 36/61 [00:01<00:00, 30.36it/s][A
+ 66% 40/61 [00:01<00:00, 31.16it/s][A
+ 72% 44/61 [00:01<00:00, 27.40it/s][A
+ 79% 48/61 [00:01<00:00, 29.23it/s][A
+ 85% 52/61 [00:01<00:00, 30.49it/s][A
+ 92% 56/61 [00:01<00:00, 32.37it/s][A
+100% 61/61 [00:01<00:00, 35.42it/s][A/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+                                     
+                                   [A100% 484/484 [01:49<00:00,  3.60it/s]
+100% 61/61 [00:02<00:00, 35.42it/s][A
+                                   [A[INFO|trainer.py:2166] 2022-05-31 16:09:18,738 >> Saving model checkpoint to cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-484
+[INFO|configuration_utils.py:441] 2022-05-31 16:09:18,740 >> Configuration saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-484/config.json
+[INFO|modeling_utils.py:1378] 2022-05-31 16:09:19,331 >> Model weights saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-484/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2086] 2022-05-31 16:09:19,332 >> tokenizer config file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-484/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2092] 2022-05-31 16:09:19,332 >> Special tokens file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/checkpoint-484/special_tokens_map.json
+[INFO|trainer.py:1530] 2022-05-31 16:09:20,485 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                     100% 484/484 [01:51<00:00,  3.60it/s]100% 484/484 [01:51<00:00,  4.34it/s]
+[INFO|trainer.py:2166] 2022-05-31 16:09:20,487 >> Saving model checkpoint to cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12
+[INFO|configuration_utils.py:441] 2022-05-31 16:09:20,488 >> Configuration saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/config.json
+[INFO|modeling_utils.py:1378] 2022-05-31 16:09:21,468 >> Model weights saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2086] 2022-05-31 16:09:21,470 >> tokenizer config file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2092] 2022-05-31 16:09:21,470 >> Special tokens file saved in cybert/model/OVANA_AC_Ranada_4_2022-05-31-16-07-12/special_tokens_map.json
+[INFO|trainer.py:566] 2022-05-31 16:09:21,509 >> The following columns in the evaluation set  don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: ner, words. If ner, words are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2416] 2022-05-31 16:09:21,511 >> ***** Running Evaluation *****
+[INFO|trainer.py:2418] 2022-05-31 16:09:21,511 >>   Num examples = 483
+[INFO|trainer.py:2421] 2022-05-31 16:09:21,511 >>   Batch size = 8
+  0% 0/61 [00:00<?, ?it/s]  8% 5/61 [00:00<00:01, 47.94it/s] 13% 8/61 [00:00<00:01, 40.63it/s] 21% 13/61 [00:00<00:01, 39.67it/s] 26% 16/61 [00:00<00:01, 36.06it/s] 31% 19/61 [00:00<00:01, 26.88it/s] 39% 24/61 [00:00<00:01, 27.17it/s] 48% 29/61 [00:00<00:01, 30.89it/s] 56% 34/61 [00:01<00:00, 34.44it/s] 62% 38/61 [00:01<00:00, 35.82it/s] 70% 43/61 [00:01<00:00, 34.79it/s] 77% 47/61 [00:01<00:00, 36.08it/s] 84% 51/61 [00:01<00:00, 34.50it/s] 92% 56/61 [00:01<00:00, 36.44it/s]100% 61/61 [00:01<00:00, 39.16it/s]/home/mb14sola/.local/lib/python3.9/site-packages/seqeval/metrics/sequence_labeling.py:171: UserWarning: AC seems not to be NE tag.
+  warnings.warn('{} seems not to be NE tag.'.format(chunk))
+100% 61/61 [00:02<00:00, 28.73it/s]
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: | 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: / 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: - 0.001 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: \ 0.001 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: | 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: / 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: - 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: \ 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: | 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: / 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: - 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: \ 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb: | 0.145 MB of 0.145 MB uploaded (0.000 MB deduped)wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  eval/accuracy ▁▇█▇▇
+wandb:                        eval/f1 ▁█▇▇▇
+wandb:                      eval/loss ▁▁▆██
+wandb:                 eval/precision ▁▇███
+wandb:                    eval/recall ▄█▁▂▂
+wandb:                   eval/runtime ▁▅▇█▂
+wandb:        eval/samples_per_second █▄▂▁▇
+wandb:          eval/steps_per_second █▄▂▁▇
+wandb:                    train/epoch ▁▃▆███
+wandb:              train/global_step ▁▃▆███
+wandb:               train/total_flos ▁
+wandb:               train/train_loss ▁
+wandb:            train/train_runtime ▁
+wandb: train/train_samples_per_second ▁
+wandb:   train/train_steps_per_second ▁
+wandb: 
+wandb: Run summary:
+wandb:                  eval/accuracy 0.94073
+wandb:                        eval/f1 0.30708
+wandb:                      eval/loss 0.19436
+wandb:                 eval/precision 0.29188
+wandb:                    eval/recall 0.32394
+wandb:                   eval/runtime 2.1525
+wandb:        eval/samples_per_second 224.393
+wandb:          eval/steps_per_second 28.339
+wandb:                    train/epoch 4.0
+wandb:              train/global_step 484
+wandb:               train/total_flos 779587549590732.0
+wandb:               train/train_loss 0.0994
+wandb:            train/train_runtime 111.5902
+wandb: train/train_samples_per_second 69.146
+wandb:   train/train_steps_per_second 4.337
+wandb: 
+wandb: Synced magic-durian-429: https://wandb.ai/few_shot/CyBERT/runs/15ev20gs
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20220531_160708-15ev20gs/logs

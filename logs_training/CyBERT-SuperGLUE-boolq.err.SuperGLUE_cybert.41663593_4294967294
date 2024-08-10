@@ -1,0 +1,11 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/superglue_boolq.py", line 8, in <module>
+    import jiant.proj.simple.runscript as simple_run
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/proj/simple/runscript.py", line 5, in <module>
+    from transformers import AutoConfig
+ModuleNotFoundError: No module named 'transformers'
+srun: error: gaqc0001: task 0: Exited with exit code 1

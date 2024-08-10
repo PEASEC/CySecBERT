@@ -1,0 +1,7 @@
+{
+  "task": "rte",
+  "paths": {
+    "test": "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/exp_100/tasks/data/superglue_broadcoverage_diagnostics/test.jsonl"
+  },
+  "name": "superglue_broadcoverage_diagnostics"
+}

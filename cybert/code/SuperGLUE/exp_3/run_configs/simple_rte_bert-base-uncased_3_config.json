@@ -1,0 +1,53 @@
+{
+  "task_config_path_dict": {
+    "rte": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/tasks/configs/rte_config.json"
+  },
+  "task_cache_config_dict": {
+    "rte": {
+      "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/cache/bert/rte/train",
+      "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/cache/bert/rte/val",
+      "val_labels": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/cache/bert/rte/val_labels",
+      "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_3/cache/bert/rte/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 117,
+    "warmup_steps": 11
+  },
+  "task_specific_configs_dict": {
+    "rte": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "rte": "rte"
+    },
+    "taskmodel_config_map": {
+      "rte": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [
+      "rte"
+    ],
+    "train_val_task_list": [
+      "rte"
+    ],
+    "val_task_list": [
+      "rte"
+    ],
+    "test_task_list": [
+      "rte"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

@@ -1,0 +1,1 @@
+{"score": 0.64, "metrics": {"copa": {"major": 0.64, "minor": {"acc": 0.64}}}, "train_state": {"global_steps": 21, "task_steps": {"copa": 21}}, "TIMESTAMP": 1653773354.285037}

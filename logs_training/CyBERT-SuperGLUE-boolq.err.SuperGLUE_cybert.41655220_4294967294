@@ -1,0 +1,62 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.7.4 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+2023-05-17 02:32:06.863856: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+Some weights of the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertModel were not initialized from the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Reusing dataset super_glue (/home/mb14sola/.cache/huggingface/datasets/super_glue/boolq/1.0.2/41d9edb3935257e1da4b7ce54cd90df0e8bb255a15e46cfe5cbc7e1c04f177de)
+Some weights of the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertModel were not initialized from the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/mb14sola/.local/lib/python3.7/site-packages/torch/cuda/__init__.py:104: UserWarning: 
+NVIDIA A100-PCIE-40GB with CUDA capability sm_80 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA A100-PCIE-40GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+/home/mb14sola/.local/lib/python3.7/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  FutureWarning,
+Training:   0%|          | 0/444 [00:00<?, ?it/s]Training:   0%|          | 0/444 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "cybert/code/SuperGLUE/superglue_boolq.py", line 69, in <module>
+    simple_run.run_simple(args)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/simple/runscript.py", line 263, in run_simple
+    runscript.run_loop(args=run_args, checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runscript.py", line 172, in run_loop
+    metarunner.run_train_loop()
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/shared/metarunner.py", line 38, in run_train_loop
+    for _ in self.yield_train_step():
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/metarunner.py", line 112, in yield_train_step
+    for train_state in train_iterator:
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runner.py", line 76, in run_train_context
+    train_dataloader_dict=train_dataloader_dict, train_state=train_state
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/runner.py", line 108, in run_train_step
+    compute_loss=True,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 112, in wrap_jiant_forward
+    compute_loss=compute_loss,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 80, in forward
+    compute_loss=compute_loss,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/taskmodels.py", line 84, in forward
+    input_mask=batch.input_mask,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/jiant/proj/main/modeling/primary.py", line 215, in encode
+    output_hidden_states=output_hidden_states,
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 993, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape)
+  File "/home/mb14sola/.local/lib/python3.7/site-packages/transformers/modeling_utils.py", line 893, in get_extended_attention_mask
+    extended_attention_mask = extended_attention_mask.to(dtype=dtype)  # fp16 compatibility
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+srun: error: gaqc0001: task 0: Exited with exit code 1

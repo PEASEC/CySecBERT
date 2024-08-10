@@ -1,0 +1,31 @@
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/api.py", line 250, in create_handler
+    creator = self._registry[params.backend]
+KeyError: 'nccl'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/shared/apps/.gcc/8.5/python/3.10.10/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 223, in launch_agent
+    rdzv_handler=rdzv_registry.get_rendezvous_handler(rdzv_parameters),
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/registry.py", line 65, in get_rendezvous_handler
+    return handler_registry.create_handler(params)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/api.py", line 252, in create_handler
+    raise ValueError(
+ValueError: The rendezvous backend 'nccl' is not registered. Did you forget to call `register`?
+srun: error: gvqc0001: task 0: Exited with exit code 1

@@ -1,0 +1,53 @@
+{
+  "task_config_path_dict": {
+    "multirc": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/tasks/configs/multirc_config.json"
+  },
+  "task_cache_config_dict": {
+    "multirc": {
+      "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/multirc/train",
+      "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/multirc/val",
+      "val_labels": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/multirc/val_labels",
+      "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/multirc/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 1278,
+    "warmup_steps": 127
+  },
+  "task_specific_configs_dict": {
+    "multirc": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "multirc": "multirc"
+    },
+    "taskmodel_config_map": {
+      "multirc": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [
+      "multirc"
+    ],
+    "train_val_task_list": [
+      "multirc"
+    ],
+    "val_task_list": [
+      "multirc"
+    ],
+    "test_task_list": [
+      "multirc"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

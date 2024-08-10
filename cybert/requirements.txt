@@ -1,0 +1,6 @@
+datasets >= 1.8.0
+transformers
+pandas==0.24.2
+requests
+pandas-datareader
+seqeval

@@ -1,0 +1,53 @@
+{
+  "task_config_path_dict": {
+    "copa": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/tasks/configs/copa_config.json"
+  },
+  "task_cache_config_dict": {
+    "copa": {
+      "train": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/copa/train",
+      "val": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/copa/val",
+      "val_labels": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/copa/val_labels",
+      "test": "/work/projects/project01762/CyBERT/cybert/code/SuperGLUE/exp_2/cache/bert/copa/test"
+    }
+  },
+  "sampler_config": {
+    "sampler_type": "ProportionalMultiTaskSampler"
+  },
+  "global_train_config": {
+    "max_steps": 21,
+    "warmup_steps": 2
+  },
+  "task_specific_configs_dict": {
+    "copa": {
+      "train_batch_size": 64,
+      "eval_batch_size": 128,
+      "gradient_accumulation_steps": 1,
+      "eval_subset_num": 500
+    }
+  },
+  "taskmodels_config": {
+    "task_to_taskmodel_map": {
+      "copa": "copa"
+    },
+    "taskmodel_config_map": {
+      "copa": null
+    }
+  },
+  "task_run_config": {
+    "train_task_list": [
+      "copa"
+    ],
+    "train_val_task_list": [
+      "copa"
+    ],
+    "val_task_list": [
+      "copa"
+    ],
+    "test_task_list": [
+      "copa"
+    ]
+  },
+  "metric_aggregator_config": {
+    "metric_aggregator_type": "EqualMetricAggregator"
+  }
+}

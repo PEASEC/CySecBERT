@@ -1,0 +1,33 @@
+Lmod: unloading cuDNN 8.8.1 
+Lmod: unloading cuda 11.8 
+Lmod: unloading python 3.10.10 
+Lmod: unloading gcc 8.5.0 
+Lmod: loading gcc 8.5.0 
+Lmod: loading python 3.10.10 
+Lmod: loading cuda 11.8 
+Lmod: loading cuDNN 8.8.1 
+Some weights of the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertModel were not initialized from the model checkpoint at /work/projects/project02060/CyBERT/model/cybert_v100_epochs_20 and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Using the latest cached version of the module from /home/mb14sola/.cache/huggingface/modules/datasets_modules/datasets/super_glue/bb9675f958ebfee0d5d6dc5476fafe38c79123727a7258d515c450873dbdbbed (last modified on Mon May 15 12:14:16 2023) since it couldn't be found locally at super_glue., or remotely on the Hugging Face Hub.
+Found cached dataset super_glue (/home/mb14sola/.cache/huggingface/datasets/super_glue/boolq/1.0.3/bb9675f958ebfee0d5d6dc5476fafe38c79123727a7258d515c450873dbdbbed)
+  0%|          | 0/3 [00:00<?, ?it/s]100%|██████████| 3/3 [00:00<00:00, 147.26it/s]
+Traceback (most recent call last):
+  File "/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/superglue_boolq.py", line 69, in <module>
+    simple_run.run_simple(args)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/proj/simple/runscript.py", line 256, in run_simple
+    runscript.run_loop(args=run_args, checkpoint=checkpoint)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/proj/main/runscript.py", line 134, in run_loop
+    quick_init_out = initialization.quick_init(args=args, verbose=True)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/shared/initialization.py", line 40, in quick_init
+    log_writer = init_log_writer(output_dir=args.output_dir)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/shared/initialization.py", line 156, in init_log_writer
+    return zlog.ZLogger(os.path.join(output_dir, str(int(time.time()))), overwrite=True)
+  File "/home/mb14sola/.local/lib/python3.10/site-packages/jiant/utils/zlog.py", line 33, in __init__
+    os.makedirs(fol_path)
+  File "/shared/apps/.gcc/8.5/python/3.10.10/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/work/projects/project02060/CyBERT/cybert/code/SuperGLUE/boolq_exp_1/runs/simple_boolq_cybert_v100_epochs_20_1/1684309982'
+srun: error: gaqc0001: task 0: Exited with exit code 1
