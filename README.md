@@ -68,8 +68,8 @@ python cybert/code/run_mlm.py \
 The `run_mlm.py` script contains several key parameters for model training and fine-tuning:
 
 - **ModelArguments**:
-  - `model_name_or_path`: Path to the pre-trained model or model identifier from the Hugging Face model hub.
-  - `model_type`: Type of model to be trained from scratch (e.g., `bert`).
+  - `model_name_or_path`: The model checkpoint for weights initialization. Don't set if you want to train a model from scratch.
+  - `model_type`: If training from scratch, pass a model type. 
   - `config_name`, `tokenizer_name`: Names or paths of the config and tokenizer if different from the model name.
   - `cache_dir`: Directory to store downloaded models.
   - `use_fast_tokenizer`: Whether to use a fast tokenizer backed by the `tokenizers` library.
@@ -78,7 +78,8 @@ The `run_mlm.py` script contains several key parameters for model training and f
 
 - **DataTrainingArguments**:
   - `dataset_name`: Name of the dataset (via the Hugging Face datasets library).
-  - `train_file`, `validation_file`: Paths to the training and validation data files.
+  - `dataset_config_name`: The configuration name of the dataset to use (via the datasets library).
+  - `train_file`, `validation_file`: Paths to the training and validation data files (text files).
   - `validation_split_percentage`: Percentage of the training set used for validation.
   - `max_seq_length`: Maximum sequence length after tokenization.
   - `mlm_probability`: Ratio of tokens to mask for the masked language modeling loss.
