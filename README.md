@@ -2,6 +2,8 @@
 
 CySecBERT is a domain-adapted version of the BERT model tailored for cybersecurity tasks. This repository contains the experimental codebase for further training BERT, fine-tuning the resulting BERT model, running various experiments, and analyzing training logs. Please note that this repository does not include any datasets, pretrained models, or checkpoints. These resources can be obtained by contacting the authors.
 
+Note: Internally, the project was called CyBERT, so all references to it normally refer to the CySecBERT model. 
+
 ## Model
 
 https://huggingface.co/markusbayer/CySecBERT
