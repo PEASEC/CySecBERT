@@ -46,7 +46,7 @@ cysecbert/
 
 ### Domain Adapting BERT
 
-To adapt BERT to the cybersecurity domain, use the `run_mlm.py` script. This script allows you to fine-tune the BERT model on a domain-specific corpus.
+To adapt BERT to the cybersecurity domain, use the `run_mlm.py` script. This script allows you to further train the BERT model on a domain-specific corpus.
 
 Example command:
 ```
