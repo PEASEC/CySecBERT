@@ -33,7 +33,7 @@ cysecbert/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CySecBERT.git
+   git clone https://github.com/PEASEC/CySecBERT.git
    cd CySecBERT
    ```
 
