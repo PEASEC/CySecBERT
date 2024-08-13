@@ -4,6 +4,10 @@ CySecBERT is a domain-adapted version of the BERT model tailored for cybersecuri
 
 Note: Internally, the project was called CyBERT, so all references to it normally refer to the CySecBERT model. 
 
+## Contact and Support
+
+If you have any questions, need access to datasets, model checkpoints, or the complete research data, or if you encounter any bugs, please feel free to contact me!
+
 ## Model
 
 https://huggingface.co/markusbayer/CySecBERT
