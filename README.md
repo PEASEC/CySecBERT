@@ -16,6 +16,10 @@ https://huggingface.co/markusbayer/CySecBERT
 
 https://github.com/PEASEC/cybersecurity_dataset
 
+## Paper
+
+https://dl.acm.org/doi/10.1145/3652594
+
 ## Project Structure
 
 The repository is organized as follows:
@@ -111,4 +115,8 @@ The repository includes an older Jupyter notebook, `CyBERT.ipynb`, that was used
 ## Getting Help
 
 For any questions, issues, or requests for datasets, models, or checkpoints, please contact the authors directly.
+
+## Authors
+
+Markus Bayer, Philipp Kuehn, Ramin Shanehsaz, Christian Reuter
 
