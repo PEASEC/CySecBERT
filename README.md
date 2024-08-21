@@ -12,6 +12,10 @@ If you have any questions, need access to datasets, model checkpoints, or the co
 
 https://huggingface.co/markusbayer/CySecBERT
 
+## Dataset
+
+https://github.com/PEASEC/cybersecurity_dataset
+
 ## Project Structure
 
 The repository is organized as follows:
